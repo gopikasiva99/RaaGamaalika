@@ -38,8 +38,9 @@ def slugify(name: str) -> str:
 
 def normalize_name(s: str) -> str:
     """Aggressive spelling-tolerant form used only for matching names."""
-    s = re.sub(r"[^a-z]", "", _ascii_lower(s))
-    for a, b in (("sh", "s"), ("th", "t"), ("dh", "d"), ("bh", "b"), ("w", "v")):
+    s = re.sub(r"[^a-z0-9]", "", _ascii_lower(s))
+    for a, b in (("ee", "i"), ("oo", "u"), ("ow", "o"), ("ou", "o"), ("au", "o"),
+                 ("sh", "s"), ("th", "t"), ("dh", "d"), ("bh", "b"), ("w", "v")):
         s = s.replace(a, b)
     return re.sub(r"(.)\1+", r"\1", s)
 
@@ -124,6 +125,38 @@ class RagaTable:
         return [self.ragas[rid] for rid in list(seen)[:limit]]
 
 
+def validate_raga(r: Raga) -> None:
+    """Raise ValueError (naming the raga) if its definition is inconsistent."""
+    try:
+        for seq in (r.arohana, r.avarohana):
+            if not seq or "S" not in seq:
+                raise ValueError("arohana/avarohana must be non-empty and contain S")
+            positions(seq)
+        if not 1 <= r.parent <= 72:
+            raise ValueError(f"parent out of range: {r.parent}")
+        scale = positions(melakarta_scale(r.parent))
+        if r.melakarta is not None:
+            if r.melakarta != r.parent:
+                raise ValueError("melakarta must equal parent")
+            if r.allowed != scale:
+                raise ValueError(f"swaras differ from melakarta {r.melakarta}")
+        elif not r.bhashanga and not r.allowed <= scale:
+            raise ValueError(f"swaras foreign to parent {r.parent} but not marked bhashanga")
+    except ValueError as e:
+        raise ValueError(f"raga {r.name!r}: {e}") from None
+
+
 def load_raga_table(path: Path) -> RagaTable:
     entries = json.loads(Path(path).read_text(encoding="utf-8"))
-    return RagaTable([Raga.from_json(e) for e in entries])
+    ragas = []
+    for e in entries:
+        try:
+            r = Raga.from_json(e)
+        except (KeyError, TypeError, ValueError) as err:
+            raise ValueError(f"raga {e.get('name')!r}: {err}") from None
+        validate_raga(r)
+        ragas.append(r)
+    table = RagaTable(ragas)
+    if len(table.ragas) != len(ragas):
+        raise ValueError("duplicate raga ids")
+    return table

@@ -1,0 +1,9 @@
+{
+  "_comment": "Corrections to known errors in the Wikipedia source. 'drop' entries are 'Name@parent'. Each fix replaces fields of the raga with that name.",
+  "drop": ["Sahana@22"],
+  "fix": {
+    "Navaroj": {"avarohana": ["M1", "G3", "R2", "S", "N3", "D2", "P"], "bhashanga": true},
+    "Atana": {"parent": 29, "arohana": ["S", "R2", "M1", "P", "N3", "S"],
+              "avarohana": ["S", "N3", "D2", "P", "M1", "P", "G3", "R2", "S"], "bhashanga": true}
+  }
+}
