@@ -72,8 +72,11 @@ def _gamaka_store(table, root):
             line = make_line(sorted(raga.allowed), 30, seed=100 * r_i + g, noise_cents=8)
             c = line.cents.copy()
             rng = np.random.default_rng(g)
-            k = rng.random(len(c)) < 0.12  # ~12% of frames slide through outside swaras
-            c[k] = rng.choice(outside, k.sum()) * 100.0 + rng.normal(0, 8, k.sum())
+            # ~12% of the time the melody glides through an outside swara (0.1 s passing tones)
+            step = int(0.1 / line.hop_s)
+            for start in range(0, len(c) - step, step):
+                if rng.random() < 0.12:
+                    c[start:start + step] = rng.choice(outside) * 100.0 + rng.normal(0, 3)
             st.put_example(ExampleMeta(id=f"y{r_i}{g:02d}", raga_id=raga.id, kind="concert", artist=f"a{g % 3}",
                                        recording_group=f"{raga.id}:{g}", tonic_hz=146.8, duration_s=30.0,
                                        source="dataset"), MelodyLine(line.tonic_hz, line.hop_s, c))
@@ -93,12 +96,12 @@ def test_tune_theory_beats_defaults_on_gamaka_audio(table, tmp_path):
 
 def test_calibrate_never_confident_without_enough_evidence(synth_store, table):
     _, cp, rep = calibrate(synth_store, table, min_confident=10_000)
-    assert cp.knn_margin == 1.0 and rep.confident_coverage == 0.0
+    assert cp.confident_enabled is False and rep.confident_coverage == 0.0
 
 
 def test_calibrate_allows_confidence_with_enough_evidence(synth_store, table):
     _, cp, _ = calibrate(synth_store, table, min_confident=3)
-    assert cp.knn_margin < 1.0
+    assert cp.confident_enabled is True
 
 
 def test_rank_stats_do_not_reward_ties(synth_store, table):
@@ -108,3 +111,13 @@ def test_rank_stats_do_not_reward_ties(synth_store, table):
     all_tie = replace(TheoryParams(), presence_threshold=1.01, sa_missing_penalty=0.0, direction_weight=0.0)
     top1, top5 = theory_rank_stats(synth_store, table, all_tie)
     assert top1 == 0.0 and top5 == 0.0
+
+
+def test_shruti_margin_calibrated_to_few_false_alarms(table, tmp_path):
+    """I7: on windows whose tonic is correct, the check should rarely fire."""
+    from raaga.eval.metrics import shruti_false_alarm_rate, tune_shruti_margin
+    st = _gamaka_store(table, tmp_path)  # passing tones make wrong-Sa rotations look plausible
+    theory = TheoryParams(shruti_margin=0.0)
+    assert shruti_false_alarm_rate(st, table, theory) > 0.02  # uncalibrated: noisy
+    tuned = tune_shruti_margin(st, table, theory)
+    assert shruti_false_alarm_rate(st, table, tuned) <= 0.02

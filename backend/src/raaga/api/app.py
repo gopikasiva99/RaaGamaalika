@@ -1,6 +1,7 @@
 """FastAPI app: public API under /api plus the built single-page app."""
 from __future__ import annotations
 
+import json
 import os
 import tempfile
 from dataclasses import dataclass
@@ -37,11 +38,69 @@ def _err(status: int, code: str) -> JSONResponse:
     return JSONResponse({"error": code}, status_code=status)
 
 
-def _client_key(request: Request) -> str:
+def _client_key(request: Request, trusted_proxies: int = 1) -> str:
+    """Client IP for rate limiting.
+
+    Clients can put anything at the front of X-Forwarded-For; each trusted proxy
+    (Cloud Run's front end) appends the address it saw. So count from the right.
+    """
     fwd = request.headers.get("x-forwarded-for")
-    if fwd:
-        return fwd.split(",")[0].strip()
+    if fwd and trusted_proxies > 0:
+        hops = [h.strip() for h in fwd.split(",") if h.strip()]
+        if hops:
+            return hops[max(0, len(hops) - trusted_proxies)]
     return request.client.host if request.client else "unknown"
+
+
+class UploadLimit:
+    """ASGI middleware: cap request bodies on upload routes while they stream in.
+
+    FastAPI parses multipart bodies before the handler runs, so the handler's own
+    check would only fire after a huge body had been buffered to disk.
+    """
+
+    def __init__(self, app, max_bytes: int, prefixes: tuple[str, ...] = ("/api/analyze",)):
+        self.app, self.max_bytes, self.prefixes = app, max_bytes, prefixes
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] != "http" or not scope["path"].startswith(self.prefixes):
+            return await self.app(scope, receive, send)
+        declared = dict(scope.get("headers") or []).get(b"content-length")
+        if declared is not None and declared.isdigit() and int(declared) > self.max_bytes:
+            return await _send_json(send, 413, "too_large")
+        seen = 0
+        exceeded = False
+
+        async def limited_receive():
+            nonlocal seen, exceeded
+            if exceeded:
+                return {"type": "http.disconnect"}
+            message = await receive()
+            if message["type"] == "http.request":
+                seen += len(message.get("body", b""))
+                if seen > self.max_bytes:
+                    exceeded = True  # stop feeding the app; it sees a disconnect
+                    return {"type": "http.disconnect"}
+            return message
+
+        async def guarded_send(message):
+            if not exceeded:  # once over the limit, the app's own response is discarded
+                await send(message)
+
+        try:
+            await self.app(scope, limited_receive, guarded_send)
+        except Exception:
+            if not exceeded:
+                raise
+        if exceeded:
+            await _send_json(send, 413, "too_large")
+
+
+async def _send_json(send, status: int, code: str) -> None:
+    body = json.dumps({"error": code}).encode()
+    await send({"type": "http.response.start", "status": status,
+                "headers": [(b"content-type", b"application/json"), (b"content-length", str(len(body)).encode())]})
+    await send({"type": "http.response.body", "body": body})
 
 
 def create_app(settings: Settings) -> FastAPI:
@@ -49,6 +108,8 @@ def create_app(settings: Settings) -> FastAPI:
     ctx = EngineContext.load(store, settings.raga_table, settings.params_path)
     limiter = RateLimiter(settings.analyze_per_min)
     app = FastAPI(title="RaaGamaalika", docs_url=None, redoc_url=None)
+    # multipart framing adds a little to the file itself
+    app.add_middleware(UploadLimit, max_bytes=settings.max_upload_bytes + 1024)
     app.state.ctx = ctx
 
     async def _analyze_path(path: Path, shruti: str | None) -> JSONResponse:

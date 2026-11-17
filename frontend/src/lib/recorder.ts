@@ -5,7 +5,8 @@ export const MAX_SECONDS = 120
 export const UPLOAD_RATE = 22050
 
 export interface Recorder {
-  start(): void
+  /** Resolves once capturing; rejects if the microphone can't be (re)opened. */
+  start(): Promise<void>
   pause(): void
   level(): number // 0..1 RMS of the latest batch
   seconds(): number // captured audio so far
@@ -50,6 +51,8 @@ export async function createRecorder(): Promise<Recorder> {
     }
   }
 
+  let acquiring: Promise<void> | null = null
+
   function release() {
     source?.disconnect()
     source = null
@@ -58,20 +61,29 @@ export async function createRecorder(): Promise<Recorder> {
   }
 
   return {
-    start() {
-      recording = true
-      void ctx.resume()
+    async start() {
       if (!stream) {
-        void navigator.mediaDevices.getUserMedia(CONSTRAINTS).then((s) => {
+        acquiring ??= navigator.mediaDevices.getUserMedia(CONSTRAINTS).then((s) => {
           stream = s
           source = ctx.createMediaStreamSource(s)
           source.connect(node)
         })
+        try {
+          await acquiring
+        } finally {
+          acquiring = null
+        }
       }
+      await ctx.resume()
+      recording = true
     },
     pause() {
       recording = false
+      const pending = acquiring
       release()
+      // if a re-acquire is still in flight, stop that stream as soon as it arrives
+      pending?.then(() => !recording && release()).catch(() => {})
+      void ctx.suspend() // no audio processing (or battery use) while paused
     },
     level: () => lastLevel,
     seconds: () => total / ctx.sampleRate,

@@ -47,7 +47,7 @@
     {#if result.kind === 'confident' && top}
       <div class="hero">
         <h1 class="title">{top.name}</h1>
-        <span class="big">{top.percent}%</span>
+        <span class="badge">Best match</span>
       </div>
       <p class="muted">
         {top.melakarta !== null ? `Melakarta ${top.melakarta}` : `Janya of melakarta ${top.parent}`}
@@ -84,7 +84,7 @@
   .result { display: grid; gap: 0.8rem; }
   .hero { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
   .title { margin: 0; font-size: 1.9rem; }
-  .big { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+  .badge { font-size: 0.8rem; font-weight: 700; color: white; background: var(--accent); border-radius: 1rem; padding: 0.2rem 0.6rem; white-space: nowrap; }
   .muted { color: var(--muted); margin: 0; }
   .scale { font-family: ui-monospace, monospace; margin: 0; line-height: 1.6; }
   h2 { font-size: 1rem; margin: 0.6rem 0 0; }

@@ -6,13 +6,13 @@ from dataclasses import dataclass, field, replace
 
 import numpy as np
 
-from raaga.config import MIN_VOICED_S, CombineParams, TheoryParams
-from raaga.engine import EngineContext, Evidence, decide, gather_evidence
+from raaga.config import CombineParams, TheoryParams
+from raaga.engine import EngineContext, Evidence, decide, gather_evidence, has_melody
 from raaga.eval.split import group_split
 from raaga.fingerprint.v0 import FINGERPRINTS
 from raaga.match.index import FingerprintIndex
 from raaga.store.base import ExampleMeta, ExampleStore
-from raaga.theory.matcher import _masks, _score_arrays
+from raaga.theory.matcher import _masks, _score_arrays, shruti_check
 from raaga.theory.ragas import RagaTable
 from raaga.theory.swaras import swara_profile, transitions
 
@@ -20,6 +20,8 @@ MIN_PRECISION = 0.90
 MIN_CONFIDENT_SAMPLES = 20  # a precision measured on fewer confident answers is noise
 MARGINS = [round(0.01 * i, 2) for i in range(31)]
 W_THEORY = [0.3, 0.5, 0.7]
+SHRUTI_MARGINS = [round(0.05 * i, 2) for i in range(1, 21)] + [1.01]  # 1.01 = never fires
+MAX_SHRUTI_FALSE_ALARMS = 0.02
 THEORY_GRID = {
     "presence_threshold": [0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75],
     "extra_penalty": [1.0, 4.0],
@@ -83,7 +85,7 @@ def _evidence(data, table, theory, combine, index, metas) -> list[tuple[ExampleM
     out = []
     for m in metas:
         line = data.lines[m.id]
-        if line.voiced_seconds >= MIN_VOICED_S:
+        if has_melody(line, theory):
             out.append((m, gather_evidence(line, ctx)))
     return out
 
@@ -148,7 +150,7 @@ def _theory_rows(store: ExampleStore, params: TheoryParams, split: str):
         if group_split(m.recording_group) != split:
             continue
         line = store.load_melody(m.id)
-        if line.voiced_seconds >= MIN_VOICED_S:
+        if has_melody(line, params):
             rows.append((m.raga_id, swara_profile(line, params).strengths, transitions(line, params)))
     return rows
 
@@ -195,14 +197,43 @@ def tune_theory(store: ExampleStore, table: RagaTable, base: TheoryParams | None
     return best
 
 
+def _shruti_gains(rows, table: RagaTable, params: TheoryParams) -> list[float]:
+    """Gain the shruti check would see on each window (rows use the true tonic)."""
+    from raaga.theory.swaras import SwaraProfile
+    probe = replace(params, shruti_margin=-1.0)  # report every positive gain
+    gains = []
+    for _raga, strengths, tr in rows:
+        s = shruti_check(SwaraProfile(np.zeros(120), strengths), tr, table, probe, 146.8)
+        gains.append(s.gain if s is not None else 0.0)
+    return gains
+
+
+def shruti_false_alarm_rate(store: ExampleStore, table: RagaTable, params: TheoryParams,
+                            split: str = "train") -> float:
+    """Share of windows (whose stored tonic is correct) on which the shruti check would fire."""
+    gains = _shruti_gains(_theory_rows(store, params, split), table, params)
+    return float(np.mean([g > 0 and g >= params.shruti_margin for g in gains])) if gains else 0.0
+
+
+def tune_shruti_margin(store: ExampleStore, table: RagaTable, theory: TheoryParams) -> TheoryParams:
+    """Smallest margin whose false-alarm rate on correct tonics is <= MAX_SHRUTI_FALSE_ALARMS."""
+    gains = np.array(_shruti_gains(_theory_rows(store, theory, "train"), table, theory))
+    if len(gains) == 0:
+        return theory
+    for margin in SHRUTI_MARGINS:
+        if np.mean((gains > 0) & (gains >= margin)) <= MAX_SHRUTI_FALSE_ALARMS:
+            return replace(theory, shruti_margin=margin)
+    return replace(theory, shruti_margin=SHRUTI_MARGINS[-1])
+
+
 def calibrate(store: ExampleStore, table: RagaTable, theory: TheoryParams | None = None, *,
               min_confident: int = MIN_CONFIDENT_SAMPLES) -> tuple[TheoryParams, CombineParams, EvalReport]:
     """Tune the theory matcher (train), then knn_margin and w_theory (val); report on test.
 
-    Confidence is only enabled if, on val, at least `min_confident` confident answers were
-    observed with precision >= MIN_PRECISION; otherwise v0 never claims confidence.
+    Confidence is only enabled (confident_enabled=True) if, on val, at least `min_confident`
+    confident answers were observed with precision >= MIN_PRECISION.
     """
-    theory = theory or tune_theory(store, table)
+    theory = theory or tune_shruti_margin(store, table, tune_theory(store, table))
     base = CombineParams()
     data = _Data(store, base.model_version)
     train = [m for m in data.metas if data.split[m.id] == "train"]
@@ -212,7 +243,7 @@ def calibrate(store: ExampleStore, table: RagaTable, theory: TheoryParams | None
     best_key, best_cp = None, None
     for w in W_THEORY:
         for margin in MARGINS:
-            cp = replace(base, w_theory=w, w_knn=round(1 - w, 2), knn_margin=margin)
+            cp = replace(base, w_theory=w, w_knn=round(1 - w, 2), knn_margin=margin, confident_enabled=True)
             top1, _t3, precision, coverage, _, n_conf = _trained_scores(evs, table, cp)
             if precision < MIN_PRECISION or n_conf < min_confident:
                 continue
@@ -222,8 +253,8 @@ def calibrate(store: ExampleStore, table: RagaTable, theory: TheoryParams | None
     if best_cp is None:  # not enough evidence for honest confidence: shortlists only
         top1_by_w = {}
         for w in W_THEORY:
-            cp = replace(base, w_theory=w, w_knn=round(1 - w, 2), knn_margin=1.0)
+            cp = replace(base, w_theory=w, w_knn=round(1 - w, 2), confident_enabled=False)
             top1_by_w[w] = _trained_scores(evs, table, cp)[0]
         w = max(W_THEORY, key=lambda x: (top1_by_w[x], x))
-        best_cp = replace(base, w_theory=w, w_knn=round(1 - w, 2), knn_margin=1.0)
+        best_cp = replace(base, w_theory=w, w_knn=round(1 - w, 2), confident_enabled=False)
     return theory, best_cp, evaluate(store, table, (theory, best_cp), _data=data)

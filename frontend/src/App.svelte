@@ -23,6 +23,11 @@
 
   const route = $derived(hash.replace(/^#/, '').split('/').filter(Boolean))
 
+  // A fresh Listen session (not "keep listening") replaces any previous live recording.
+  $effect(() => {
+    if (route[0] === 'listen' && route[1] !== 'more') dropLive()
+  })
+
   let liveRecorder = $state<Recorder | null>(null)
   let resumeRecorder = $state<Recorder | null>(null)
 

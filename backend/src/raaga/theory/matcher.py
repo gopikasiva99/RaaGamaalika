@@ -103,6 +103,6 @@ def shruti_check(profile: SwaraProfile, trans: Transitions, table: RagaTable,
     near = [a for a in alts if a[0] >= top - TIE_EPS]
     best, _sa_pa, _closeness, shift = max(near, key=lambda a: (a[1], a[2]))
     gain = best - base
-    if gain < params.shruti_margin:
+    if gain <= 0 or gain < params.shruti_margin:
         return None
     return ShrutiSuggestion(shift, float(tonic_hz * 2 ** (shift / 12)), gain)

@@ -9,7 +9,7 @@ let fetchFn: ReturnType<typeof vi.fn>
 
 function fakeRecorder(): Recorder {
   return {
-    start: vi.fn(), pause: vi.fn(), close: vi.fn(),
+    start: vi.fn().mockResolvedValue(undefined), pause: vi.fn(), close: vi.fn(),
     level: () => 0.3,
     seconds: () => secs,
     toWav: () => new Blob(['RIFF'], { type: 'audio/wav' }),
@@ -75,4 +75,35 @@ test('keep listening resumes the same recorder for 30 more seconds', async () =>
   secs = 75
   await vi.advanceTimersByTimeAsync(500)
   await waitFor(() => expect(fetchFn).toHaveBeenCalled())
+})
+
+
+test('leaving mid-recording closes the recorder (mic off)', async () => {
+  const rec = fakeRecorder()
+  const view = render(Listen, { createRecorder: async () => rec, onResult: () => {} })
+  await fireEvent.click(screen.getByRole('button', { name: 'Start listening' }))
+  secs = 5
+  await vi.advanceTimersByTimeAsync(300)
+  view.unmount()
+  expect(rec.close).toHaveBeenCalled()
+})
+
+test('a recorder handed to the result is not closed on leaving', async () => {
+  const rec = fakeRecorder()
+  const view = render(Listen, { createRecorder: async () => rec, onResult: () => {} })
+  await fireEvent.click(screen.getByRole('button', { name: 'Start listening' }))
+  secs = 45
+  await vi.advanceTimersByTimeAsync(500)
+  await waitFor(() => expect(fetchFn.mock.calls.some((c) => c[0] === '/api/analyze')).toBe(true))
+  await vi.advanceTimersByTimeAsync(10)
+  view.unmount()
+  expect(rec.close).not.toHaveBeenCalled()
+})
+
+test('failing to re-open the mic on keep listening shows the fallback', async () => {
+  const rec = { ...fakeRecorder(), start: vi.fn().mockRejectedValue(new Error('NotAllowedError')) }
+  secs = 45
+  render(Listen, { createRecorder: async () => rec, onResult: () => {}, resume: rec })
+  await waitFor(() =>
+    expect(screen.getByText('Microphone access is needed to listen. You can upload a recording instead.')).toBeInTheDocument())
 })

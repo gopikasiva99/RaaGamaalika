@@ -10,7 +10,7 @@ from typing import Literal
 
 import numpy as np
 
-from raaga.config import MIN_VOICED_S, SHORTLIST_SIZE, CombineParams, TheoryParams
+from raaga.config import MIN_MELODIC_POSITIONS, MIN_VOICED_S, SHORTLIST_SIZE, CombineParams, TheoryParams
 from raaga.fingerprint.v0 import FINGERPRINTS
 from raaga.match.index import FingerprintIndex
 from raaga.melody.extract import detect_tonic, melody_line_from_audio
@@ -19,7 +19,7 @@ from raaga.notes import hz_to_note, note_to_hz_near
 from raaga.store.base import ExampleStore
 from raaga.theory.matcher import ShrutiSuggestion, TheoryScore, score_ragas, shruti_check
 from raaga.theory.ragas import RagaTable, load_raga_table
-from raaga.theory.swaras import swara_profile, transitions
+from raaga.theory.swaras import melodic_positions, swara_profile, transitions
 
 DEFAULT_TONIC_HZ = 146.83  # D3, used only when tonic detection fails on silence
 
@@ -34,9 +34,17 @@ class EngineContext:
 
     @classmethod
     def load(cls, store: ExampleStore, table_path: Path, params_path: Path | None) -> "EngineContext":
+        """Params come from `params_path` if given, else from the store's
+        models/v0/params.json (written by calibration); without either, the
+        defaults apply and confident answers stay disabled."""
         theory, combine = TheoryParams(), CombineParams()
+        raw: bytes | None = None
         if params_path is not None and Path(params_path).is_file():
-            data = json.loads(Path(params_path).read_text(encoding="utf-8"))
+            raw = Path(params_path).read_bytes()
+        elif params_path is None:
+            raw = store.read_blob(f"models/{combine.model_version}/params.json")
+        if raw:
+            data = json.loads(raw)
             theory = TheoryParams.from_json(data.get("theory"))
             combine = CombineParams.from_json(data.get("combine"))
         index = FingerprintIndex.build(store, combine.model_version)
@@ -86,6 +94,12 @@ def _percents(values: list[float]) -> list[int]:
     return [int(round(100 * v / total)) for v in values]
 
 
+def has_melody(line: MelodyLine, theory: TheoryParams) -> bool:
+    """The melody gate: enough voiced time AND a melody that moves between swaras."""
+    return (line.voiced_seconds >= MIN_VOICED_S
+            and melodic_positions(line, theory) >= MIN_MELODIC_POSITIONS)
+
+
 @dataclass
 class Evidence:
     """Everything a decision needs; independent of CombineParams (so calibration is cheap)."""
@@ -95,14 +109,14 @@ class Evidence:
     suspect: ShrutiSuggestion | None
 
 
-def gather_evidence(line: MelodyLine, ctx: EngineContext) -> Evidence:
+def gather_evidence(line: MelodyLine, ctx: EngineContext, check_shruti: bool = True) -> Evidence:
     profile = swara_profile(line, ctx.theory)
     trans = transitions(line, ctx.theory)
     return Evidence(
         strengths=[float(x) for x in profile.strengths],
         theory=score_ragas(profile, trans, ctx.table, ctx.theory),
         knn=ctx.index.match(ctx.fingerprint(line)) if len(ctx.index) else {},
-        suspect=shruti_check(profile, trans, ctx.table, ctx.theory, line.tonic_hz),
+        suspect=shruti_check(profile, trans, ctx.table, ctx.theory, line.tonic_hz) if check_shruti else None,
     )
 
 
@@ -118,7 +132,7 @@ def decide(ev: Evidence, table: RagaTable, cp: CombineParams) -> tuple[str, list
         return (-combined[r], -theory[r].score, "(mela" in table.ragas[r].name, table.ragas[r].name)
 
     ranked = sorted(combined, key=order)
-    if knn and ev.suspect is None:
+    if cp.confident_enabled and knn and ev.suspect is None:
         ordered_knn = sorted(knn.values(), reverse=True)
         top = max(knn, key=knn.get)
         margin = ordered_knn[0] - (ordered_knn[1] if len(ordered_knn) > 1 else 0.0)
@@ -128,15 +142,16 @@ def decide(ev: Evidence, table: RagaTable, cp: CombineParams) -> tuple[str, list
     return "shortlist", ranked[:SHORTLIST_SIZE], combined
 
 
-def analyze_line(line: MelodyLine, ctx: EngineContext) -> AnalysisResult:
+def analyze_line(line: MelodyLine, ctx: EngineContext, user_shruti: bool = False) -> AnalysisResult:
+    """`user_shruti`: the tonic was chosen by the user, so it is not second-guessed."""
     t0 = time.perf_counter()
     base = dict(tonic_hz=float(line.tonic_hz), tonic_note=hz_to_note(line.tonic_hz),
                 voiced_seconds=round(line.voiced_seconds, 2), model_version=ctx.combine.model_version)
-    if line.voiced_seconds < MIN_VOICED_S:
+    if not has_melody(line, ctx.theory):
         strengths = [float(x) for x in swara_profile(line, ctx.theory).strengths]
         return AnalysisResult(kind="no_melody", candidates=[], shruti_suspect=None, swara_strengths=strengths,
                               processing_ms=int(1000 * (time.perf_counter() - t0)), **base)
-    ev = gather_evidence(line, ctx)
+    ev = gather_evidence(line, ctx, check_shruti=not user_shruti)
     kind, chosen, combined = decide(ev, ctx.table, ctx.combine)
 
     scale_key = {r: (ctx.table.ragas[r].aro_positions, ctx.table.ragas[r].avaro_positions) for r in chosen}
@@ -173,6 +188,6 @@ def analyze(audio: np.ndarray, ctx: EngineContext, shruti: str | None = None) ->
         tonic = DEFAULT_TONIC_HZ
     if shruti:
         tonic = note_to_hz_near(shruti, tonic)
-    result = analyze_line(melody_line_from_audio(audio, tonic_hz=tonic), ctx)
+    result = analyze_line(melody_line_from_audio(audio, tonic_hz=tonic), ctx, user_shruti=bool(shruti))
     result.processing_ms = int(1000 * (time.perf_counter() - t0))
     return result

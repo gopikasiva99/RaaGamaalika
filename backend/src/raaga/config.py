@@ -8,6 +8,7 @@ SAMPLE_RATE = 44100
 ANALYSIS_WINDOW_S = 120.0
 MIN_CLIP_S = 10.0
 MIN_VOICED_S = 8.0
+MIN_MELODIC_POSITIONS = 3  # swaras visited in continuous glides; drone/percussion/applause visit < 3
 MAX_UPLOAD_BYTES = 50 * 1024 * 1024
 BIN_CENTS = 10
 N_BINS = 120
@@ -47,3 +48,6 @@ class CombineParams(_JsonMixin):
     w_theory: float = 0.5
     w_knn: float = 0.5
     model_version: str = "v0"
+    # Fail closed: "confident" is only allowed once calibration has shown, on enough
+    # held-out answers, that confident answers are right >= 90% of the time.
+    confident_enabled: bool = False

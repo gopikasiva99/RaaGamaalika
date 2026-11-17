@@ -1,6 +1,7 @@
 import numpy as np
 import pytest
 
+from conftest import DATA
 from fixtures.synth import synth_clip
 from raaga.config import CombineParams, TheoryParams
 from raaga.engine import EngineContext, analyze
@@ -11,6 +12,7 @@ from raaga.store.base import ExampleMeta
 from raaga.store.local import LocalExampleStore
 from raaga.theory.ragas import Raga, RagaTable
 
+DATA_TABLE = DATA / "ragas.json"
 MOHANAM = ["S", "R2", "G3", "P", "D2"]
 HINDOLAM = ["S", "G2", "M1", "D1", "N2"]
 
@@ -25,7 +27,8 @@ def _ctx(table, store_dir, examples):
     for i, (swaras, raga_id, tonic) in enumerate(examples):
         st.put_example(_meta(i, raga_id),
                        melody_line_from_audio(synth_clip(swaras, tonic, 20, seed=50 + i), tonic_hz=tonic))
-    return EngineContext(table, TheoryParams(), CombineParams(), FingerprintIndex.build(st, "v0"), fingerprint_v0)
+    return EngineContext(table, TheoryParams(), CombineParams(confident_enabled=True),
+                         FingerprintIndex.build(st, "v0"), fingerprint_v0)
 
 
 @pytest.fixture(scope="module")
@@ -90,14 +93,22 @@ def test_bad_shruti_raises(ctx_empty, mohanam_clip):
         analyze(mohanam_clip, ctx_empty, shruti="H#")
 
 
-def test_wrong_shruti_is_flagged(ctx_examples, mohanam_clip):
-    # F is not one of the clip's swaras relative to the true Sa (D), so Sa goes missing.
-    # (Giving Pa as Sa would turn Mohanam into another valid raga - graha bhedam - not flaggable.)
-    r = analyze(mohanam_clip, ctx_examples, shruti="F")
+def test_wrong_detected_shruti_is_flagged(ctx_examples, mohanam_clip):
+    # Simulate a detection error: re-reference the melody to F (not one of the clip's swaras
+    # relative to the true Sa D), so Sa goes missing. (Pa-as-Sa would be graha bhedam.)
+    from raaga.engine import analyze_line
+    line = melody_line_from_audio(mohanam_clip, tonic_hz=146.83).with_tonic(174.61)
+    r = analyze_line(line, ctx_examples)
     assert r.kind == "shortlist" and r.shruti_suspect is not None
-    # The synthetic clip gives every swara equal weight, so any of its own swaras is a
+    # Synthetic clips give every swara equal weight, so any of the clip's own swaras is a
     # valid Sa (graha bhedam); Sa-vs-Pa prominence tie-breaking is unit-tested in test_matcher.
     assert r.shruti_suspect.suggested_note in {"D", "E", "F#", "A", "B"}
+
+
+def test_user_chosen_shruti_is_not_second_guessed(ctx_examples, mohanam_clip):
+    """I7: after the user picks the shruti, don't nag with 'Check the shruti?' again."""
+    r = analyze(mohanam_clip, ctx_examples, shruti="F")
+    assert r.shruti_suspect is None and r.tonic_note == "F"
 
 
 def test_groups_marked_for_identical_scales(tmp_path, mohanam_clip):
@@ -130,3 +141,47 @@ def test_raga_without_examples_can_win_on_theory(table):
     ev = Evidence(strengths=[0.0] * 12, theory=theory, knn=knn, suspect=None)
     kind, chosen, _ = decide(ev, table, CombineParams(w_theory=0.3, w_knn=0.7, knn_margin=1.0))
     assert kind == "shortlist" and chosen[0] == mo
+
+
+def test_store_without_params_never_claims_confidence(table, tmp_path, mohanam_clip):
+    """C1: a seeded store with no calibration must fail closed (shortlists only)."""
+    from raaga.engine import EngineContext
+    st = LocalExampleStore(tmp_path)
+    mo = table.resolve("Mohanam").id
+    for i, tonic in enumerate((146.8, 174.6, 130.8)):
+        st.put_example(_meta(i, mo), melody_line_from_audio(synth_clip(MOHANAM, tonic, 20, seed=50 + i), tonic_hz=tonic))
+    ctx = EngineContext.load(st, DATA_TABLE, None)
+    assert ctx.combine.confident_enabled is False
+    assert analyze(mohanam_clip, ctx).kind == "shortlist"
+
+
+def test_params_are_loaded_from_the_store(table, tmp_path):
+    """C1: calibration written to <store>/models/v0/params.json is used without RAAGA_PARAMS."""
+    import json
+    from raaga.engine import EngineContext
+    st = LocalExampleStore(tmp_path)
+    st.write_blob("models/v0/params.json", json.dumps(
+        {"theory": {"presence_threshold": 0.33}, "combine": {"knn_margin": 0.07, "confident_enabled": True}}).encode())
+    ctx = EngineContext.load(st, DATA_TABLE, None)
+    assert ctx.theory.presence_threshold == 0.33
+    assert ctx.combine.knn_margin == 0.07 and ctx.combine.confident_enabled is True
+
+
+def test_confidence_switch_off_blocks_confident(ctx_examples, mohanam_clip):
+    from dataclasses import replace
+    from raaga.engine import EngineContext
+    off = EngineContext(ctx_examples.table, ctx_examples.theory, replace(ctx_examples.combine, confident_enabled=False),
+                        ctx_examples.index, ctx_examples.fingerprint)
+    assert analyze(mohanam_clip, off).kind == "shortlist"
+
+
+
+@pytest.mark.parametrize("kind", ["drone", "mridangam", "applause"])
+def test_no_melody_for_drone_percussion_applause(ctx_empty, kind):
+    """I1: tanpura-only, tani avartanam and applause must say 'keep listening', not guess."""
+    from fixtures.synth import synth_applause, synth_mridangam
+    audio = {"drone": lambda: synth_clip(MOHANAM, 146.8, 40, melody=False),
+             "mridangam": lambda: synth_mridangam(146.8, 40),
+             "applause": lambda: synth_applause(40)}[kind]()
+    r = analyze(audio, ctx_empty)
+    assert r.kind == "no_melody" and r.candidates == []

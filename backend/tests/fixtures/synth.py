@@ -20,7 +20,8 @@ def _note_sequence(swaras: list[str]) -> list[int]:
 
 
 def synth_clip(swaras: list[str], tonic_hz: float, seconds: float, *, drone: bool = True,
-               note_s: float = 0.5, seed: int = 0, leading_silence_s: float = 0.0) -> np.ndarray:
+               note_s: float = 0.5, seed: int = 0, leading_silence_s: float = 0.0,
+               melody: bool = True) -> np.ndarray:
     rng = np.random.default_rng(seed)
     n = int(round(seconds * SR))
     lead = min(n, int(round(leading_silence_s * SR)))
@@ -33,12 +34,12 @@ def synth_clip(swaras: list[str], tonic_hz: float, seconds: float, *, drone: boo
     vib = 0.08 * np.sin(2 * np.pi * 5.5 * t + rng.uniform(0, 2 * np.pi))  # ~8 cents vibrato
     freq = tonic_hz * 2.0 ** ((semis + vib) / 12.0)
     phase = 2 * np.pi * np.cumsum(freq) / SR
-    melody = sum(np.sin(k * phase) / k for k in range(1, 6))
+    tone = sum(np.sin(k * phase) / k for k in range(1, 6))
     # soft attack/release per note to avoid clicks
     pos_in_note = (np.arange(m) % note_len) / SR
     env = np.minimum(1.0, np.minimum(pos_in_note / 0.02, (note_s - pos_in_note) / 0.02))
-    melody = 0.35 * melody * np.clip(env, 0, 1)
-    out = melody
+    melody_sig = 0.35 * tone * np.clip(env, 0, 1) if melody else np.zeros(m)
+    out = melody_sig
     if drone:
         tt = np.arange(m) / SR
         d = np.zeros(m)
@@ -77,3 +78,33 @@ def encode(path_wav: Path, ext: str) -> Path:
         raise ValueError(ext)
     subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", *args, str(out)], check=True)
     return out
+
+
+def synth_mridangam(tonic_hz: float, seconds: float, *, seed: int = 0) -> np.ndarray:
+    """Percussive strokes: decaying tones near the tonic (mridangam is tuned to Sa) plus noisy hits."""
+    rng = np.random.default_rng(seed)
+    n = int(seconds * SR)
+    out = np.zeros(n)
+    t = 0.0
+    while t < seconds - 0.5:
+        i = int(t * SR)
+        L = int(0.35 * SR)
+        tt = np.arange(L) / SR
+        f = tonic_hz * rng.choice([1.0, 2.0])
+        stroke = (np.sin(2 * np.pi * f * tt) + 0.5 * np.sin(4 * np.pi * f * tt)) * np.exp(-tt / 0.08)
+        stroke += 0.6 * rng.standard_normal(L) * np.exp(-tt / 0.02)
+        out[i:i + L] += stroke[: n - i]
+        t += rng.choice([0.125, 0.25, 0.375])
+    return (0.8 * out / np.max(np.abs(out))).astype(np.float32)
+
+
+def synth_applause(seconds: float, *, seed: int = 0) -> np.ndarray:
+    """Clapping: dense short noise bursts."""
+    rng = np.random.default_rng(seed)
+    n = int(seconds * SR)
+    out = 0.05 * rng.standard_normal(n)
+    for _ in range(int(seconds * 25)):
+        i = rng.integers(0, n - 2000)
+        L = 1500
+        out[i:i + L] += rng.standard_normal(L) * np.exp(-np.arange(L) / 200)
+    return (0.8 * out / np.max(np.abs(out))).astype(np.float32)

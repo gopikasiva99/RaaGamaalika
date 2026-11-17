@@ -34,18 +34,25 @@
     if (elapsed >= target || elapsed >= MAX_SECONDS) void finish()
   }
 
-  function record(r: Recorder, forSeconds: number) {
+  let handedOff = false
+
+  async function record(r: Recorder, forSeconds: number) {
     rec = r
     target = Math.min(MAX_SECONDS, r.seconds() + forSeconds)
     message = null
     phase = 'recording'
-    r.start()
+    try {
+      await r.start()
+    } catch {
+      phase = 'denied'
+      return
+    }
     timer ??= setInterval(tick, 250)
   }
 
   async function begin() {
     try {
-      record(await createRecorder(), FIRST_LISTEN_S)
+      await record(await createRecorder(), FIRST_LISTEN_S)
     } catch (e) {
       phase = 'denied'
     }
@@ -63,16 +70,19 @@
     }
     phase = 'analysing'
     const r = await startAnalysis({ kind: 'file', blob: rec.toWav(), filename: 'live.wav', source: 'live' })
-    if (r) onResult(r, rec)
-    else phase = 'intro'
+    if (r) {
+      handedOff = true // the result screen owns it now (for "Keep listening")
+      onResult(r, rec)
+    } else phase = 'intro'
   }
 
   onMount(() => {
-    if (resume) record(resume, KEEP_LISTENING_S)
+    if (resume) void record(resume, KEEP_LISTENING_S)
   })
 
   onDestroy(() => {
     if (timer) clearInterval(timer)
+    if (rec && !handedOff) rec.close() // leaving mid-recording: release the microphone
   })
 
   const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`
@@ -92,7 +102,7 @@
   {:else}
     <p>We'll listen for about 45 seconds. Audio is analysed and never stored.</p>
     {#if message}<p class="warn" role="alert">{message}</p>{/if}
-    <button class="primary" onclick={() => (rec && message ? record(rec, FIRST_LISTEN_S) : begin())}>
+    <button class="primary" onclick={() => (rec && message ? void record(rec, FIRST_LISTEN_S) : begin())}>
       {rec && message ? 'Keep recording' : 'Start listening'}
     </button>
   {/if}

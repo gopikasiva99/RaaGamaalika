@@ -130,3 +130,34 @@ def roll_profile(p: SwaraProfile, k: int) -> SwaraProfile:
 def roll_transitions(t: Transitions, k: int) -> Transitions:
     r = lambda m: np.roll(np.roll(m, -k, axis=0), -k, axis=1)  # noqa: E731
     return Transitions(r(t.up), r(t.down))
+
+
+SMOOTH_STEP_CENTS = 40.0   # frame-to-frame change still counted as a continuous glide
+MIN_SMOOTH_RUN_S = 0.2
+MIN_POSITION_S = 0.5
+
+
+def melodic_positions(line, params: TheoryParams) -> int:
+    """How many swara positions the melody spends >= 0.5 s on, in continuous glides.
+
+    A real melody visits several swaras (even through gamakas); a tanpura drone or
+    a mridangam (tuned to Sa) sits on one or two, and applause/noise has no
+    continuous pitch at all.
+    """
+    c = line.cents
+    v = ~np.isnan(c)
+    if v.sum() < 2:
+        return 0
+    with np.errstate(invalid="ignore"):
+        ok = v[1:] & v[:-1] & (np.abs(np.diff(c)) < SMOOTH_STEP_CENTS)
+    min_run = max(1, int(round(MIN_SMOOTH_RUN_S / line.hop_s)))
+    smooth = np.zeros(len(c), bool)
+    padded = np.concatenate([[False], ok, [False]]).astype(np.int8)
+    edges = np.flatnonzero(np.diff(padded))
+    for a, b in zip(edges[::2], edges[1::2]):  # runs of ok pairs [a, b)
+        if b - a >= min_run:
+            smooth[a:b + 1] = True
+    folded = np.mod(c[smooth], 1200.0)
+    pos = np.round(folded / 100.0).astype(int) % 12
+    seconds = np.bincount(pos, minlength=12) * line.hop_s
+    return int((seconds >= MIN_POSITION_S).sum())

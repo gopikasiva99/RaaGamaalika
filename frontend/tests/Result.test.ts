@@ -5,10 +5,10 @@ import { cand, result } from './fixtures'
 
 const noop = () => {}
 
-test('confident result shows name, percent and Also possible', () => {
+test('confident result shows name, a Best match label and Also possible', () => {
   render(Result, { result: result(), onShruti: noop, onRetry: noop })
   expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Mohanam')
-  expect(screen.getByText('70%')).toBeInTheDocument()
+  expect(screen.getByText('Best match')).toBeInTheDocument()
   expect(screen.getByText(/Also possible/)).toBeInTheDocument()
   expect(screen.getByText('Bilahari')).toBeInTheDocument()
 })
@@ -56,4 +56,13 @@ test('swara bars label shared positions with the top raga’s own swara names', 
   render(Result, { result: result(), onShruti: noop, onRetry: noop })
   expect(screen.getByLabelText('R2 strength')).toBeInTheDocument()
   expect(screen.getByLabelText('G3 strength')).toBeInTheDocument()
+})
+
+
+test('no uncalibrated percentages are shown (confident or shortlist)', () => {
+  const { container, unmount } = render(Result, { result: result(), onShruti: noop, onRetry: noop })
+  expect(container.textContent).not.toMatch(/\d+%/)
+  unmount()
+  const short = render(Result, { result: result({ kind: 'shortlist' }), onShruti: noop, onRetry: noop })
+  expect(short.container.textContent).not.toMatch(/\d+%/)
 })

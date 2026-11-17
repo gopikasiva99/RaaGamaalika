@@ -35,7 +35,8 @@ uv run --extra scripts python scripts/import_seed.py --store ../.store
 uv run python scripts/evaluate.py --store ../.store --calibrate --out ../.store/models/v0/params.json
 ```
 
-then run the container with `-e RAAGA_PARAMS=/data/store/models/v0/params.json`.
+The calibrated parameters are read from the store automatically. Without them
+the app never claims a confident answer (it fails closed to shortlists).
 Results are recorded in [`docs/evaluation.md`](docs/evaluation.md).
 
 ## Develop

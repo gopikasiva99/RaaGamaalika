@@ -79,3 +79,30 @@ def test_accepted_hosts(url):
 def test_rejected_hosts(url):
     with pytest.raises(youtube.YouTubeInvalid):
         youtube.validate_url(url)
+
+
+@pytest.mark.parametrize("url", ["https://www.youtube.com/playlist?list=PL123", "https://www.youtube.com/@someone/videos",
+                                 "https://www.youtube.com/channel/UC123", "https://www.youtube.com/c/name",
+                                 "https://www.youtube.com/user/name"])
+def test_rejects_playlists_and_channels(url):
+    """I4: whole playlists/channels would make yt-dlp walk every entry."""
+    with pytest.raises(youtube.YouTubeInvalid):
+        youtube.validate_url(url)
+
+
+def test_download_is_guarded(client, fake_ytdl):
+    client.post("/api/analyze/youtube", json={"url": "https://www.youtube.com/watch?v=abc&list=PL1"})
+    o = fake_ytdl.last_opts
+    assert o["playlist_items"] == "1" and o["allowed_extractors"] == ["youtube"] and o["socket_timeout"] > 0
+    assert o["match_filter"]({"is_live": True}, incomplete=False)        # rejected (reason string)
+    assert o["match_filter"]({"is_live": False}, incomplete=False) is None
+
+
+def test_live_stream_is_bad_url(client, fake_ytdl, monkeypatch):
+    class LiveYDL(fake_ytdl):
+        def download(self, urls):
+            self.last_opts["match_filter"]({"is_live": True}, incomplete=False)
+            return 0  # yt-dlp skips the entry: nothing is written
+    monkeypatch.setattr(youtube.yt_dlp, "YoutubeDL", LiveYDL)
+    r = client.post("/api/analyze/youtube", json={"url": "https://youtu.be/live1"})
+    assert (r.status_code, r.json()["error"]) == (422, "bad_url")
