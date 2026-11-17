@@ -64,3 +64,31 @@ export function searchRagas(q: string): Promise<RagaSummary[]> {
 export function getRaga(id: string): Promise<RagaDetail> {
   return request(`/api/ragas/${encodeURIComponent(id)}`)
 }
+
+/** Poll /api/health until the server answers (Cloud Run cold starts take a few seconds). */
+export function waitForServer(onSlow: () => void, slowAfterMs = 2000, timeoutMs = 90000): Promise<void> {
+  return new Promise((resolve, reject) => {
+    let finished = false
+    const slow = setTimeout(() => !finished && onSlow(), slowAfterMs)
+    const giveUp = setTimeout(() => finish(new ApiError(0, 'network')), timeoutMs)
+    function finish(err?: ApiError) {
+      if (finished) return
+      finished = true
+      clearTimeout(slow)
+      clearTimeout(giveUp)
+      if (err) reject(err)
+      else resolve()
+    }
+    async function attempt() {
+      if (finished) return
+      try {
+        const res = await fetch('/api/health', { cache: 'no-store' })
+        if (res.ok) return finish()
+      } catch {
+        /* not up yet */
+      }
+      if (!finished) setTimeout(attempt, 1500)
+    }
+    void attempt()
+  })
+}

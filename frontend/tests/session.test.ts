@@ -10,7 +10,10 @@ test('reanalyze re-sends the last file with the chosen shruti', async () => {
   await startAnalysis({ kind: 'file', blob: new Blob(['x']), filename: 'clip.m4a', source: 'upload' })
   expect(session.lastResult?.candidates[0].name).toBe('Mohanam')
   await reanalyze('C#')
-  const fd = fn.mock.calls[1][1].body as FormData
+  const analyzeCalls = fn.mock.calls.filter((c) => c[0] === '/api/analyze')
+  expect(analyzeCalls).toHaveLength(2)
+  expect(fn.mock.calls[0][0]).toBe('/api/health') // waits for the server first (cold starts)
+  const fd = analyzeCalls[1][1].body as FormData
   expect(fd.get('shruti')).toBe('C#')
   expect((fd.get('file') as File).name).toBe('clip.m4a')
 })

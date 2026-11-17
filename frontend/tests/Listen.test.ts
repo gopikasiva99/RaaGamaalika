@@ -48,8 +48,9 @@ test('auto-stops at 45s and posts live.wav', async () => {
   await fireEvent.click(screen.getByRole('button', { name: 'Start listening' }))
   secs = 45
   await vi.advanceTimersByTimeAsync(500)
-  await waitFor(() => expect(fetchFn).toHaveBeenCalled())
-  const fd = fetchFn.mock.calls[0][1].body as FormData
+  const analyzeCall = () => fetchFn.mock.calls.find((c) => c[0] === '/api/analyze')
+  await waitFor(() => expect(analyzeCall()).toBeDefined())
+  const fd = analyzeCall()![1].body as FormData
   expect((fd.get('file') as File).name).toBe('live.wav')
   await waitFor(() => expect(onResult).toHaveBeenCalled())
 })
