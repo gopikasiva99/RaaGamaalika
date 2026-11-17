@@ -1,7 +1,7 @@
 # RaaGamaalika — Carnatic Raga Recognizer — Design
 
 Date: 2026-11-17
-Status: Core design approved; revised to add admin examples and kritis (§5.7, §5.8)
+Status: Core design approved; revised to add admin examples and kritis (§5.7, §5.8) and GCP hosting (§5.6)
 
 ## 1. Intent
 
@@ -80,14 +80,21 @@ The app always says whether it is giving a **confident answer** or a **shortlist
 - Running costs before anyone is using it.
 
 ## 3. Constraints
-- **Budget:** free hosting to start (e.g. Hugging Face Spaces, Docker, CPU).
-  Must tolerate cold starts. The frontend shows a "waking up the server…"
-  state rather than appearing broken.
-- **Persistence:** free hosts have ephemeral disks. The example store,
-  admin-added ragas and kritis must live in free persistent storage, for
-  example a **private Hugging Face dataset repo**, which is also versioned
-  and so acts as a backup. They are loaded on startup and written through
-  on change.
+- **Budget:** the owner's GCP account, staying within free tiers to start.
+  Cloud Run scales to zero, so cold starts (a few seconds) must be
+  tolerated. The frontend shows a "waking up the server…" state rather
+  than appearing broken. A GCP budget alert and a Cloud Run max-instances
+  cap bound the worst-case cost.
+- **Persistence and multiple instances:** Cloud Run containers have no
+  lasting disk, and there may be several at once. The example store,
+  admin-added ragas and kritis live in a **private Cloud Storage bucket**
+  with object versioning on, which acts as a backup and a way to roll back.
+  Every instance must see admin changes promptly (§5.6). There is no
+  server-side state kept between requests.
+- **Deploy access:** the GCP account is under a different Google ID from
+  this development setup. Deploys run only from GitHub Actions, trusted by
+  GCP through Workload Identity Federation. No GCP keys exist in GitHub,
+  the repo or development sessions.
 - **Hardware:** CPU-only. Analyzing a 60 s clip and matching it against the
   whole example store must take a few seconds on ~2 vCPUs.
 - **Data licensing:** CompMusic / Saraga Carnatic datasets are
@@ -211,10 +218,11 @@ adding an example reuses exactly the same steps 1–6.
   - `GET /admin/examples/{id}/audio` (admin-only playback).
   - `POST /admin/ragas` and `PUT /admin/ragas/{id}` to add or correct ragas.
   - `POST/PUT/DELETE /admin/kritis`.
-- **"Save as example" on a result:** analysis keeps the user's clip in
-  memory for a short time (e.g. 15 min) under a random ID. Only the admin
-  can turn that ID into a stored example. Otherwise it expires, so the
-  "never store users' audio" rule holds.
+- **"Save as example" on a result:** the server holds nothing. The admin's
+  own browser still has the clip it just recorded or uploaded, or the
+  YouTube URL and segment, and re-sends it to `POST /admin/examples`. This
+  works with scale-to-zero and multiple instances, and keeps the "never
+  store users' audio" rule absolute.
 - **Limits:** max upload size and duration, and simple per-IP rate
   limiting on public endpoints. Public audio is never logged.
 
@@ -275,21 +283,61 @@ Add example ─────────────────────
 
 Mobile-first; the desktop layout comes second.
 
-### 5.6 Hosting and upgrade path
-- **Launch:** one Docker image (API plus built static frontend) on a free
-  Hugging Face Space (CPU). The example store, admin ragas and kritis are
-  kept in a private Hugging Face dataset repo, loaded on startup and
-  written through on each admin change.
-- **Upgrade:** the same image on a paid always-on instance or a small VPS
-  (~$5–15/month). No code changes, only configuration.
-- **Secrets** (admin password, storage token) come from host secrets, never
-  the repo.
+### 5.6 Hosting, storage and deploys (GCP)
+- **Runtime:** one Docker image (API plus built static frontend) on
+  **Cloud Run**.
+  - Min instances 0 (free, with a few-second cold start).
+  - A max-instances cap (e.g. 3).
+  - CPU and memory sized so a 60 s clip analyzes in a few seconds.
+  - Region `us-central1` (my call): it keeps Cloud Run and Cloud Storage
+    inside GCP's always-free tiers. The extra network latency for India is
+    small next to the analysis time.
+- **Storage:** a private **Cloud Storage** bucket, with object versioning,
+  holding the following. The Cloud Run service account is the only thing
+  with access.
+  - `examples/{id}/audio.*`
+  - `examples/{id}/meta.json` (including the fingerprint)
+  - `ragas/admin.json` and `kritis/admin.json`
+  - a small `manifest.json` whose **generation number** changes on every
+    admin write.
+- **Keeping instances in sync:** on startup an instance loads all
+  fingerprints and the admin tables into memory. Before each analysis it
+  checks the manifest's generation (one tiny metadata read) and reloads
+  only if it changed. An example added on one instance is therefore used by
+  the very next analysis on any instance.
+- **Secrets:**
+  - The admin password hash and the cookie-signing key live in **Secret
+    Manager**, mounted into Cloud Run.
+  - The bucket is reached through the service account's identity, with no
+    key.
+- **Deploys (GitHub Actions):**
+  - On every push to `main`: run the tests, build the image, push it to
+    **Artifact Registry**, and deploy to Cloud Run.
+  - GitHub authenticates to GCP via **Workload Identity Federation**,
+    limited to this repo and its `main` branch. A dedicated deployer
+    service account has only the roles it needs.
+  - Pull requests run the tests only.
+  - An Artifact Registry cleanup policy keeps the last few images, so
+    image storage stays at pennies.
+- **One-time setup by the owner:** a short script plus instructions in
+  `docs/deploy.md`, run in **Cloud Shell** while signed in with the GCP
+  Google ID. It:
+  - enables the APIs;
+  - creates the bucket, Artifact Registry repo, service accounts, Workload
+    Identity pool/provider and secrets;
+  - sets a budget alert (e.g. $5/month).
+
+  The owner then adds the non-secret identifiers it prints (project ID,
+  provider name, service account email) as GitHub repository variables.
+- **Upgrade path:** set Cloud Run min instances to 1 for no cold starts
+  (roughly $10–15/month at the chosen size), or raise CPU/memory. Only
+  configuration changes, no code changes.
 - Code in the `gopikasiva99/RaaGamaalika` GitHub repo.
 
 ### 5.7 Admin: teaching new ragas
 - **Single admin:**
-  - A password set as a host secret, giving a signed, HTTP-only session
-    cookie.
+  - A password, stored as a hash in Secret Manager, giving a signed,
+    HTTP-only session cookie. It is stateless, so it works across instances.
   - Login rate-limited.
   - No user management.
 - **Each example stores:**
@@ -298,8 +346,9 @@ Mobile-first; the desktop layout comes second.
   - Fingerprint.
   - Raga ID, kind (singing/concert), detected shruti, duration, source
     (record/upload/YouTube/saved-result), note, and date added.
-- **Effect is immediate:** the new fingerprint is added to the in-memory
-  index and written through to storage. The next analysis uses it.
+- **Effect is immediate:** the example is written to Cloud Storage and the
+  manifest generation is bumped. The next analysis on any instance picks it
+  up (§5.6).
 - **Guardrails:**
   - When saving, show the detected swaras next to the chosen raga's
     arohana/avarohana, and warn if they disagree. This catches mislabels
@@ -333,6 +382,7 @@ Mobile-first; the desktop layout comes second.
 - Input: both live recording and upload/YouTube.
 - Full-concert timeline is Phase 2. Phase 1 is a single clip.
 - Free hosting to start, upgrade if needed.
+- Host on the owner's GCP account (a different Google ID), with **automatic deploys from GitHub** on merge to `main`.
 - Approach A: Python server plus installable web app.
 - Owner is the sole admin. Adds 1–5 examples per raga, both their own
   singing and concert clips, so that new ragas become recognizable.
@@ -341,9 +391,9 @@ Mobile-first; the desktop layout comes second.
 ### Calls made in this design (owner can override)
 - **Recognition engine switched to example matching** (approach 3), so admin
   examples work immediately.
-- "Save as example" from any result, using a 15-minute in-memory hold of
-  the clip.
-- Private Hugging Face dataset repo for persistent storage.
+- "Save as example" from any result: the admin's browser re-sends the clip, and the server holds nothing.
+- Cloud Run + private Cloud Storage bucket (versioned) + Secret Manager, region `us-central1`, max-instances cap, $5 budget alert.
+- Workload Identity Federation for GitHub → GCP (no keys anywhere), with a one-time Cloud Shell setup script for the owner.
 - Swara-mismatch warning when saving examples.
 - Admin can add new ragas and edit kritis.
 - No accounts, with history on the device.
@@ -369,7 +419,7 @@ These are proposed targets, to be revised once real numbers exist.
 - **Confidence honesty:** when the app says "confident", it is right ≥ 90%
   of the time on the test set. This is used to set the margin.
 - **Admin flow:** an example added through the UI affects the very next
-  analysis, and it survives a server restart.
+  analysis on any instance, and it survives instances scaling to zero.
 - **Real phone recordings:** a small personal test set of live hall clips,
   scored and reported separately. It is not gated in Phase 1, but it drives
   what to improve next.
@@ -381,7 +431,7 @@ These are proposed targets, to be revised once real numbers exist.
   per-raga aggregation and thresholds, as long as §7 is met on CPU.
 - Frontend framework, and visual design within the screens above.
 - Source compilation for the raga and kriti seed tables.
-- Storage layout inside the dataset repo.
+- Exact Cloud Run CPU/memory sizing and cold-start optimisation (e.g. image size, lazy loading).
 - Exact rate limits, upload caps and error copy.
 - Test strategy and project layout.
 
@@ -405,5 +455,12 @@ These are proposed targets, to be revised once real numbers exist.
 - **Violin shadowing and gamaka-heavy passages** can confuse swara
   detection. Mitigation: evaluate on real ensemble audio.
 - **YouTube blocking** on cloud hosts. Mitigation: a graceful fallback to upload.
-- **Free-tier sleep and cold starts.** Mitigations: a health-ping
-  "waking up" UI, and the upgrade path.
+- **Cold starts** (scale to zero, plus a heavy audio image). Mitigations:
+  a health-ping "waking up" UI, a lean image, and min-instances=1 as the
+  upgrade path.
+- **Surprise GCP bills.** Mitigations: a max-instances cap, a budget
+  alert, rate limits, and an image cleanup policy.
+- **Owner-only setup steps** (Cloud Shell, GitHub variables) can be done
+  wrong and are hard to debug remotely. Mitigations: an idempotent setup
+  script that prints exactly what to paste, and a smoke-test deploy as its
+  own early milestone.
