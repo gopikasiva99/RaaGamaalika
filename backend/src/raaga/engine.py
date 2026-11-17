@@ -17,7 +17,7 @@ from raaga.melody.extract import detect_tonic, melody_line_from_audio
 from raaga.melody.line import MelodyLine
 from raaga.notes import hz_to_note, note_to_hz_near
 from raaga.store.base import ExampleStore
-from raaga.theory.matcher import score_ragas, shruti_check
+from raaga.theory.matcher import ShrutiSuggestion, TheoryScore, score_ragas, shruti_check
 from raaga.theory.ragas import RagaTable, load_raga_table
 from raaga.theory.swaras import swara_profile, transitions
 
@@ -86,39 +86,55 @@ def _percents(values: list[float]) -> list[int]:
     return [int(round(100 * v / total)) for v in values]
 
 
-def analyze_line(line: MelodyLine, ctx: EngineContext) -> AnalysisResult:
-    t0 = time.perf_counter()
+@dataclass
+class Evidence:
+    """Everything a decision needs; independent of CombineParams (so calibration is cheap)."""
+    strengths: list[float]
+    theory: dict[str, TheoryScore]
+    knn: dict[str, float]
+    suspect: ShrutiSuggestion | None
+
+
+def gather_evidence(line: MelodyLine, ctx: EngineContext) -> Evidence:
     profile = swara_profile(line, ctx.theory)
-    strengths = [float(x) for x in profile.strengths]
-    base = dict(tonic_hz=float(line.tonic_hz), tonic_note=hz_to_note(line.tonic_hz),
-                swara_strengths=strengths, voiced_seconds=round(line.voiced_seconds, 2),
-                model_version=ctx.combine.model_version)
-    if line.voiced_seconds < MIN_VOICED_S:
-        return AnalysisResult(kind="no_melody", candidates=[], shruti_suspect=None,
-                              processing_ms=int(1000 * (time.perf_counter() - t0)), **base)
     trans = transitions(line, ctx.theory)
-    theory = score_ragas(profile, trans, ctx.table, ctx.theory)
-    knn = ctx.index.match(ctx.fingerprint(line)) if len(ctx.index) else {}
-    cp = ctx.combine
+    return Evidence(
+        strengths=[float(x) for x in profile.strengths],
+        theory=score_ragas(profile, trans, ctx.table, ctx.theory),
+        knn=ctx.index.match(ctx.fingerprint(line)) if len(ctx.index) else {},
+        suspect=shruti_check(profile, trans, ctx.table, ctx.theory, line.tonic_hz),
+    )
+
+
+def decide(ev: Evidence, table: RagaTable, cp: CombineParams) -> tuple[str, list[str], dict[str, float]]:
+    """The combine rule (spec §5.1 step 8, v0: no classifier). Returns (kind, chosen ids, combined)."""
+    theory, knn = ev.theory, ev.knn
     combined = {r: cp.w_theory * theory[r].score + cp.w_knn * knn.get(r, 0.0) for r in theory}
 
     def order(r: str):
-        return (-combined[r], -theory[r].score, "(mela" in ctx.table.ragas[r].name, ctx.table.ragas[r].name)
+        return (-combined[r], -theory[r].score, "(mela" in table.ragas[r].name, table.ragas[r].name)
 
     ranked = sorted(combined, key=order)
-    suspect = shruti_check(profile, trans, ctx.table, ctx.theory, line.tonic_hz)
-
-    kind: Literal["confident", "shortlist"] = "shortlist"
-    chosen = ranked[:SHORTLIST_SIZE]
-    if knn and suspect is None:
+    if knn and ev.suspect is None:
         ordered_knn = sorted(knn.values(), reverse=True)
         top = max(knn, key=knn.get)
         margin = ordered_knn[0] - (ordered_knn[1] if len(ordered_knn) > 1 else 0.0)
         t = theory.get(top)
-        if (t is not None and margin >= cp.knn_margin and t.score >= cp.theory_agree_min
-                and t.extra == ()):
-            kind = "confident"
-            chosen = [top] + [r for r in ranked if r != top][: SHORTLIST_SIZE - 1]
+        if t is not None and margin >= cp.knn_margin and t.score >= cp.theory_agree_min and t.extra == ():
+            return "confident", [top] + [r for r in ranked if r != top][: SHORTLIST_SIZE - 1], combined
+    return "shortlist", ranked[:SHORTLIST_SIZE], combined
+
+
+def analyze_line(line: MelodyLine, ctx: EngineContext) -> AnalysisResult:
+    t0 = time.perf_counter()
+    base = dict(tonic_hz=float(line.tonic_hz), tonic_note=hz_to_note(line.tonic_hz),
+                voiced_seconds=round(line.voiced_seconds, 2), model_version=ctx.combine.model_version)
+    if line.voiced_seconds < MIN_VOICED_S:
+        strengths = [float(x) for x in swara_profile(line, ctx.theory).strengths]
+        return AnalysisResult(kind="no_melody", candidates=[], shruti_suspect=None, swara_strengths=strengths,
+                              processing_ms=int(1000 * (time.perf_counter() - t0)), **base)
+    ev = gather_evidence(line, ctx)
+    kind, chosen, combined = decide(ev, ctx.table, ctx.combine)
 
     scale_key = {r: (ctx.table.ragas[r].aro_positions, ctx.table.ragas[r].avaro_positions) for r in chosen}
     counts: dict = {}
@@ -128,19 +144,19 @@ def analyze_line(line: MelodyLine, ctx: EngineContext) -> AnalysisResult:
     for r in chosen:
         if counts[scale_key[r]] > 1 and scale_key[r] not in group_ids:
             group_ids[scale_key[r]] = len(group_ids) + 1
-    percents = _percents([combined[r] for r in chosen])
     candidates = []
-    for r, pct in zip(chosen, percents):
+    for r, pct in zip(chosen, _percents([combined[r] for r in chosen])):
         raga = ctx.table.ragas[r]
         candidates.append(Candidate(
             raga_id=r, name=raga.name, melakarta=raga.melakarta, parent=raga.parent,
             arohana=list(raga.arohana), avarohana=list(raga.avarohana),
             score=round(float(combined[r]), 4), percent=pct, group=group_ids.get(scale_key[r])))
     sus = None
-    if suspect is not None:
-        sus = ShrutiSuspect(suspect.suggested_tonic_hz, hz_to_note(suspect.suggested_tonic_hz),
-                            suspect.shift_semitones)
-    return AnalysisResult(kind=kind, candidates=candidates, shruti_suspect=sus,
+    if ev.suspect is not None:
+        sus = ShrutiSuspect(ev.suspect.suggested_tonic_hz, hz_to_note(ev.suspect.suggested_tonic_hz),
+                            ev.suspect.shift_semitones)
+    return AnalysisResult(kind=kind, candidates=candidates, shruti_suspect=sus,  # type: ignore[arg-type]
+                          swara_strengths=ev.strengths,
                           processing_ms=int(1000 * (time.perf_counter() - t0)), **base)
 
 
