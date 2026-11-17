@@ -9,8 +9,10 @@ from pathlib import Path
 from fastapi import FastAPI, File, Form, Request, UploadFile
 from fastapi.concurrency import run_in_threadpool
 from fastapi.responses import FileResponse, JSONResponse
+from pydantic import BaseModel
 
 from raaga.audio.decode import AudioDecodeError, decode_audio
+from raaga.audio.youtube import YouTubeBlocked, YouTubeInvalid, fetch_youtube_segment
 from raaga.config import MAX_UPLOAD_BYTES, MIN_CLIP_S, SAMPLE_RATE
 from raaga.engine import EngineContext, analyze
 from raaga.notes import note_to_hz_near
@@ -127,8 +129,28 @@ def create_app(settings: Settings) -> FastAPI:
     return app
 
 
+class YouTubeRequest(BaseModel):
+    url: str
+    start: float = 0.0
+    shruti: str | None = None
+
+
 def _register_youtube(app: FastAPI) -> None:
-    """Hook for the YouTube route (Task 11)."""
+    @app.post("/api/analyze/youtube")
+    async def analyze_youtube(request: Request, body: YouTubeRequest):
+        st = app.state
+        if not st.limiter.check(st.client_key(request)):
+            return _err(429, "rate_limited")
+        if st.bad_shruti(body.shruti):
+            return _err(422, "bad_shruti")
+        with tempfile.TemporaryDirectory(prefix="raaga-yt-") as tmp:
+            try:
+                path = await run_in_threadpool(fetch_youtube_segment, body.url, body.start, Path(tmp))
+            except YouTubeInvalid:
+                return _err(422, "bad_url")
+            except YouTubeBlocked:
+                return _err(502, "youtube_blocked")
+            return await st.analyze_path(path, body.shruti)
 
 
 def app_from_env() -> FastAPI:
