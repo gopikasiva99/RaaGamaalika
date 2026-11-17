@@ -1,7 +1,7 @@
 # RaaGamaalika — Carnatic Raga Recognizer — Design
 
 Date: 2026-11-17
-Status: Core design approved; revised to add admin examples and kritis (§5.7, §5.8) GCP hosting (§5.6), and a trained model with retraining (§5.9)
+Status: **Approved** (2026-11-17), including admin examples and kritis (§5.7, §5.8), GCP hosting (§5.6), a trained model with retraining (§5.9) and the shruti check (§5.1)
 
 ## 1. Intent
 
@@ -189,6 +189,15 @@ works before the first training run.
      Shared pitch positions (R2=G1, R3=G2, D2=N1, D3=N2) are resolved by
      the raga's own naming. Thresholds and penalty weights come from the
      active model version, where training tuned them.
+   - **Shruti check:** the theory matcher also re-scores the swara profile
+     as if Sa were at each of the other 11 positions.
+     - If some other Sa fits the raga table far better (by a calibrated
+       margin) than the detected one, the response includes a
+       `shruti_suspect` flag with the suggested shruti.
+     - The answer is then downgraded to a shortlist, and the UI shows
+       "Check the shruti?" with a one-tap retry using the suggestion or a
+       manual pick.
+     - The same check runs when the admin saves an example.
 8. **Combine** (the combination weights and thresholds are fitted during
    training and stored with the model version):
    - **Confident** when the theory matcher agrees with the top raga's swara
@@ -538,7 +547,7 @@ Mobile-first; the desktop layout comes second.
 - Admin can add new ragas and edit kritis.
 - No accounts, with history on the device.
 - Users' audio is never stored.
-- Manual shruti override.
+- Manual shruti override, plus the automatic "Check the shruti?" prompt.
 - Default live listening time ~45 s.
 - Reference table target of ≥300 ragas.
 - Success targets in §7.
@@ -589,8 +598,8 @@ These are proposed targets, to be revised once real numbers exist.
 
 ## 9. Risks
 - **Tonic errors on short or noisy clips** cascade into wrong answers and
-  bad examples. Mitigations: manual override, the swara-mismatch warning
-  when saving, and the confidence gate.
+  bad examples. Mitigations: the shruti check (§5.1), manual override, the
+  swara-mismatch warning when saving, and the confidence gate.
 - **Solo singing vs concert mismatch:** an example of the owner singing may
   match concert audio less well. Mitigations: predominant-melody extraction
   for both, the `kind` tag to compare, and coverage view nudges to add a
