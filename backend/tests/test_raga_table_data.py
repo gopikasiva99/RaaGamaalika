@@ -6,11 +6,6 @@ from conftest import DATA
 from raaga.theory.ragas import load_raga_table, normalize_name
 
 
-@pytest.fixture(scope="module")
-def table():
-    return load_raga_table(DATA / "ragas.json")
-
-
 def test_table_size_and_validity(table):
     assert len(table.ragas) >= 300
     assert sum(r.melakarta is not None for r in table.ragas.values()) == 72
