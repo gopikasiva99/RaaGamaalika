@@ -1,6 +1,7 @@
 """Evaluation (spec §7 metrics) and v0 calibration of CombineParams."""
 from __future__ import annotations
 
+import itertools
 from dataclasses import dataclass, field, replace
 
 import numpy as np
@@ -11,11 +12,20 @@ from raaga.eval.split import group_split
 from raaga.fingerprint.v0 import FINGERPRINTS
 from raaga.match.index import FingerprintIndex
 from raaga.store.base import ExampleMeta, ExampleStore
+from raaga.theory.matcher import _masks, _score_arrays
 from raaga.theory.ragas import RagaTable
+from raaga.theory.swaras import swara_profile, transitions
 
 MIN_PRECISION = 0.90
+MIN_CONFIDENT_SAMPLES = 20  # a precision measured on fewer confident answers is noise
 MARGINS = [round(0.01 * i, 2) for i in range(31)]
 W_THEORY = [0.3, 0.5, 0.7]
+THEORY_GRID = {
+    "presence_threshold": [0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75],
+    "extra_penalty": [1.0, 4.0],
+    "missing_penalty": [0.5, 1.0],
+    "direction_weight": [0.0, 0.3],
+}
 
 
 @dataclass
@@ -28,14 +38,17 @@ class EvalReport:
     confident_coverage: float = 0.0
     per_raga: dict[str, dict] = field(default_factory=dict)
     n_test_groups: int = 0
+    n_trained: int = 0
+    n_fewshot: int = 0
+    n_noexample: int = 0
 
     def format(self) -> str:
         lines = [
             f"test recording groups : {self.n_test_groups}",
-            f"trained top-1         : {self.trained_top1:.1%}",
+            f"trained top-1         : {self.trained_top1:.1%}  (n={self.n_trained} windows)",
             f"trained top-3         : {self.trained_top3:.1%}",
-            f"few-shot top-3        : {self.fewshot_top3:.1%}",
-            f"no-example top-5      : {self.noexample_top5:.1%}",
+            f"few-shot top-3        : {f'{self.fewshot_top3:.1%}' if self.n_fewshot else 'n/a'}  (n={self.n_fewshot})",
+            f"no-example top-5      : {self.noexample_top5:.1%}  (n={self.n_noexample})",
             f"confident precision   : {self.confident_precision:.1%}",
             f"confident coverage    : {self.confident_coverage:.1%}",
         ]
@@ -75,9 +88,9 @@ def _evidence(data, table, theory, combine, index, metas) -> list[tuple[ExampleM
     return out
 
 
-def _trained_scores(evs, table, cp) -> tuple[float, float, float, float, dict]:
+def _trained_scores(evs, table, cp) -> tuple[float, float, float, float, dict, int]:
     if not evs:
-        return 0.0, 0.0, 1.0, 0.0, {}
+        return 0.0, 0.0, 1.0, 0.0, {}, 0
     top1 = top3 = conf = conf_ok = 0
     per: dict[str, dict] = {}
     for m, ev in evs:
@@ -92,7 +105,7 @@ def _trained_scores(evs, table, cp) -> tuple[float, float, float, float, dict]:
         d["n_test"] += 1
         d["top1"] += int(hit1)
     n = len(evs)
-    return top1 / n, top3 / n, (conf_ok / conf if conf else 1.0), conf / n, per
+    return top1 / n, top3 / n, (conf_ok / conf if conf else 1.0), conf / n, per, conf
 
 
 def evaluate(store: ExampleStore, table: RagaTable, params: tuple[TheoryParams, CombineParams], *,
@@ -106,7 +119,8 @@ def evaluate(store: ExampleStore, table: RagaTable, params: tuple[TheoryParams, 
 
     evs = _evidence(data, table, theory, cp, data.index(train), [m for m in target if m.raga_id in trained_ragas])
     (rep.trained_top1, rep.trained_top3, rep.confident_precision,
-     rep.confident_coverage, rep.per_raga) = _trained_scores(evs, table, cp)
+     rep.confident_coverage, rep.per_raga, _) = _trained_scores(evs, table, cp)
+    rep.n_trained = len(evs)
 
     few_hits = few_n = none_hits = none_n = 0
     for raga in sorted({m.raga_id for m in target}):
@@ -122,31 +136,94 @@ def evaluate(store: ExampleStore, table: RagaTable, params: tuple[TheoryParams, 
         for m, ev in _evidence(data, table, theory, cp, data.index(others), r_target):
             none_n += 1
             none_hits += raga in decide(ev, table, cp)[1][:5]
+    rep.n_fewshot, rep.n_noexample = few_n, none_n
     rep.fewshot_top3 = few_hits / few_n if few_n else 0.0
     rep.noexample_top5 = none_hits / none_n if none_n else 0.0
     return rep
 
 
-def calibrate(store: ExampleStore, table: RagaTable,
-              theory: TheoryParams | None = None) -> tuple[TheoryParams, CombineParams, EvalReport]:
-    """Pick knn_margin and w_theory on the val split; report on test."""
-    theory = theory or TheoryParams()
+def _theory_rows(store: ExampleStore, params: TheoryParams, split: str):
+    rows = []
+    for m in store.list_examples():
+        if group_split(m.recording_group) != split:
+            continue
+        line = store.load_melody(m.id)
+        if line.voiced_seconds >= MIN_VOICED_S:
+            rows.append((m.raga_id, swara_profile(line, params).strengths, transitions(line, params)))
+    return rows
+
+
+def _rank_stats(rows, table: RagaTable, params: TheoryParams) -> tuple[float, float]:
+    if not rows:
+        return 0.0, 0.0
+    m = _masks(table)
+    idx = {r: i for i, r in enumerate(m.ids)}
+    ranks = []
+    for raga_id, strengths, tr in rows:
+        sc = _score_arrays(strengths, tr.up, tr.down, m, params)[0]
+        # Pessimistic rank: ragas tied with the true one count against it (the app's
+        # tie order is arbitrary), so tuning cannot "win" by making everything tie.
+        ranks.append(int((sc >= sc[idx[raga_id]]).sum()))
+    r = np.array(ranks)
+    return float(np.mean(r == 1)), float(np.mean(r <= 5))
+
+
+def theory_rank_stats(store: ExampleStore, table: RagaTable, params: TheoryParams,
+                      split: str = "train") -> tuple[float, float]:
+    """Theory-matcher-only (top-1, top-5) accuracy over one split's windows."""
+    return _rank_stats(_theory_rows(store, params, split), table, params)
+
+
+def tune_theory(store: ExampleStore, table: RagaTable, base: TheoryParams | None = None) -> TheoryParams:
+    """Grid-search the theory matcher's dials on the train split (it needs no examples).
+
+    Real concert audio spreads mass onto passing tones (gamakas), so the synthetic-audio
+    defaults are far too strict; this is the v0 stand-in for Plan 4's trained tuning.
+    """
+    base = base or TheoryParams()
+    rows = _theory_rows(store, base, "train")  # profiles depend only on tolerance_cents
+    if not rows:
+        return base
+    best_key, best = None, base
+    keys = list(THEORY_GRID)
+    for values in itertools.product(*(THEORY_GRID[k] for k in keys)):
+        p = replace(base, **dict(zip(keys, values)))
+        top1, top5 = _rank_stats(rows, table, p)
+        key = (top5, top1)
+        if best_key is None or key > best_key:
+            best_key, best = key, p
+    return best
+
+
+def calibrate(store: ExampleStore, table: RagaTable, theory: TheoryParams | None = None, *,
+              min_confident: int = MIN_CONFIDENT_SAMPLES) -> tuple[TheoryParams, CombineParams, EvalReport]:
+    """Tune the theory matcher (train), then knn_margin and w_theory (val); report on test.
+
+    Confidence is only enabled if, on val, at least `min_confident` confident answers were
+    observed with precision >= MIN_PRECISION; otherwise v0 never claims confidence.
+    """
+    theory = theory or tune_theory(store, table)
     base = CombineParams()
     data = _Data(store, base.model_version)
     train = [m for m in data.metas if data.split[m.id] == "train"]
     trained_ragas = {m.raga_id for m in train}
     val = [m for m in data.metas if data.split[m.id] == "val" and m.raga_id in trained_ragas]
     evs = _evidence(data, table, theory, base, data.index(train), val)
-    best_key, best_cp = None, base
+    best_key, best_cp = None, None
     for w in W_THEORY:
         for margin in MARGINS:
             cp = replace(base, w_theory=w, w_knn=round(1 - w, 2), knn_margin=margin)
-            top1, _t3, precision, coverage, _ = _trained_scores(evs, table, cp)
-            if precision < MIN_PRECISION:
+            top1, _t3, precision, coverage, _, n_conf = _trained_scores(evs, table, cp)
+            if precision < MIN_PRECISION or n_conf < min_confident:
                 continue
             key = (top1, coverage, -margin)
             if best_key is None or key > best_key:
                 best_key, best_cp = key, cp
-    if best_key is None:  # nothing reached the precision target: never claim confidence
-        best_cp = replace(base, knn_margin=1.0)
+    if best_cp is None:  # not enough evidence for honest confidence: shortlists only
+        top1_by_w = {}
+        for w in W_THEORY:
+            cp = replace(base, w_theory=w, w_knn=round(1 - w, 2), knn_margin=1.0)
+            top1_by_w[w] = _trained_scores(evs, table, cp)[0]
+        w = max(W_THEORY, key=lambda x: (top1_by_w[x], x))
+        best_cp = replace(base, w_theory=w, w_knn=round(1 - w, 2), knn_margin=1.0)
     return theory, best_cp, evaluate(store, table, (theory, best_cp), _data=data)

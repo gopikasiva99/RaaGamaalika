@@ -109,7 +109,10 @@ def gather_evidence(line: MelodyLine, ctx: EngineContext) -> Evidence:
 def decide(ev: Evidence, table: RagaTable, cp: CombineParams) -> tuple[str, list[str], dict[str, float]]:
     """The combine rule (spec §5.1 step 8, v0: no classifier). Returns (kind, chosen ids, combined)."""
     theory, knn = ev.theory, ev.knn
-    combined = {r: cp.w_theory * theory[r].score + cp.w_knn * knn.get(r, 0.0) for r in theory}
+    # A raga with no examples gets neutral (median) example evidence rather than zero, so it
+    # can still win on its swaras: real-audio similarities are high for every raga.
+    neutral = float(np.median(list(knn.values()))) if knn else 0.0
+    combined = {r: cp.w_theory * theory[r].score + cp.w_knn * knn.get(r, neutral) for r in theory}
 
     def order(r: str):
         return (-combined[r], -theory[r].score, "(mela" in table.ragas[r].name, table.ragas[r].name)

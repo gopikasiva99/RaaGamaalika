@@ -116,3 +116,17 @@ def test_result_json_shape(ctx_empty, mohanam_clip):
                       "voiced_seconds", "model_version", "processing_ms"}
     assert set(j["candidates"][0]) == {"raga_id", "name", "melakarta", "parent", "arohana", "avarohana",
                                        "score", "percent", "group"}
+
+
+def test_raga_without_examples_can_win_on_theory(table):
+    """No examples = neutral (median) example evidence, not zero: swaras decide."""
+    from raaga.engine import Evidence, decide
+    from raaga.theory.matcher import TheoryScore
+    mo, ha, hi, ka = (table.resolve(n).id for n in ("Mohanam", "Hamsadhwani", "Hindolam", "Kalyani"))
+    theory = {r: TheoryScore(r, 0.0, (), (), 1.0) for r in table.ragas}
+    theory[mo] = TheoryScore(mo, 1.0, (), (), 1.0)    # perfect fit, but no examples
+    theory[ha] = TheoryScore(ha, 0.4, (9,), (), 1.0)  # has examples, poor fit
+    knn = {ha: 0.86, hi: 0.80, ka: 0.82}               # real-audio similarities are all high
+    ev = Evidence(strengths=[0.0] * 12, theory=theory, knn=knn, suspect=None)
+    kind, chosen, _ = decide(ev, table, CombineParams(w_theory=0.3, w_knn=0.7, knn_margin=1.0))
+    assert kind == "shortlist" and chosen[0] == mo
