@@ -79,6 +79,7 @@ class ImportReport:
     skipped_no_raga: int = 0
     skipped_ragamalika: int = 0
     skipped_missing_files: int = 0
+    skipped_existing: int = 0
     unmatched: Counter = field(default_factory=Counter)
 
 
@@ -149,9 +150,10 @@ def resolve_raga(names: list[str], table: RagaTable) -> Raga | None:
 
 def import_saraga(z: zipfile.ZipFile, store: ExampleStore, table: RagaTable, *, window_s: float = 60.0,
                   hop_s: float = 60.0, min_voiced_s: float = 20.0, limit: int | None = None,
-                  log=lambda msg: None) -> ImportReport:
+                  skip_existing: bool = True, log=lambda msg: None) -> ImportReport:
     rep = ImportReport()
     tracks = list_saraga_tracks(z)
+    existing_groups = {m.recording_group for m in store.list_examples()} if skip_existing else set()
     for i, t in enumerate(tracks[:limit] if limit else tracks):
         if not t.raga_names:
             rep.skipped_no_raga += 1
@@ -162,6 +164,9 @@ def import_saraga(z: zipfile.ZipFile, store: ExampleStore, table: RagaTable, *, 
         raga = resolve_raga(t.raga_names, table)
         if raga is None:
             rep.unmatched[t.raga_names[0]] += 1
+            continue
+        if f"saraga:{t.mbid}" in existing_groups:
+            rep.skipped_existing += 1
             continue
         if not t.pitch_member or not t.tonic_member:
             rep.skipped_missing_files += 1

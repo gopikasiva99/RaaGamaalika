@@ -82,3 +82,11 @@ def test_import(saraga_zip, table, tmp_path):
     assert rep.unmatched == {"Unknownraga": 1}
     assert rep.skipped_no_raga == 1 and rep.skipped_ragamalika == 1
     assert not list((tmp_path / "store").rglob("audio.*"))  # no dataset audio stored
+
+
+def test_import_skips_tracks_already_in_store(saraga_zip, table, tmp_path):
+    store = LocalExampleStore(tmp_path / "store")
+    import_saraga(saraga_zip, store, table, window_s=60, hop_s=60, min_voiced_s=20)
+    rep = import_saraga(saraga_zip, store, table, window_s=60, hop_s=60, min_voiced_s=20)
+    assert rep.n_examples == 0 and rep.skipped_existing == 1
+    assert len(store.list_examples()) == 2

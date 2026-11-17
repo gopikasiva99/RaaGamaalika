@@ -20,6 +20,9 @@ def test_melakarta_scale(n, scale):
     ("Mohanam", "mohanam "), ("Kalyaani", "Kalyani"),
     ("Dheerasankarabharanam", "Dhīraśankarābharaṇam"), ("Keeravani", "Kiravani"),
     ("Mayamalavagowla", "Mayamalavagoula"), ("Poorvikalyani", "Purvikalyani"),
+    ("Karaharapriya", "Kharaharapriya"), ("Cakravākaṁ", "Chakravakam"),
+    ("Amṛtavarṣiṇi", "Amritavarshini"), ("Bṛndāvana sāranga", "Brindavana Saranga"),
+    ("Sencuruṭṭi", "Senchurutti"), ("Lalita pancamaṁ", "Lalithapanchamam"),
 ])
 def test_normalize_equivalent(a, b):
     assert normalize_name(a) == normalize_name(b)

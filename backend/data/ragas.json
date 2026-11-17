@@ -13472,7 +13472,10 @@
   "id": "dwijavanthijujavanthi",
   "name": "Dwijavanthi /Jujavanthi",
   "aliases": [
-   "Dwijāvanthi /Jujāvanthi"
+   "Dvijavanti",
+   "Dwijavanti",
+   "Dwijāvanthi /Jujāvanthi",
+   "Jujavanti"
   ],
   "melakarta": null,
   "parent": 28,
@@ -15538,7 +15541,11 @@
  {
   "id": "chenjurutti",
   "name": "Chenjurutti",
-  "aliases": [],
+  "aliases": [
+   "Chenchurutti",
+   "Senchurutti",
+   "Sencurutti"
+  ],
   "melakarta": null,
   "parent": 28,
   "arohana": [
@@ -15599,7 +15606,10 @@
  {
   "id": "surutti",
   "name": "Surutti",
-  "aliases": [],
+  "aliases": [
+   "Surati",
+   "Suruti"
+  ],
   "melakarta": null,
   "parent": 28,
   "arohana": [
@@ -15631,6 +15641,8 @@
   "id": "shyama",
   "name": "Shyama",
   "aliases": [
+   "Saama",
+   "Sama",
    "Shyāmā"
   ],
   "melakarta": null,
@@ -17293,6 +17305,8 @@
   "id": "mand",
   "name": "Mand",
   "aliases": [
+   "Maand",
+   "Mandu",
    "Mānd"
   ],
   "melakarta": null,
@@ -17476,7 +17490,9 @@
  {
   "id": "navaroj",
   "name": "Navaroj",
-  "aliases": [],
+  "aliases": [
+   "Navroj"
+  ],
   "melakarta": null,
   "parent": 29,
   "arohana": [

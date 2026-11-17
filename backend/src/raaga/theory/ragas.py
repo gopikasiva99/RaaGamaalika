@@ -40,7 +40,9 @@ def normalize_name(s: str) -> str:
     """Aggressive spelling-tolerant form used only for matching names."""
     s = re.sub(r"[^a-z0-9]", "", _ascii_lower(s))
     for a, b in (("ee", "i"), ("oo", "u"), ("ow", "o"), ("ou", "o"), ("au", "o"),
-                 ("sh", "s"), ("th", "t"), ("dh", "d"), ("bh", "b"), ("w", "v")):
+                 ("sh", "s"), ("th", "t"), ("dh", "d"), ("bh", "b"), ("kh", "k"),
+                 ("gh", "g"), ("ch", "c"), ("jh", "j"), ("ph", "p"), ("w", "v"),
+                 ("ri", "r")):  # vocalic r: Amrita / Amṛta
         s = s.replace(a, b)
     return re.sub(r"(.)\1+", r"\1", s)
 
