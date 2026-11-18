@@ -1,0 +1,2105 @@
+{{short description|None}}
+
+{{Use dmy dates|date=July 2020}}
+{{Use Indian English|date=July 2020}}
+[[File:Melakarta.katapayadi.sankhya.72 correction for no 41-47-53-59-65-71 da2-instead-of-da3.png|alt=|thumb|Melakarta Ragas]]
+'''[[Janya]] ragas''' are [[Carnatic music]] [[ragas]] derived from the fundamental set of 72 ragas called ''[[Melakarta]]'' ragas, by the permutation and combination of the various ascending and descending notes. The process of deriving ''janya ragas'' from the parent ''melakartas'' is complex and leads to an open mathematical possibility of around thirty thousand ragas. Though limited by the necessity of the existence of individual ''swaroopas'' (unique identities) for the ''janya'' ragas, a list is never comprehensive or exhaustive. Thus the list below is open to additions or corrections. Moreover, some musicians experiment and use new scales, leading to new ''janya'' ragas. The 72 ''Melakarta'' ragas are numbered according to the ancient Indian system for numerical notation — the ''[[Katapayadi system]]''.<ref>{{cite web|title=The "ka-Ta-pa-ya" scheme and its application to mELAkarta raagas of Carnatic Music|url=http://rksanka.tripod.com/music/katapaya.html}}</ref><ref>{{cite journal|first = Anand | last = Raman|title=The Ancient Katapayadi Formula and the Modern Hashing Method|citeseerx = 10.1.1.18.9659 }}</ref>
+
+The ''melakartas'' are listed by numbers 1-72, with corresponding ''[[Asampurna Melakarta|asampoorna melakarta]]'' names<ref name="md">''Sri Muthuswami Dikshitar Keerthanaigal'' by Vainika Vidwan A. Sundaram Iyer (part 2 section II and III), Published 1989, Music Books Publishers, Mylapore, Chennai</ref> and scales listed just below (if different, in bold). Under those musical scales are the ''janyas'' associated with each ''melakarta''. If the raga has multiple scales in the same ''janya'', these are given below the main scale. Other ''janya'' ragas that are either not associated with a ''melakarta'' or whose scales are not yet added in this list, are listed at [[#Other janyas|the bottom]].
+
+== Scales ==
+{{unreferenced section|date=October 2018}}
+{|class="wikitable"
+!Raga Name !! Ascending Scale (ārohanam) !! Descending Scale (avarohanam)
+|-style="background-color:#ebebeb;" id="Kanakangi"
+|'''1 [[Kanakangi|Kanakāngi (Janaka raga)]]'''|| {{svaraC|S|R1|G1|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G1|R1|S|abbr=no}}
+|-
+|'''[[Kanakambari|Kanakāmbari]]'''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G1|R1|S|abbr=no}}
+|-
+|''Kanakatodi''|| {{svaraC|S|R1|G1|M1|P|D1|S'}} || {{svaraC|S'|N1|D1|P|M1|R1|S|abbr=no}}
+|-
+|''Mādhavapriyā''|| {{svaraC|S|R1|G1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|G1|R1|S|abbr=no}}
+|-
+|''[[Karnataka Shuddha Saveri|Karnātaka Shuddha Sāveri]]''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|R1|S|abbr=no}}
+|-
+|''Latantapriya''|| {{svaraC|S|R1|G1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|R1|S|abbr=no}}
+|-
+|''Lavangi(Raga created by [[M. Balamuralikrishna]])'' || {{svaraC|S|R1|M1|D1|S'|abbr=no}} || {{svaraC|S'|D1|M1|R1|S|abbr=no}}
+|-
+|''Megha'' || {{svaraC|S|R1|M1|P|D1|N1|D1|P|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|R1|S|abbr=no}}
+|-
+|''Rishabhavilāsa''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|R1|M1|R1|S|abbr=no}}
+|-
+|''Sarvashree''|| {{svaraC|S|M1|P|S'|abbr=no}} || {{svaraC|S'|P|M1|S|abbr=no}}
+|-
+|''Suddha Mukhāri''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G1|R1|S|abbr=no}}
+|-
+|''Tatillatika''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|R1|S|abbr=no}}
+|-
+|''Vāgeeshwari''|| {{svaraC|S|R1|G1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|M1|P|G1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Ratnangi"
+|'''2 [[Ratnangi|Ratnāngi]]'''|| {{svaraC|S|R1|G1|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G1|R1|S|abbr=no}}
+|-
+|'''Phenadhyuti'''|| {{svaraC|S|R1|M1|P|D1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G1|R1|S|abbr=no}}
+|-
+|''Ganamukhāri''|| {{svaraC|S|R1|M1|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|R1|S|abbr=no}}
+|-
+|''Ratnavarāli''|| {{svaraC|S|R1|M1|P|N2|D1|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R1|G1|R1|S|abbr=no}}
+|-
+|''[[Revati (raga)|Revati]]''|| {{svaraC|S|R1|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R1|S|abbr=no}}
+|-
+|''Shreemani''|| {{svaraC|S|R1|G1|P|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|G1|R1|S|abbr=no}}
+|-
+|''Shreemati''|| {{svaraC|S|R1|G1|P|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|G1|R1|S|abbr=no}}
+|-
+|''[[Svadhya]]''|| {{svaraC|S|R1|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Ganamurti"
+|'''3 [[Ganamurti|Gānamūrti]]'''|| {{svaraC|S|R1|G1|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G1|R1|S|abbr=no}}
+|-
+|'''Gānasāmavarāli'''|| {{svaraC|S|R1|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G1|R1|S|abbr=no}}
+|-
+|''Bhinnapanchamam''|| {{svaraC|S|R1|G1|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G1|R1|S|abbr=no}}
+|-
+|''Nādharanjani''|| {{svaraC|S|R1|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|G1|R1|S|abbr=no}}
+|-
+|''Poorvavarāli''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G1|R1|S|abbr=no}}
+|-
+|''Sāmavarāli''|| {{svaraC|S|R1|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G1|R1|G1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Vanaspati "
+|'''4 [[Vanaspati (Raga)|Vanaspati]]'''|| {{svaraC|S|R1|G1|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G1|R1|S|abbr=no}}
+|-
+|'''Bhānumati'''|| {{svaraC|N2|S|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Rasāli''|| {{svaraC|S|R1|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R1|S|abbr=no}}
+|-
+|''Vanāvali''|| {{svaraC|S|R1|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R1|S|abbr=no}}
+|-
+|''Vittalapriya''|| {{svaraC|S|R1|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Manavati"
+|'''5 [[Manavati|Mānavati]]'''|| {{svaraC|S|R1|G1|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G1|R1|S|abbr=no}}
+|-
+|'''Manoranjani'''||{{svaraC|S|R1|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G1|R1|S|abbr=no}}
+|-
+|''Ghanashyāmalā''|| {{svaraC|S|G1|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|N3|P|M1|G1|R1|S|abbr=no}}
+|-
+|''Kunjari''|| {{svaraC|S|R1|M1|P|D2|P|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Tanarupi"
+|'''6 [[Tanarupi|Tānarūpi]]'''|| {{svaraC|S|R1|G1|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G1|R1|S|abbr=no}}
+|-
+|'''Tanukeerti'''|| {{svaraC|S|R1|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|N3|P|M1|G1|M1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Senavati"
+|'''7 [[Senavati|Senāvati]]'''|| {{svaraC|S|R1|G2|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|'''Senāgrani'''|| {{svaraC|S|R1|G2|R1|M1|G2|M1|P|N1|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G2|M1|G2|R1|S|abbr=no}}
+|-
+|''Bhogi''|| {{svaraC|S|G2|M1|P|D1|N1|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G2|S|abbr=no}}
+|-
+|''Chitthakarshani''|| {{svaraC|S|R1|G2|M1|D1|S'|abbr=no}} || {{svaraC|S'|D1|M1|G2|R1|S|abbr=no}}
+|-
+|''Navarasa Mālā''|| {{svaraC|S|R1|G2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|R1|S|abbr=no}}
+|-
+|''Sindhu Gowri''|| {{svaraC|S|R1|G2|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|M1|G2|M1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Hanumatodi"
+|'''8 [[Hanumatodi]]'''|| {{svaraC|S|R1|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|'''Janatodi'''|| {{svaraC|S|R1|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''[[Ahiri|Āhiri]]''|| {{svaraC|S|R1|S|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R1|S|abbr=no}} ''(Anya swara*'' : {{svaraC|R2|G2|}} / {{svaraC| G3|D2|N3|abbr=no}})
+|-
+|''Amrita Dhanyāsi''|| {{svaraC|S|R1|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|R1|S|abbr=no}}
+|-
+|''[[Asaveri|Asāveri]]''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N2|S|P|D1|M1|P|R1|G2|R1|S|abbr=no}} ''(Anya swara*'' : {{svaraC|R2|abbr=no}})
+|-
+|''Bhānuchandrika''|| {{svaraC|S|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G1|S|abbr=no}}
+|-
+|''Bhadratodi''|| {{svaraC|S|R1|G2|M1|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|G2|S|abbr=no}}
+|-
+|''[[Bhupalam|Bhoopālam]]''|| {{svaraC|S|R1|G2|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|G2|R1|S|abbr=no}}
+|-
+|''Chandrikatodi''|| {{svaraC|S|G2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G2|S|abbr=no}}
+|-
+|''Deshikatodi''|| {{svaraC|S|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Dhanyāsi''|| {{svaraC|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Divyamālati''|| {{svaraC|S|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|S|abbr=no}}
+|-
+|''Ghanta''|| {{svaraC|S|G2|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}} ''(Anya swara*'' : {{svaraC|R2|D2|abbr=no}})
+|-
+|''Kalāsāveri''|| {{svaraC|S|R1|G2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|G2|R1|S|abbr=no}}
+|-
+|''Kanakasāveri''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Nāgavarāli''|| {{svaraC|S|R1|G2|M1|P|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Prabhupriya''|| {{svaraC|S|G2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G2|S|abbr=no}}
+|-
+|''Punnāgatodi''|| {{svaraC|N1|S|R1|G2|M1|P|abbr=no}} || {{svaraC|P|M1|G2|R1|S|N2|D1|abbr=no}}
+|-
+|''[[Punnagavarali]]''|| {{svaraC|N2|S|R1|G2|M1|P|D1|N2|abbr=no}} || {{svaraC|N2|D1|P|M1|G2|R1|S|N2|abbr=no}} ''(Anya swara*'' : {{svaraC|R2|abbr=no}})
+|-
+|''Shravanamallika''|| {{svaraC|S|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Sowjanya''|| {{svaraC|S|R1|M1|D1|S'|abbr=no}} || {{svaraC|S'|D1|M1|R1|S|abbr=no}}
+|-
+|''Shuddha Seemantini''|| {{svaraC|S|R1|G2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Shuddha Todi''|| {{svaraC|S|R1|G2|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G2|R1|S|abbr=no}}
+|-
+|''[[Sindhu Bhairavi (raga)|Sindhubhairavi]]''
+|{{svaraC|S|R2|G2|M1|G2|P|D1|N2|S|abbr=no}}
+|{{svaraC|N2|D1|P|M1|G2|R1|S|N2|S|abbr=no}}  (''Anya swara*'' : {{svaraC|R2|G3|M2|D2|N3|abbr=no}})
+|-
+|''Srimati''
+|{{svaraC|S|G2|R1|G2|M1|P|D1|P|D2|N2|S'|abbr=no}} (Anya swara : {{svaraC|D2|abbr=no}})
+|{{svaraC|S'|N2|D1|P|M1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Swarnamalli''|| {{svaraC|S|G2|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Dhenuka "
+|'''9 [[Dhenuka (raga)|Dhenukā]]'''|| {{svaraC|S|R1|G2|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|'''Dhunibhinnashadjam'''|| {{svaraC|S|R1|G2|R1|P|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Bhinnashadjam''|| {{svaraC|S|R1|G2|R1|P|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Mohananāta''|| {{svaraC|S|G2|M1|P|D1|P|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|D1|P|M1|G2|S|abbr=no}}
+|-
+|''Udayaravichandrika''|| {{svaraC|S|G2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G2|S|abbr=no}}
+|-
+|''Vasanthatodi''|| {{svaraC|S|R1|G2|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Natakapriya"
+|'''10 [[Natakapriya|Nātakapriyā]]'''|| {{svaraC|S|R1|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R1|S|abbr=no}}
+|-
+|'''Natābharanam'''|| {{svaraC|S|R1|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Alankārapriya''|| {{svaraC|S|R1|G2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|R1|S|abbr=no}}
+|-
+|''Bhāgyashabari''|| {{svaraC|S|R1|G2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|R1|S|abbr=no}}
+|-
+|''Deeparamu''|| {{svaraC|S|R1|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Gunāvati''|| {{svaraC|S|R1|M1|P|D2|S|abbr=no}} || {{svaraC|S|D2|P|M1|R1|S|abbr=no}}
+|-
+|''Hindoladeshikam''|| {{svaraC|S|M1|R1|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|P|N2|D2|M1|G2|R1|S|abbr=no}}
+|-
+|''Kanakadri''|| {{svaraC|S|R1|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Mātangakāmini''|| {{svaraC|S|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|S|abbr=no}}
+|-
+|''Nātyadhārana''|| {{svaraC|S|R1|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R1|S|abbr=no}}
+|-
+|''Niranjana''|| {{svaraC|S|R1|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Shānthabhāshini''|| {{svaraC|S|R1|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|S|abbr=no}}
+|-
+|''Shivashakti''|| {{svaraC|S|G2|M1|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Kokilapriya"
+|'''11 [[Kokilapriya|Kokilapriyā]]'''|| {{svaraC|S|R1|G2|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R1|S|abbr=no}}
+|-
+|'''Kokilāravam'''|| {{svaraC|S|R1|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Bhimsen (raga)|Bhimsen]] (<small>Raga created by Mahesh Mahadev)</small>''
+|{{svaraC|S|3=G2|4=M1|6=P|7=N3|8=S'|abbr=no}}
+|{{svaraC|S'|N3|D2|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Bhakthirasa (<small>Raga created by Rishabh Jagadeesh)</small>''
+|{{svaraC|S|3=G2|4=M1|6=P|7=N3|8=S'|abbr=no}}
+|{{svaraC|S'|N3|P|M1|G2|S|abbr=no}}
+|-
+|''Chitramani''|| {{svaraC|S|R1|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Jnānachintāmani''|| {{svaraC|S|R1|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|R1|S|abbr=no}}
+|-
+|''Kowmāri''|| {{svaraC|S|R1|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Shuddha Lalitha''|| {{svaraC|S|P|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|S|D2|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Vardhani'' || {{svaraC|S|G2|M1|P|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Vasantamalli''|| {{svaraC|S|G2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G2|S|abbr=no}}
+|-
+|''Vasantanārāyani''|| {{svaraC|S|R1|G2|M1|P|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Rupavati"
+|'''12 [[Rupavati|Rūpavati]]'''|| {{svaraC|S|R1|G2|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Rowpyanaka''|| {{svaraC|S|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Shyāmakalyāni''|| {{svaraC|S|M1|G2|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|D3|N3|P|M1|G2|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Gayakapriya"
+|'''13 [[Gayakapriya|Gāyakapriyā]]'''|| {{svaraC|S|R1|G3|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|'''Geya Hejjajji'''|| {{svaraC|S|R1|M1|G3|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Hejjajji''|| {{svaraC|S|R1|G3|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Kalākānti''|| {{svaraC|S|R1|G3|M1|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|G3|R1|S|abbr=no}}
+|-
+|''Kalkada''|| {{svaraC|S|R1|G3|P|D1|N1|S|abbr=no}}<br /> {{svaraC|S|R1|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|G3|R1|S|abbr=no}}
+|-
+|''Kalpanadhārini''|| {{svaraC|S|G3|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G3|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Vakulabharanam"
+|'''14 [[Vakulabharanam|Vakuḷābharaṇam]]'''|| {{svaraC|S|R1|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''[[Ahiri|Āhiri]]''|| {{svaraC|S|R1|S|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R1|S|abbr=no}} ''(Anya swara*'' : {{svaraC|R2|G2|}} / {{svaraC|G3|D2|N3|abbr=no}})
+|-
+|'''Vātee Vasantabhairavi'''|| {{svaraC|S|R1|G3|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G3|R1|S|abbr=no}}
+|-
+|''Amudhasurabhi''|| {{svaraC|S|M1|G3|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|R1|S|abbr=no}}
+|-
+|''Devipriya''|| {{svaraC|S|G3|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Kalindaja''|| {{svaraC|S|R1|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Kuvalayabharanam''|| {{svaraC|S|R1|G3|M1|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|M1|G3|R1|S|abbr=no}}
+|-
+|''Mukthipradayini <small>(Raga created by Mahesh Mahadev)</small>''<ref name=":0">{{Cite book |last=Bharatiya Samagana Sabha |url=http://archive.org/details/saamagana-indian-classical-music-magazine-july-2018 |title=Saamagana Indian Classical Music Magazine July 2018 - India's Monthly Classical Music Magazine |date=2018-07-09}}</ref>
+|{{svaraC|S|R1|G3|P|N2|S'|abbr=no}}
+|{{svaraC|S'|N2|P|D1|P|G3|R1|S|abbr=no}}
+|-
+|''Sallapa''|| {{svaraC|S|G3|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G3|S|abbr=no}}
+|-
+|''Soma'' || {{svaraC|S|R1|P|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Sūryā'' || {{svaraC|S|G3|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G3|S|abbr=no}}
+|-
+|''Shuddha Kāmbhoji''|| {{svaraC|S|G3|R1|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Vasantabhairavi''|| {{svaraC|S|R1|G3|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Vasanta Mukhāri''|| {{svaraC|S|M1|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Vijayollāsini''|| {{svaraC|S|R1|G3|M1|P|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Mayamalavagowla"
+|'''15 [[Mayamalavagowla|Māyāmāḻavagouḻai]]'''|| {{svaraC|S|R1|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Ardhradesi''|| {{svaraC|S|R1|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Bhāvini''|| {{svaraC|S|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|S|abbr=no}}
+|-
+|''Bibhās {Hindustani}''|| {{svaraC|S|R1|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|R1|S|abbr=no}}
+|-
+|''[[Bowli]]''|| {{svaraC|S|R1|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|G3|R1|S|abbr=no}}
+|-
+|''Bowli Rāmakriya''|| {{svaraC|S|R1|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|P|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Chāruvardhani''|| {{svaraC|S|R1|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Chāyagowla''|| {{svaraC|S|R1|M1|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Chandrachooda''|| {{svaraC|S|M1|G3|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|S|abbr=no}}
+|-
+|''Deshyagowla''|| {{svaraC|S|R1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|R1|S|abbr=no}}
+|-
+|''Devaranji''|| {{svaraC|S|M1|P|D1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|S|abbr=no}}
+|-
+|''Ekakshari'' || {{svaraC|S|R1|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N1|P|M1|R1|G3|M1|R1|S|abbr=no}}
+|-
+|''Ghanasindhu''|| {{svaraC|S|M1|G3|M1|P|D1|N3|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''[[Gowla]]''|| {{svaraC|S|R1|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|R1|G3|M1|R1|S|abbr=no}}
+|-
+|''Gowlipantu''|| {{svaraC|S|R1|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|D1|M1|G3|R1|S|abbr=no}}
+|-
+|''Gowri''|| {{svaraC|S|R1|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Gummakāmbhoji''|| {{svaraC|S|R1|G3|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Gundakriya'' || {{svaraC|S|R1|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Gurjari''|| {{svaraC|S|R1|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|D1|N3|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Jaganmohini''|| {{svaraC|S|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Kalyānakesari''|| {{svaraC|S|R1|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|G3|R1|S|abbr=no}}
+|-
+|''Kannadabangāla''|| {{svaraC|S|R1|M1|G3|M1|D1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Karnātaka Sāranga''|| {{svaraC|S|R1|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|R1|S|abbr=no}}
+|-
+|''Lalitā''|| {{svaraC|S|R1|G3|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|G3|R1|S|abbr=no}}
+|-
+|''Lalitapanchamam''|| {{svaraC|S|R1|G3|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Mālavakurinji''|| {{svaraC|S|G3|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|R1|S|abbr=no}}
+|-
+|''Mālavapanchamam''|| {{svaraC|S|R1|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Mārgadesi'' || {{svaraC|S|R1|G3|R1|G3|D1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''[[Malahari]]''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Mallikavasantam''|| {{svaraC|S|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Mangalakaishiki'' || {{svaraC|S|R1|M1|G3|D1|P|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Manolayam''	|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|R1|S|abbr=no}}
+|-
+|''Maruva''|| {{svaraC|S|G3|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|G3|M1|G3|R1|S|R1|G3|R1|S|abbr=no}}
+|-
+|''Mechabowli''|| {{svaraC|S|R1|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Megharanjani''|| {{svaraC|S|R1|G3|M1|N3|S'|abbr=no}} || {{svaraC|S'|N3|M1|G3|R1|S|abbr=no}}
+|-
+|''Nadanamakriya''|| {{svaraC|S|R1|G3|M1|P|D1|N3|abbr=no}} || {{svaraC|N3|D1|P|M1|G3|R1|S|N3|abbr=no}}
+|-
+|''Pādi''|| {{svaraC|S|R1|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|D1|P|M1|R1|S|abbr=no}}
+|-
+|''Pharaju (Paras) {Hindustani}''|| {{svaraC|S|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Poornalalita'' || {{svaraC|S|R1|G3|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Poorvi''|| {{svaraC|S|R1|G3|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Poorvikavasanta''|| {{svaraC|S|M1|G3|M1|D|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Pratāpadhanyāsi''|| {{svaraC|S|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Pratāparanjani''|| {{svaraC|S|R1|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Puranirmai''|| {{svaraC|S|R1|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|G3|R1|S|abbr=no}}
+|-
+|''Rāmakali''|| {{svaraC|S|R1|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Rāmakriya''|| {{svaraC|S|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''[[Revagupti]]''|| {{svaraC|S|R1|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|G3|R1|S|abbr=no}}
+|-
+|''Rukhmāmbari''|| {{svaraC|S|R1|G3|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|G3|R1|S|abbr=no}}
+|-
+|''Sāmantadeepara''|| {{svaraC|S|R1|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Sāranga Nāta''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|S|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''[[Saveri|Sāveri]]''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Salanganāta''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|G3|R1|S|abbr=no}}
+|-
+|''Satyāvati''|| {{svaraC|S|G3|R1|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|N3|P|D1|P|G3|R1|S|abbr=no}}
+|-
+|''Sindhu Rāmakriya''|| {{svaraC|S|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|R1|G3|S|abbr=no}}
+|-
+|''Surasindhu''|| {{svaraC|S|M1|G3|M1|P|D1|N3|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|R1|G3|R1|S|abbr=no}}
+|-
+|''Tārakagowla''|| {{svaraC|S|G3|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|G3|S|abbr=no}}
+|-
+|''Takka''|| {{svaraC|S|R1|S|G3|M1|G3|P|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Ushāvali''|| {{svaraC|S|R1|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|P|M1|R1|S|abbr=no}}
+|-
+|''Vishārada''|| {{svaraC|S|R1|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Chakravakam "
+|'''16 [[Chakravakam (raga)|Chakravākam]]'''|| {{svaraC|S|R1|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R1|S|abbr=no}}
+|-
+|'''Toyavegavāhini'''|| {{svaraC|S|R1|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Āhir Bhairavi''|| {{svaraC|S|R1|G3|M1|P|N2|D2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|P|G3|R1|S|abbr=no}}
+|-
+|''Bhakthapriya''|| {{svaraC|S|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R1|M1|G3|S|abbr=no}}
+|-
+|''Bhujāngini''|| {{svaraC|S|R1|G3|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|R1|S|abbr=no}}
+|-
+|''Bindhumālini''|| {{svaraC|S|G3|R1|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|S|D2|P|G3|M1|P|G3|R1|S|abbr=no}}
+|-
+|''Chakranārāyani''|| {{svaraC|S|R1|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R1|S|abbr=no}}
+|-
+|''Ghoshini''|| {{svaraC|S|M1|G3|M1|P|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Guhapriya''|| {{svaraC|S|R1|G3|M1|P|P|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|S|R1|S|abbr=no}}
+|-
+|''Kalāvati''|| {{svaraC|S|R1|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G3|S|R1|S|abbr=no}}
+|-
+|''Kokilā''|| {{svaraC|S|R1|G3|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|R1|S|abbr=no}}
+|-
+|''[[Malayamarutam|Malayamārutam]]''|| {{svaraC|S|R1|G3|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|G3|R1|S|abbr=no}}
+|-
+|''Mukthāngi''|| {{svaraC|S|R1|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|D2|N2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Mukundamālini''|| {{svaraC|S|R1|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G2|R1|S|abbr=no}}
+|-
+|''Poornapanchamam'' || {{svaraC|P|M1|S|R1|S|M1|P|D2|abbr=no}} || {{svaraC|D2|P|M1|G3|R1|S|N2|abbr=no}}
+|-
+|''Pravritti''|| {{svaraC|S|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|S|abbr=no}}
+|-
+|''Rāgamanjari''|| {{svaraC|S|R1|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|R1|S|abbr=no}}
+|-
+|''Rasikaranjani''|| {{svaraC|S|R1|G3|P|S'|abbr=no}} || {{svaraC|S'|D2|P|G3|R1|S|abbr=no}}
+|-
+|''Rudra Panchami''
+|{{svaraC|S|G3|M1|5=D2|6=N2|7=S'|abbr=no}}
+|{{svaraC|S'|N3|D2|5=M1|6=G3|7=R1|8=S|abbr=no}}
+|-
+|''Samya'' <small>(Raga created by Mahesh Mahadev)</small><ref>{{Cite web |date=2024-05-21 |title=Samya - A Raga created by Mahesh Mahadev |url=https://maheshmahadev.com/samya-raga/ |access-date=2024-11-27 |archive-url=https://web.archive.org/web/20240521104041/https://maheshmahadev.com/samya-raga/ |archive-date=21 May 2024 }}</ref>
+|{{svaraC|S|R1|G3|P|N2|S'|abbr=no}}|| {{svaraC|S'|N2|P|M1|G3|R1|S|abbr=no}}||
+|-
+|''Shree Nabhomārgini''|| {{svaraC|S|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Shyāmali''|| {{svaraC|S|G3|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|G3|R1|S|abbr=no}}
+|-
+|''Subhāshini''|| {{svaraC|S|D2|N2|D|R1|G3|M1|P|abbr=no}} || {{svaraC|M1|G3|R1|S|N2|D2|N2|S|abbr=no}}
+|-
+|''[[Valaji]]''|| {{svaraC|S|G3|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|G3|S|abbr=no}}
+|-
+|''Veenadhāri''|| {{svaraC|S|R1|G3|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Vegavāhini''|| {{svaraC|S|R1|G3|M1|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Suryakantam"
+|'''17 [[Suryakantam|Sūryakāntam]]'''|| {{svaraC|S|R1|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R1|S|abbr=no}}
+|-
+|'''Chāyāvathi'''|| {{svaraC|S|R1|G3|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Bhairavam''|| {{svaraC|S|R1|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Haridarpa''|| {{svaraC|S|R1|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R1|S|abbr=no}}
+|-
+|''Jayasamvardhani''|| {{svaraC|S|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Jeevantikā''|| {{svaraC|S|R1|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|R1|S|abbr=no}}
+|-
+|''Kusumamāruta''|| {{svaraC|S|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R1|G3|M1|S|abbr=no}}
+|-
+|''Nāgachooḍāmani''|| {{svaraC|S|R1|G3|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|N2|D2|P|M1|G3|M1|R2|S|abbr=no}}
+|-
+|''Rohini''|| {{svaraC|S|R1|G3|M1|M2|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|M1|G3|R1|S|abbr=no}}
+|-
+|''Sāmakannada''|| {{svaraC|S|R2|M1|G2|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|R1|S|abbr=no}}
+|-
+|''Sowrāshtram''|| {{svaraC|S|R1|G3|M1|P|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|N2|D2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Suddha Gowla''|| {{svaraC|S|R1|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|R1|S|abbr=no}}
+|-
+|''Supradeepam''|| {{svaraC|S|R1|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|M1|R1|S|abbr=no}}
+|-
+|''[[Vasantha (raga)|Vasanthā]]''|| {{svaraC|S|M1|G3|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M1|G3|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Hatakambari"
+|'''18 [[Hatakambari|Hātakāmbari]]'''|| {{svaraC|S|R1|G3|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G3|R1|S|abbr=no}}
+|-
+|'''Jayashuddhamālavi'''|| {{svaraC|S|R1|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Hamsanantini''|| {{svaraC|S|G3|M1|P|S'|abbr=no}} || {{svaraC|S'|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Kallola''|| {{svaraC|S|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Simhala''|| {{svaraC|S|R1|G3|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|N3|P|M1|G3|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Jhankaradhvani"
+|'''19 [[Jhankaradhvani|Jhankāradhvani]]'''|| {{svaraC|S|R2|G2|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|'''Jhankārabhramari'''|| {{svaraC|S|R2|G2|M1|P|D1|N1|D1|P|D1|S|abbr=no}}<br />{{svaraC|S|R2|G2|M1|P|D1|S|abbr=no}}<br />{{svaraC|S|R2|G2|M1|P|D1|N1|D1|S|abbr=no}}<br />{{svaraC|S|R2|G2|M1|P|D1|N1|D1|S|abbr=no}}<br />{{svaraC|S|G2|R2|G|M1|P|D1|N1|D1|S|abbr=no}}<br />{{svaraC|S|R2|G2|M1|P|D1|N1|D1|S|abbr=no}}|| {{svaraC|S|N1|D1|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N1|D1|P|M1|G2|R2|S|abbr=no}}<br />
+{{svaraC|S|D1|P|M1|G2|R2|S|abbr=no}}<br />
+{{svaraC|S|N1|D1|P|M1|G2|R2|S|abbr=no}}<br />
+{{svaraC|S|N1|D1|P|M1|G2|R2|G|R2|S|abbr=no}}<br />
+{{svaraC|D1|N1|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Bhārati''|| {{svaraC|S|R2|G2|M1|P|S'|abbr=no}} || {{svaraC|S'|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Chittaranjani''|| {{svaraC|S|R2|G2|M1|P|D1|N1|abbr=no}} || {{svaraC|N1|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Jalmika''|| {{svaraC|S|R2|G1|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G1|S|R2|S|abbr=no}}
+|-
+|''Lalitabhairavi''|| {{svaraC|S|G2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Poornalalita''|| {{svaraC|S|G2|R2|M1|P|S|abbr=no}}<br />{{svaraC|S|G2|R2|G2|R2|M1|P|S|abbr=no}}<br />{{svaraC|S|R2|G2|R2|M1|P|S|abbr=no}}<br />{{svaraC|S|R2|G2|M1|P|S|abbr=no}}<br />{{svaraC|S|G2|R2|G2|M1|P|S|abbr=no}}|| {{svaraC|S|N1|D1|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N1|D1|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N1|D1|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N1|D1|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N1|D1|P|M1|G2|R2|S|abbr=no}}<br />
+|-style="background-color:#ebebeb;" id="Natabhairavi"
+|'''20 [[Natabhairavi]]'''|| {{svaraC|S|R2|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|'''Nārērētigowla'''|| {{svaraC|S|G2|R2|G2|M1|N2|D1|M1|N2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G2|M1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Abheri (Dikshitar School)'' || {{svaraC|S|M1|G2|M1|P|P|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Anandabhairavi]]'' || {{svaraC|S|G2|R2|G2|M1|P|D2|P|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|G3|D1|N3|abbr=no}})
+|-
+|''Amrithavāhini''|| {{svaraC|S|R2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Bhairavi (ragam)|Bhairavi]]''|| {{svaraC|S|G2|R2|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|D2|abbr=no}}) 
+|-
+|''Bhuvanagāndhāri''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|S|abbr=no}}
+|-
+|''Chapagantarva''|| {{svaraC|S|G2|M1|P|N2|abbr=no}} || {{svaraC|D1|M1|G2|R2|S|N2|abbr=no}}
+|-
+|''[[Darbari Kanada|Darbāri Kānada]]''|| {{svaraC|N2|S|R2|G2|R2|S|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|D1|N2|P|M1|P|G2|M1|R2|S|abbr=no}}
+|-
+|''Devakriya''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Dhanashree''|| {{svaraC|N2|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Dharmaprakāshini''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G2|R2|S|abbr=no}}
+|-
+|''Dilipika Vasantha''|| {{svaraC|S|G2|M1|P|D1|P|N2|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|R2|S|abbr=no}}
+|-
+|''Divyagāndhāri''|| {{svaraC|S|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|S|abbr=no}}
+|-
+|''Gopikāvasantam''|| {{svaraC|S|R2|G2|M1|P|D1|P|N2|abbr=no}} || {{svaraC|S|N2|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Hindolam]]''|| {{svaraC|S|G2|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G2|S|abbr=no}}
+|-
+|''Hindolavasanta''|| {{svaraC|S|G2|M1|P|D1|N2|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|D2|M1|G2|S|abbr=no}}
+|-
+|''Indughantarava''|| {{svaraC|S|G2|M1|P|D1|P|abbr=no}} || {{svaraC|N2|D1|P|M1|G2|R2|S|N2|abbr=no}}
+|-
+|''Jayanthashrī''|| {{svaraC|S|G2|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|P|M1|G2|S|abbr=no}}
+|-
+|''Jingaḷa''|| {{svaraC|S|R2|G2|M1|P|D1|N2|D1|P|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Jaunpuri (raga)|Jaunpuri]] {Hindustani}''|| {{svaraC|S|R2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Kātyāyani''|| {{svaraC|S|R2|G2|P|D1|S'|abbr=no}}||{{svaraC|S'|D1|P|G2|R2|S|abbr=no}}
+|-
+|''Kamakhyapriya'' <small>(Raga created by Mahesh Mahadev)</small><ref>{{cite web |url=https://archive.org/details/sanje-express-page-6-sanje-express |title=Sanje Express – Page 6 |website=Internet Archive |access-date=6 August 2026 }}</ref> ||{{svaraC|S|R2|M1|P|D1|N2|S'|abbr=no}}||{{svaraC|S'|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Kanakavasantham''|| {{svaraC|S|G2|M1|P|N2|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Kshanika''|| {{svaraC|S|G2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G2|S|abbr=no}}
+|-
+|''Mānji''|| {{svaraC|S|R2|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|P|M1|P|G2|R2|S|abbr=no}}
+|-
+|''Mahati'' cf. Mela 28&43 (Mahathi)  || {{svaraC|S|G2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|G2|R2|S|abbr=no}}
+|-
+|''Malkosh /  [[Malkauns]]''|| {{svaraC|S|G2|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G2|S|abbr=no}}
+|-
+|mArgahindOLaM||{{svaraC|S|R2|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|S|abbr=no}}
+|-
+|''Nāgagāndhāri''|| {{svaraC|S|R2|M1|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Navarathna Vilāsam''|| {{svaraC|S|R2|G2|M1|P|D1|P|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G2|M1|R2|S|abbr=no}}
+|-
+|''Nīlamati''|| {{svaraC|S|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G2|S|abbr=no}}
+|-
+|''Nīlaveni''|| {{svaraC|S|R2|G2|M1|P|D1|N2|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Poornashađjam''|| {{svaraC|S|R2|G2|M1|N2|N2|S|abbr=no}}<br />{{svaraC|S|R2|G2|M1|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Rājarājeshwari''|| {{svaraC|S|R2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Saramati|Sāramati]]''|| {{svaraC|S|R2|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|G2|S|abbr=no}}
+|-
+|''Sāranga Kāpi''|| {{svaraC|S|R1|P|M1|R1|P|R1|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Sharadapriya''|| {{svaraC|S|R2|G2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|G2|R2|S|abbr=no}}
+|-
+|''Shree Navarasachandrika''|| {{svaraC|S|R2|G2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Sindhu Dhanyāsi''|| {{svaraC|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Shuddha Desi''|| {{svaraC|S|R2|G2|R2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Shuddha Sālavi''|| {{svaraC|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|S|abbr=no}}
+|-
+|''Sukumāri''|| {{svaraC|S|G2|M1|P|N2|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|M1|R2|S|abbr=no}}
+|-
+|''Sushama <small>(Raga created by [[M. Balamuralikrishna]])</small>''|| {{svaraC|S|R2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|R2|S|abbr=no}}
+|-
+|''Sutradhāri''|| (Also 27) {{svaraC|S|R2|M1|P|D1|S|abbr=no}} || {{svaraC|S|D1|P|M1|R2|S|abbr=no}}
+|-
+|''Tarkshika''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|R2|G2|R2|S|abbr=no}}
+|-
+|''[[Udayaravichandrika|Udayarāga]]''|| {{svaraC|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|S|abbr=no}}
+|-
+|''Vasantavarāli''|| {{svaraC|S|R2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|G2|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Keeravani"
+|'''21 [[Keeravani|Kīravāṇi]]'''|| {{svaraC|S|R2|G2|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|'''Keeranāvali'''|| {{svaraC|S|R2|G2|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Aymmukhan''|| {{svaraC|S|G2|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G2|S|abbr=no}}
+|-
+|''Bhānupriya''|| {{svaraC|S|R2|G2|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|G2|R2|S|abbr=no}}
+|-
+|''Beethovanapriya'' ''<small>(invented by [[Ramesh Vinayakam]]<ref>[https://www.youtube.com/watch?v=HEJn3FtVYLQ Abhishek Raghuram - Thiruvarul - Rupakam -Raga Beethovanapriya - Invented by Ramesh Vinayakam - YouTube<!-- Bot generated title -->]</ref>)</small>''|| {{svaraC|'G2|'P|'N3|S|R2|G2|M1|P|D1|abbr=no}} || {{svaraC|P|M2|P|R2|M1|G2|S|abbr=no}}
+|-
+|''Chandrika''|| {{svaraC|S|R2|G2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|G2|R2|S|abbr=no}}
+|-
+|''Gaganabhoopālam''|| {{svaraC|S|M1|G2|M1|P|D1|N3|abbr=no}} || {{svaraC|S|N3|D1|M1|G2|R2|S|abbr=no}}
+|-
+|''Hamsapancama''|| {{svaraC|S|G2|M1|P|N3|D1|N3|P|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|G2|R2|S|abbr=no}}
+|-
+|''Hamsavāhini''|| {{svaraC|S|R2|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|R2|S|abbr=no}}
+|-
+|''Jayashree''|| {{svaraC|S|R2|G2|M1|P|D1|N3|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Kadaram (Chandrakosh, [[Chandrakauns]], Chandrakaush)''|| {{svaraC|S|G2|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|G2|S|abbr=no}}
+|-
+|''[[Kalyanavasantam|Kalyāna Vasantam]]''|| {{svaraC|S|G2|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Kusumāvali''|| {{svaraC|S|G2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G2|M1|R1|S|abbr=no}}
+|-
+|''Mādhavi''|| {{svaraC|S|M1|G2|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|S|M1|G2|R1|S|abbr=no}}
+|-
+|''Mishramanolayam''||  {{svaraC|S|R2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D2|D1|P|M1|R2|S|abbr=no}}
+|-
+|''Priyadarshani''|| {{svaraC|S|R2|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|R2|S|abbr=no}}
+|-
+|''Rishipriya''|| {{svaraC|S|R2|G2|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Sāmapriya''|| {{svaraC|S|R2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|R2|S|abbr=no}}
+|-
+|''Shrothasvini''|| {{svaraC|S|G2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G2|S|abbr=no}}
+|-
+|''Vasanthamanohari''|| {{svaraC|S|R2|G2|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|G2|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Kharaharapriya"
+|'''22 [[Kharaharapriya|Kharaharapriyā]]'''||{{svaraC|S|R2|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|'''[[Sri Ragam|Shree]]'''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|D2|N2|P|M1|R2|G2|R2|S|abbr=no}}
+|-
+|''[[Andolika|Andolikā]]''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|R2|S|abbr=no}}
+|-
+|''[[Abheri]]''|| {{svaraC|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Abhogi]]''|| {{svaraC|S|R2|G2|M1|D2|S'|abbr=no}} || {{svaraC|S'|D2|M1|G2|R2|S|abbr=no}}
+|-
+|''Ādi Kāpi''|| {{svaraC|S|R2|M1|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Āryamati''|| {{svaraC|S|R2|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|D2|M1|G2|R2|S|abbr=no}}
+|-
+|''Agnikopa''|| {{svaraC|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Bālachandrika''|| {{svaraC|S|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|R2|S|abbr=no}}
+|-
+|''Basant Bahār {Hindustani}''|| {{svaraC|S|M2|P|G3|M2|N3|D1|N3|S|abbr=no}} || {{svaraC|R2|S|N2|D2|P|M1|G2|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Bageshri]]''|| {{svaraC|S|G2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|P|D2|G2|M1|R2|S|abbr=no}}
+|-
+|''Bhagavatapriya''|| {{svaraC|S|R2|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Bhagavathpriya''|| {{svaraC|S|R2|G2|M1|R2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R2|S|abbr=no}}
+|-
+|''[[Bhimpalasi]] {Hindustani} ''|| {{svaraC|N2|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Brindavani_Sarang|Brindāvana Sāranga]] {Hindustani}''|| {{svaraC|S|R2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|G2|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|N3|abbr=no}})
+|-
+|''[[Brindavani_Sarang|Brindāvani]] {Hindustani}''|| {{svaraC|S|R2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|N3|abbr=no}})
+|-
+|''Chakrapradipta''|| {{svaraC|S|R2|G2|M1|P|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|S|abbr=no}}
+|-
+|''Chittaranjani''|| {{svaraC|S|R2|G2|M1|P|D2|N2|abbr=no}} || {{svaraC|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Darbar (Raga)|Darbar]]''|| {{svaraC|S|R2|M1|P|D2|N2|S|abbr=no}} || {{svaraC|R2|S|N2|S|D2|P|M1|R2|G2|G2|R2|S|abbr=no}}
+|-
+|''Dayavati''|| {{svaraC|S|R2|G2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|S|abbr=no}}
+|-
+|''Devāmruthavarshani''|| {{svaraC|S|R2|G2|M1|N2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Deva Manohari''|| {{svaraC|S|R2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|R2|S|abbr=no}}
+|-
+|''Dhanakāpi''|| {{svaraC|S|R2|M1|P|N2|S|abbr=no}} (Varies) || {{svaraC|S|N2|D2|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Dilipika''|| {{svaraC|S|R2|G2|M1|P|N2|D2|N2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Gowla Kannada''|| {{svaraC|S|R2|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|S|abbr=no}}
+|-
+|''[[Gara (raga)|Gāra]] {Hindustani}''|| {{svaraC|S|G2|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|G2|R2|S|N3|S|N2|D2|S|abbr=no}} (''Anya swara*'' : {{svaraC|G3|D1|N3|abbr=no}}) 
+|-
+|''Hamsa ābheri''|| {{svaraC|S|G2|P|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|S|abbr=no}}
+|-
+|''Haridasapriya''|| {{svaraC|S|P|M1|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Harinārāyani''|| {{svaraC|S|R2|G2|M1|P|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Hindustāni Kāpi''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G2|M1|D2|P|G2|R2|S|N2|S|abbr=no}} (''Anya swara*'' : {{svaraC|G3|D1|N3|abbr=no}})
+|-
+|''Huseni''|| {{svaraC|S|R2|G2|M1|P|N2|D2|N2|S|abbr=no}}<br />{{svaraC|S|R2|G3|M1|P|N3|D2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|D1|abbr=no}})<br />{{svaraC|S|N3|S|P|D2|M1|P|G3|R2|S|abbr=no}}
+|-
+|Jatādhāri|| {{svaraC|S|R2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R2|S|abbr=no}}
+|-
+|''Jayamanohari''|| {{svaraC|S|R2|G2|M1|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|R2|S|abbr=no}}
+|-
+|''Jayanārāyani''|| {{svaraC|S|R2|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Jayanthasena''|| {{svaraC|S|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|S|abbr=no}}
+|-
+|''[[Jog (raga)|Jog]] {Hindustani}''|| {{svaraC|S|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G3|M1|G2|S|abbr=no}} (''Anya swara*'' : {{svaraC|G2|abbr=no}})
+|-
+|''Kanadā''|| {{svaraC|S|R2|P|G2|M1|D2|N2|S'}}|| {{svaraC|S'|N2|P|M1|G2|M1|R2|S|abbr=no}}
+|-
+|''[[Kāpi]]''|| {{svaraC|S|R2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G2|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|G3|D1|N3|abbr=no}})
+|-
+|''Kāpijingala''|| {{svaraC|S|N2|S|R2|G2|M1|abbr=no}} || {{svaraC|M1|G2|R2|S|N2|D2|N2|S|abbr=no}}
+|-
+|''Kalānidhi''|| {{svaraC|S|R2|G2|M1|S|P|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Kalika''|| {{svaraC|S|R2|G2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|G2|R2|S|abbr=no}}
+|-
+|''Kannadagowla''|| {{svaraC|S|R2|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|S|abbr=no}}
+|-
+|''Karnātaka Hindolam''|| {{svaraC|S|G2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|S|abbr=no}}
+|-
+|''Karnātaka Kāpi''|| {{svaraC|S|R2|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Karnātaka Devagāndhari''|| {{svaraC|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Karnaranjani''|| {{svaraC|S|R2|G2|M1|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Kowmodaki''|| {{svaraC|S|R2|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|D2|P|G2|S|abbr=no}}
+|-
+|''Kowshika''|| {{svaraC|S|G2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|M1|R2|S|abbr=no}}
+|-
+|''Lalitamanohari''|| {{svaraC|S|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Mādhavamanohari''|| {{svaraC|S|R2|G2|M1|P|N2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|R2|S|abbr=no}}
+|-
+|''Mālavashree''|| {{svaraC|S|G2|M1|P|N2|D2|N2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Māyapradeeptam''|| {{svaraC|S|M1|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Madhyamarāvali''|| {{svaraC|S|R2|G2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|G2|R2|S|abbr=no}}
+|-
+|''[[Madhyamavathi|Madhyamāvathi]]''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|S|abbr=no}}
+|-
+|''Mahānandhi''|| {{svaraC|S|R2|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G2|R2|S|abbr=no}}
+|-
+|''Mandāmari''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|S|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Mangalāvathi''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Manirangu''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Manjari''|| {{svaraC|S|G2|R2|G2|M1|P|N2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Manohari''|| {{svaraC|S|G2|R2|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Manorama''|| {{svaraC|S|R2|G2|M1|P|D1|P|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Maruvadhanyāsi''|| {{svaraC|S|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|D2|M1|G2|R2|S|abbr=no}}
+|-
+|''Mishramanolayam''|| {{svaraC|S|R2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D2|D1|P|M1|R2|S|abbr=no}}
+|-
+|''Mishra shivaranjani''|| {{svaraC|S|R2|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G2|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|R1|G3|M1|M2|D1|N2|N3|abbr=no}})
+|-
+|''[[Malhar]] or Miyān ki Malhār {Hindustani}''|| {{svaraC|S|R2|P|M1|P|N2|D2|N3|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|P|G2|M1|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|N3|abbr=no}})
+|-
+|''[[Mukhari|Mukhāri]]''|| {{svaraC|S|R2|M1|P|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|D1|abbr=no}})
+|-
+|''Nādachintāmani''|| {{svaraC|S|R2|G2|M1|N2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Nādatārangini''|| {{svaraC|S|P|M1|R2|G2|S'|abbr=no}} || {{svaraC|S'|P|N2|D2|P|M1|G2|R2|G2|S|abbr=no}}
+|-
+|''Nādavarangini''|| {{svaraC|S|P|M1|N2|D2|N2|S'|abbr=no}} || {{svaraC|S'|P|N2|D2|P|M1|G2|R2|G2|S|abbr=no}}
+|-
+|''Nāgari''|| {{svaraC|S|R2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|S|abbr=no}}
+|-
+|''Nāgavalli''|| {{svaraC|S|R2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|R2|S|abbr=no}}
+|-
+|''Nāyaki''|| {{svaraC|S|R2|M1|P|D2|N2|D2|P|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R2|G2|R2|S|abbr=no}}
+|-
+|''Nigamagāmini''|| {{svaraC|M1|G2|S|G2|M1|N2|S'|abbr=no}} || {{svaraC|S'|N2|M1|G2|M1|G2|S|abbr=no}}
+|-
+|''Nirmalāngi''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|S|abbr=no}}
+|-
+|''Omkāri''|| {{svaraC|S|R2|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Panchamam''|| {{svaraC|S|R2|D2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Phalamanjari''|| {{svaraC|S|G2|M1|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|M1|R2|S|abbr=no}}
+|-
+|''Phalaranjani''|| {{svaraC|S|G2|M1|P|M1|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|M1|R2|S|abbr=no}}
+|-
+|''[[Pilu (raga)|Pilu]](peelu) {Hindustani}''|| {{svaraC|N3|S|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|D1|P|M1|G2|R2|S|N3|S|abbr=no}} (''Anya swara*'' : {{svaraC|G3|D1|N3|abbr=no}})
+|-
+|''Poornakalānidhi''|| {{svaraC|S|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Pushpalathika''|| {{svaraC|S|R2|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Ratipatipriya''|| {{svaraC|S|R2|G2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|G2|R2|S|abbr=no}}
+|-
+|''[[Reethigowla]]''|| {{svaraC|S|G2|R2|G2|M1|N2|D2|M1|N2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|M1|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Rudrapriyā''|| {{svaraC|S|R2|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Sahana (raga)|Sahāna]] (Original)''|| {{svaraC|S|R2|G2|M1|P|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|G2|R2|G2|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|G3|abbr=no}})
+|-
+|''[[Salaga Bhairavi|Sālagabhairavi]]''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Sārang {Hindustani}''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|S|abbr=no}}
+|-
+|''Saindhavi''|| {{svaraC|N2|D2|N2|S|R2|G2|M1|P|D2|N2|abbr=no}} || {{svaraC|D2|P|M1|G2|R2|S|N2|D2|N2|S|abbr=no}}
+|-
+|''Sangrama''|| {{svaraC|S|R2|M1|D2|N2|P|S'|abbr=no}} || {{svaraC|S'|N2|D2|G2|R2|S|abbr=no}}
+|-
+|''Sankrāndanapriyā''|| {{svaraC|S|R2|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G2|R2|S|abbr=no}}
+|-
+|''Sarvachoodāmani''|| {{svaraC|S|R2|M1|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|D2|N2|D2|P|M1|G2|R2|G2|R2|S|abbr=no}}
+|-
+|''Shivapriyā''|| {{svaraC|S|R2|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G2|R2|S|abbr=no}}
+|-
+|''[[Shivaranjani]]''|| {{svaraC|S|R2|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G2|R2|S|abbr=no}}
+|-
+|''Shree Manohari''|| {{svaraC|S|G2|R2|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Shree Manoranjani''|| {{svaraC|S|G2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Shreeranjani]]''|| {{svaraC|S|R2|G2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|R2|S|abbr=no}}
+|-
+|''Siddhasena''|| {{svaraC|S|G2|R2|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|P|M1|R2|G2|R2|S|abbr=no}}
+|-
+|''Suddha Bangāla''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R2|G2|R2|S|abbr=no}}
+|-
+|''Suddha Bhairavi''|| {{svaraC|S|G2|M1|P|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Shuddha Dhanyasi|Suddha Dhanyāsi]]''|| {{svaraC|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|S|abbr=no}}
+|-
+|''Suddha Hindolam (Varamu)''|| {{svaraC|S|G2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G2|S|abbr=no}}
+|-
+|''Suddha Manohari''|| {{svaraC|S|R2|G2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|G2|S|abbr=no}}
+|-
+|''Suddha Velāvali''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Sugunabhooshani''|| {{svaraC|S|G2|M1|P|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|D2|M1|R2|S|abbr=no}}
+|-
+|''Swarabhooshani''|| {{svaraC|S|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R2|S|abbr=no}}
+|-
+|''Swarakalānidhi''|| {{svaraC|S|M1|G2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Swararanjani''|| {{svaraC|S|R2|G2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G2|M1|R2|S|abbr=no}}
+|-
+|''Tavamukhāri''|| {{svaraC|S|R2|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Vajrakānti''|| {{svaraC|S|G2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|-style="background-color:#ebebeb;" id="Gourimanohari"
+|'''23 [[Gourimanohari]]'''|| {{svaraC|S|R2|G2|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|'''Gowrivelāvali'''|| {{svaraC|S|R2|G2|S|R2|M1|P|D2|S|abbr=no}}<br />{{svaraC|S|R2|G1|G2|S|R2|M1|M1|P|D2|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N3|D2|P|M1|G1|G2|R2|S|abbr=no}}
+|-
+|''Gowrishankar''|| {{svaraC|S|R2|G2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Hamsadeepika''|| {{svaraC|S|R2|G2|M1|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Hrudkamali''|| {{svaraC|S|R2|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M1|R2|S|abbr=no}}
+|-
+|''Lavanthika''|| {{svaraC|S|R2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|R2|S|abbr=no}}
+|-
+|''Sundaramanohari''|| {{svaraC|S|R2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Patdeep|Patdīp]] {Hindustani}''
+|{{svaraC|N3|S|G2|M1|P|N3|S'|abbr=no}}
+|{{svaraC|S'|N3|D2|P|M1|P|G2|M1|G2|R2|S|abbr=no}}
+|-
+|''[[Thyagaraja Mangalam]]'' 
+|{{svaraC|S|G2|M1|P|N3|S'|abbr=no}}
+|{{svaraC|S'|N3|D2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Vasantashree (Amba Manohari)''|| {{svaraC|S|R2|G2|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M1|G2|R2|S|abbr=no}}
+|-
+|''Velāvali''|| {{svaraC|S|G2|M1|D2|N3|S|abbr=no}}<br />{{svaraC|S|R2|M1|P|D2|S|abbr=no}}<br />{{svaraC|S|R2|G2|M1|P|D2|S|abbr=no}}<br />{{svaraC|S|G2|R2|M1|P|D2|S|abbr=no}}<br />{{svaraC|S|R2|G2|S|R2|M1|P|D2|S|abbr=no}}<br />{{svaraC|S|R2|M1|P|D2|N3|S|abbr=no}}|| {{svaraC|S|N3|D2|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N3|D2|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N3|D2|P|M1|G2|S|abbr=no}}<br />{{svaraC|S|N3|D2|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N3|D2|P|M1|G2|R2|S|abbr=no}}<br />{{svaraC|S|N3|D2|P|M1|G2|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Varunapriya"
+|'''24 [[Varunapriya|Varuṇapriyā]]'''|| {{svaraC|S|R2|G2|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G2|R2|S|abbr=no}}
+|-
+|'''Veeravasantham'''|| {{svaraC|S|R2|G2|M1|P|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G2|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Mararanjani"
+|'''25 [[Mararanjani|Māraranjani]]'''|| {{svaraC|S|R2|G3|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|'''Sharāvathi'''|| {{svaraC|S|R2|G3|M1|P|D1|N1|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Devasalaga''|| {{svaraC|S|G3|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Kesari''|| {{svaraC|S|R2|G3|M1|P|M1|D1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|N1|D1|P|M1|G2|R2|S|abbr=no}}
+|-
+|Gayakamandini 
+|{{svaraC|S|R2|G3|M1|P|D1|S|abbr=no}}
+|{{svaraC|S|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Rājathilaka''|| {{svaraC|S|R2|G3|M1|P|S'|abbr=no}} || {{svaraC|S'|P|M1|G3|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Charukesi"
+|'''26 [[Charukesi|Chārukesi]]'''|| {{svaraC|S|R2|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|'''Tarangini'''|| {{svaraC|S|R2|G3|P|D1|N2|D1|S|abbr=no}}<br />{{svaraC|S|R2|G3|P|D1|N2|D1|P|D1|S|abbr=no}}  || {{svaraC|S|D1|P|M1|G3|R2|S|abbr=no}}<br />{{svaraC|S|D1|P|G3|R2|S|G3|M1|R2|G3|S|abbr=no}}
+|-
+|''Chirswaroopi''|| {{svaraC|S|R2|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Māravi''|| {{svaraC|S|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Poorvadhanyāsi''|| {{svaraC|S|M1|G3|M1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Shiva Manohari''|| {{svaraC|S|M1|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Shukrajyothi''|| {{svaraC|S|R2|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|D1|M1|G3|R2|S|abbr=no}}
+|-
+|''Ushābharanam''|| {{svaraC|S|G3|M1|D1|P|M1|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R2|G3|M1|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Sarasangi"
+|'''27 [[Sarasangi|Sarasāngi]]'''|| {{svaraC|S|R2|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|'''Sowrasenā'''|| {{svaraC|S|R2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Haripriya''|| {{svaraC|S|R1|G3|M1|P|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|S|abbr=no}}
+|-
+|''Srirangapriya''
+|{{svaraC|S|R2|G3|M1|P|D1|S'|abbr=no}}
+|{{svaraC|S'|D1|P|M1|G3|R2|S| abbr=no}}
+|-
+|''Kamalā Manohari''|| {{svaraC|S|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|S|abbr=no}}
+|-
+|''Madhulika''|| {{svaraC|S|R2|G3|M1|N3|S'|abbr=no}} || {{svaraC|S'|N3|M1|G3|R2|S|abbr=no}}
+|-
+|''Nalinakānthi''|| {{svaraC|S|G3|R2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Neelamani''|| {{svaraC|S|R2|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|R2|S|abbr=no}}
+|-
+|''Salavi''|| {{svaraC|S|G3|R2|G3|M1|P|D1|N3|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Sarasānana''|| {{svaraC|S|R2|G3|M1|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M1|G3|R2|S|abbr=no}}
+|-
+|''Saraseeruha''|| {{svaraC|S|R2|G3|M1|D1|N1|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|M1|G3|R2|abbr=no}}
+|-
+|''Simhavāhini''|| {{svaraC|S|G2|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Surasena''|| {{svaraC|S|R2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|S|R2|S|abbr=no}}
+|-
+|''Sutradhāri''|| (Also 20) {{svaraC|S|R2|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M1|R2|S|abbr=no}}
+|-
+|''Vasanthi''|| {{svaraC|S|R2|G3|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|G3|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Harikambhoji"
+|'''28 [[Harikambhoji|Harikāmbhōji]]'''|| {{svaraC|S|R2|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|'''Harikedāragowla'''|| {{svaraC|S|R2|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Ambhojini''|| {{svaraC|S|R2|G3|M1|D2|S'|abbr=no}} || {{svaraC|S'|D2|M1|G3|R2|S|abbr=no}}
+|-
+|''Andhali''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|G3|M1|R2|S|abbr=no}}
+|-
+|''Aparoopam''|| {{svaraC|S|R2|G3|M1|P|N2|D2|N2|S'|abbr=no}} || {{svaraC|S'|D2|M1|G3|R2|G3|S|abbr=no}}
+|-
+|''Bālahamsa''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R2|M1|G3|S|abbr=no}}
+|-
+|''[[Bahudari|Bahudāri]]''|| {{svaraC|S|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G3|S|abbr=no}}
+|-
+|''Chāyalagakhamās''|| {{svaraC|S|M1|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Chāyatārangini''|| {{svaraC|S|R2|M1|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Chandrahasitham''|| {{svaraC|S|R2|G3|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|R2|S|abbr=no}}
+|-
+|''Dasharatipriya''|| {{svaraC|S|M1|G3|M1|P|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|M1|R2|S|abbr=no}}
+|-
+|''Dayaranjani''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|S|abbr=no}}
+|-
+|''[[Desh (raga)|Desh]] {Hindustani}''|| {{svaraC|S|R2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|N3|abbr=no}})
+|-
+|''Deshākshi''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Deshkār {Hindustani}''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Dwaithachintāmani''|| {{svaraC|S|G3|M1|D2|N2|S|abbr=no}}<br />{{svaraC|S|G3|M1|D2|N2|S|abbr=no}}  || {{svaraC|S|N2|D2|M1|P|G3|R2|S|abbr=no}}<br />{{svaraC|S|N2|D2|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Jaijaivanti|Dwijāvanthi /Jujāvanthi]]''|| {{svaraC|S|R2|M1|G3|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|M1|R2|G2|R2|S|N2|D2|N2|S|abbr=no}} (''Anya swara*'' : {{svaraC|G2|N3|abbr=no}})
+|-
+|''Eeshamanohari''|| {{svaraC|S|R2|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R2|M1|G3|R2|S|abbr=no}}
+|-
+|''Eeshaivaridhi''|| {{svaraC|S|R2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|S|abbr=no}}
+|-
+|''Gāndhāralola''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Gara (raga)|Gāra]] {Hindustani}''|| {{svaraC|S|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|G2|R2|S|N3|S|N2|D2|S|abbr=no}} (''Anya swara*'' : {{svaraC|G2|D1|N3|abbr=no}})
+|-
+|''Gavati {Hindustani}''|| {{svaraC|S|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|D2|M1|P|G3|M1|R2|N2|S|abbr=no}}
+|-
+|''Guhamanohari''|| {{svaraC|S|R2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|R2|S|abbr=no}}
+|-
+|''Guharanjani''|| {{svaraC|S|R2|S|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G3|S|abbr=no}}
+|-
+|''Hamsaroopini''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|S|abbr=no}}
+|-
+|''Haridasapriya''|| {{svaraC|S|P|M1|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Harikedāram''|| {{svaraC|S|R2|G3|M1|P|D2|N2|S|N2|S'|abbr=no}} || {{svaraC|S'|N2|S|D2|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Harini''|| {{svaraC|S|G3|M1|P|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|S|N2|D2|P|M1|G3|M1|G2|R2|S|abbr=no}}
+|-
+|''Harithapriya''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|G3|R2|S|abbr=no}}
+|-
+|''Hemasāranga''|| {{svaraC|S|R2|G3|M1|P|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|P|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Jaijaiwanti]] {Hindustani}''|| {{svaraC|S|D2|N2|R2|S|R2|G3|M1|P|M1|G3|M1|G3|R2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|D2|M1|G3|M1|R2|G2|R2|S|N3|S|abbr=no}} (''Anya swara*'' : {{svaraC|G2|N3|abbr=no}})
+|-
+|''Jaithshree''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Jana Sammodhini''|| {{svaraC|S|R2|G3|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Jayarāma''|| {{svaraC|S|R2|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|S|abbr=no}}
+|-
+|''[[Jhinjhoti|Jhinjoti]] {Hindustani}''|| {{svaraC|D2|S|R2|G3|M1|P|D2|N2|abbr=no}} || {{svaraC|D2|P|M1|G3|R2|S|N2|D2|P|D2|S|abbr=no}}
+|-
+|''Jujahuli''|| {{svaraC|S|M1|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|S|abbr=no}}
+|-
+|''[[Kambhoji|Kāmbhoji]]''|| {{svaraC|S|R2|G3|M1|P|D2|S'|abbr=no}} || {{svaraC|S|N2|D2|P|M1|G3|R2|S|N3|P|D2|S'|abbr=no}} (''Anya swara*'' : {{svaraC|N3|abbr=no}})
+|-
+|''Kāpi Nārāyani''|| {{svaraC|S|R2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Khamaj|Khamāj]] {Hindustani}''|| {{svaraC|S|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|N3|abbr=no}})
+|-
+|''[[Khamas (raga)|Kamās]]''|| {{svaraC|S|M1|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|N3|abbr=no}})
+|-
+|''Karnātaka Behāg''|| {{svaraC|S|R2|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|D2|M1|G3|R2|S|abbr=no}}
+|-
+|''Karnātaka Devagāndhāri''|| {{svaraC|S|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Karnātaka Khamās''|| {{svaraC|S|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|S|abbr=no}}
+|-
+|''[[Kedaragaula|Kedāragowla]]''|| {{svaraC|S|R2|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Keshavapriyā''|| {{svaraC|S|R2|S|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|S|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Kokiladhwani''|| {{svaraC|S|R2|G3|M1|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Kokilavarāli''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|P|M1|G3|R2|G3|S|abbr=no}}
+|-
+|''Kunthalavarāli''|| {{svaraC|S|M1|P|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|S|abbr=no}}
+|-
+|''Mālavi''|| {{svaraC|S|R2|G3|M1|P|N2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G3|M1|R2|S|abbr=no}}
+|-
+|''Madhurakokila''|| {{svaraC|S|R2|G3|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|G3|R2|S|abbr=no}}
+|-
+|''[[Mahati|Mahathi]]''|| {{svaraC|S|G3|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|G3|S|abbr=no}}
+|-
+|''Mahuri''|| {{svaraC|S|R2|M1|G3|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|R2|G3|R2|S|abbr=no}}
+|-
+|''Manjupriya''|| {{svaraC|S|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Manoharam''|| {{svaraC|S|R2|G3|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|S|abbr=no}}
+|-
+|''Mattakokila''|| {{svaraC|S|R2|P|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|D2|N2|D2|P|R2|S|abbr=no}}
+|-
+|''Meghana''|| {{svaraC|S|M1|G3|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|S|abbr=no}}
+|-
+|''[[Mohanam]]''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Nādavalli''|| {{svaraC|S|R2|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|R2|S|abbr=no}}
+|-
+|''[[Nagasvaravali|Nāgaswarāvali]]''|| {{svaraC|S|G3|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G3|S|abbr=no}}
+|-
+|''Nārāyanagowla''|| {{svaraC|S|R2|M1|P|N2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|G3|S|abbr=no}}
+|-
+|''Nārāyani''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R2|S|abbr=no}}
+|-
+|''[[Nattakurinji|Nāttai Kurinji]]''|| {{svaraC|S|R2|G3|M1|N2|D2|N2|P|D2|N2|S|abbr=no}}<br />{{svaraC|S|R2|G3|M1|D2|N2|S|abbr=no}}<br />{{svaraC|S|R2|G3|M1|N2|D2|N2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|M1|P|G3|R2|S|abbr=no}}<br />{{svaraC|S|N2|D2|M1|G3|S|abbr=no}}<br />{{svaraC|S|N2|D2|M1|G3|M1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Nāttai Nārāyani''|| {{svaraC|S|R2|G3|M1|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|M1|R2|S|abbr=no}}
+|-
+|''Nandhkowns {Hindustani}''|| {{svaraC|S|G3|M1|P|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|S|G3|S|abbr=no}}
+|-
+|''Narani''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R2|S|abbr=no}}
+|-
+|''Navarasa Kalānidhi''|| {{svaraC|S|R2|M1|P|S|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Navarasa kannada]]''|| {{svaraC|S|G3|M1|P|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|R2|S|abbr=no}}
+|-
+|''Neela''|| {{svaraC|S|G3|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|S|abbr=no}}
+|-
+|''Pārsi''|| {{svaraC|S|R2|G3|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Parameshwarapriyā''|| {{svaraC|S|R2|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|S|abbr=no}}
+|-
+|''Pashupathipriyā''|| {{svaraC|S|R2|M1|P|M1|D2|S'|abbr=no}} || {{svaraC|S'|D2|M1|P|R2|M1|S|abbr=no}}
+|-
+|''Poornakāmbhoji''|| {{svaraC|S|R2|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Pratāpa Nāttai''|| {{svaraC|S|R2|G3|M1|D2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|S|abbr=no}}
+|-
+|''Pratāpavarāli''|| {{svaraC|S|R2|M1|P|D2|P|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Pravalajyoti''|| {{svaraC|S|R2|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|S|abbr=no}}
+|-
+|''Rāgapanjaramu''|| {{svaraC|S|R2|M1|P|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|R2|S|abbr=no}}
+|-
+|''Rāgavinodini''|| {{svaraC|S|R2|G3|M1|D2|S'|abbr=no}} || {{svaraC|S'|D2|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Rageshree|Rāgeshree]]'' || {{svaraC|S|G3|M1|D2|N2|S|abbr=no}}<br />{{svaraC|S|G3|M1|D2|N2|S|abbr=no}}<br />{{svaraC|S|G3|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|R2|S|abbr=no}}<br />{{svaraC|S|N2|D2|M1|G3|R2|S|abbr=no}}<br />{{svaraC|S|N2|D2|N3|D2|M1|G3|R2|S|abbr=no}} (''Anya swara*{rarely}'' : {{svaraC|N3|abbr=no}})
+|-
+|''Ravi Chandrikā''|| {{svaraC|S|R2|G3|M1|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|R2|S|abbr=no}}
+|-
+|''Sāvithri''|| {{svaraC|S|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G3|S|abbr=no}}
+|-
+|''[[Sahana (raga)|Sahāna]]''|| {{svaraC|S|R2|G3|M1|P|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|S|D2|N2|D2|P|M1|G3|M1|R2|G3|R2|S|abbr=no}} 
+|-
+|''Saraswathi Manohari''|| {{svaraC|S|R2|G3|M1|D2|S'|abbr=no}} || {{svaraC|S'|D2|N2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Sathvamanjari''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|N2|D2|M1|R2|S|abbr=no}}
+|-
+|''Shakunthala''|| {{svaraC|S|R2|G3|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|S|abbr=no}}
+|-
+|''Shankaraharigowla''|| {{svaraC|S|R2|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Shenchukāmbhoji''|| {{svaraC|S|P|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Chenjurutti''|| {{svaraC|D2|S|R2|G3|M1|P|D2|N2|abbr=no}} || {{svaraC|N2|D2|P|M1|G3|R2|S|N2|D2|P|D2|S|abbr=no}} (''Anya swara*'' : {{svaraC|G2|abbr=no}})
+|-
+|''Shiva Kāmbhoji''|| {{svaraC|S|R2|G3|M1|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Surutti]]''|| {{svaraC|S|R2|M1|P|N2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|P|M1|R2|S|abbr=no}}
+|-
+|''Shyāmā''|| {{svaraC|S|R2|M1|P|D2|S|abbr=no}}<br />{{svaraC|S|R2|G3|S|R2|P|M1|D2|D2|S|abbr=no}}  || {{svaraC|S|D2|P|M1|G3|R2|S|abbr=no}}<br />{{svaraC|S|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Simhavikrama''|| {{svaraC|S|R2|G3|R2|M1|P|D2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Sindhu Kannada''|| {{svaraC|S|M1|G3|M1|R2|G3|M1|P|D2|P|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Sindhu Surutti''|| {{svaraC|S|R2|M1|P|N2|S|S|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R2|M1|G3|R2|S|abbr=no}}
+|-
+|''Suddha Khamās''|| {{svaraC|S|M1|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Suddha Varāli''|| {{svaraC|S|R2|G3|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G3|S|abbr=no}}
+|-
+|''Suddha''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R2|S|abbr=no}}
+|-
+|''Suddhatarangini''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Sumanapriyā''|| {{svaraC|S|R2|G3|M1|P|D2|P|S'|abbr=no}} || {{svaraC|S'|D2|S|P|M1|G3|R2|S|abbr=no}}
+|-
+|''{{not a typo|Suposhini}}''|| {{svaraC|S|R2|S|M1|P|N2|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R2|M1|S|abbr=no}}
+|-
+|''Suvarnakriyā''|| {{svaraC|S|R2|G3|P|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|P|G3|R2|S|abbr=no}}
+|-
+|''Swarāvali''|| {{svaraC|S|M1|G3|M1|P|N2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Swaravedi''|| {{svaraC|S|M1|G3|M1|P|N2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|S|abbr=no}}
+|-
+|''Tilakavathi''|| {{svaraC|S|R2|G3|M1|P|D2|P|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R2|S|abbr=no}}
+|-
+|''[[Tilang]] {Hindustani}''|| {{svaraC|S|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|G3|S|abbr=no}} (''Anya swara*'' : {{svaraC|N3|abbr=no}})
+|-
+|''Umābharanam''|| {{svaraC|S|R2|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R2|G3|M1|R2|S|abbr=no}}
+|-
+|''Vaishnavi''|| {{svaraC|S|R2|G3|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Veenavadini''|| {{svaraC|S|R2|G3|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|G3|R2|S|abbr=no}}
+|-
+|''Vivardhani''|| {{svaraC|S|R2|M1|P|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Yadukulakamboji|Yadukula Kāmbhoji]]''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Dheerasankarabharanam"
+|'''29 [[Dheerasankarabharanam|Dhīraśankarābharaṇam]]'''|| {{svaraC|S|R2|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Ānandharoopa''|| {{svaraC|S|R2|G3|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|G3|R2|S|abbr=no}}
+|-
+|''[[Arabhi|Ārabhi]]''|| {{svaraC|S|R2|M1|P|D2|S|abbr=no}}<br />{{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}<br />{{svaraC|S|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Atana|Atāna]]''
+|{{svaraC|S|R2|M1|P|N2|S'|abbr=no}}
+|{{svaraC|S'|N2|D2|P|M1|G2|M1|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|G2|N2|abbr=no}})
+|-
+|''Bangāla''|| {{svaraC|S|R2|G3|M1|P|M1|R2|P|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|R2|G3|M1|R2|S|abbr=no}}
+|-
+|''Begada''|| {{svaraC|S|G3|R2|G3|M1|P|D2|P|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Behāg (Carnatic adaptation)''|| {{svaraC|S|G3|M1|P|N3|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|M2|N2|abbr=no}})
+|-
+|''Behāg Deshikam''|| {{svaraC|S|R2|G3|M1|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Bihag]]'' {Original/Hindustani}
+|{{svaraC|N3|S|G3|M1|P|N3|S'|abbr=no}}
+|{{svaraC|S'|N3|D2|P|M2|P|G3|M1|G3|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|M2|abbr=no}})
+|-
+|''[[Bilahari]]''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|N2|abbr=no}})
+|-
+|''Buddhamanohari''|| {{svaraC|S|R2|G3|M1|S|P|S'|abbr=no}} || {{svaraC|S'|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Buddharanjani''|| {{svaraC|S|R2|G3|M1|P|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|M1|R2|S|abbr=no}}
+|-
+|''Chāyā''|| {{svaraC|S|P|M1|P|D2|P|N3|R2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|P|D2|P|G3|M1|R2|S|abbr=no}}
+|-
+|''Chāyashankarābharanam''|| {{svaraC|S|R1|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R1|S|abbr=no}}
+|-
+|''[[Devagandhari#In Carnatic music|Devagāndhāri]]''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|N2|abbr=no}})
+|-
+|''Dharmalakhi''|| {{svaraC|S|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|S|abbr=no}}
+|-
+|''Dhurvanki''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Durga (raga)|Durga]] {Hindustani}''|| {{svaraC|S|R2|M1|D2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R2|S|abbr=no}}
+|-
+|''Gajagowri''|| {{svaraC|S|R2|M1|G3|M1|N3|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Garudadhvani]]''|| {{svaraC|S|R2|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Gowdamalhār''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Hamsadhwani]]''|| {{svaraC|S|R2|G3|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|G3|R2|S|abbr=no}}
+|-
+|''Hamsavinodhini''|| {{svaraC|S|R2|G3|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M1|G3|R2|S|abbr=no}}
+|-
+|''Hemant'' {Hindustani}|| {{svaraC|N3|S|D2|N3|S|G3|G3|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''[[Jana Ranjani]]''|| {{svaraC|S|R2|G3|M1|P|D2|P|N3|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R2|S|abbr=no}}
+|-
+|''Julavu''|| {{svaraC|P|D2|N3|S|R2|G3|M1|P|abbr=no}} || {{svaraC|M1|G3|R2|S|N3|D2|P|M1|abbr=no}}
+|-
+|''Kamaripriyā''|| {{svaraC|S|G3|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M1|M1|G3|M1|R2|S|abbr=no}}
+|-
+|''Kannada''|| {{svaraC|S|R2|G3|M1|P|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|S|D2|P|M1|G3|M1|G3|M1|R2|S|abbr=no}}
+|-
+|''[[Kathanakuthuhalam]]''|| {{svaraC|S|R2|M1|D2|N3|G3|P|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Kaushikadhwani / Bhinna shadaj {Hindustani}''|| {{svaraC|S|G3|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M1|G3|S|abbr=no}}
+|-
+|''[[Kedaram]]''|| {{svaraC|S|M1|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Kokilabhāshani''|| {{svaraC|S|R2|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|M1|R2|S|abbr=no}}
+|-
+|''Kolahalam''|| {{svaraC|S|P|M1|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Kurinji''|| {{svaraC|S|N3|S|R2|G3|M1|P|D2|abbr=no}} || {{svaraC|D2|P|M1|G3|R2|S|N3|S|abbr=no}}
+|-
+|''Kusumavichithra''|| {{svaraC|S|G3|R2|G3|M1|P|N3|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|D2|N3|D2|M1|G3|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Kutuhala''|| {{svaraC|S|R2|M1|N3|D2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Lahari''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Mānd {Hindustani}''|| {{svaraC|S|G3|M1|D2|N3|S'|abbr=no}}||{{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|R1|G2|M2|D1|N2|abbr=no}})
+|-
+|''Māyadravila''|| {{svaraC|S|R2|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|P|G3|M1|R2|S|abbr=no}}
+|-
+|''Mohanadhwani''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|P|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Nāgabhooshani''|| {{svaraC|S|R2|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R2|S|abbr=no}}
+|-
+|''Nāgadhwani''|| {{svaraC|S|R2|S|M1|G3|M1|P|N3|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|N3|P|M1|G3|S|abbr=no}}
+|-
+|''Nārāyanadeshākshi''|| {{svaraC|S|R2|M1|G3|R2|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Navaroj''|| {{svaraC|P|D2|N3|S|R2|G3|M1|P|abbr=no}} || {{svaraC|M1|G1|R3|S|N2|D2|P|abbr=no}} (''Anya swara*'' : {{svaraC|N2|abbr=no}})
+|-
+|''Neelāmbari''|| {{svaraC|S|R2|G3|M1|P|D2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|R2|G3|S|abbr=no}} (''Anya swara*'' : {{svaraC|N2|abbr=no}})
+|-
+|''[[Niroshta]]''|| {{svaraC|S|R2|G3|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|G3|R2|S|abbr=no}}
+|-
+|''Pahādi {Hindustani}''|| {{svaraC|S|R2|G3|P|D2|P|D2|S|abbr=no}} || {{svaraC|N3|D2|P|G3|M1|G3|R2|S|N3|D2|P|D2|S|abbr=no}} (''Anya swara*'' : {{svaraC|R1|G2|M2|D1|N2|abbr=no}})
+|-
+|''[[Poornachandrika]]''|| {{svaraC|S|R2|G3|M1|P|D2|P|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|R2|G3|M1|R2|S|abbr=no}}
+|-
+|''Poornagowla''|| {{svaraC|S|R2|G3|M1|P|N3|D2|N3|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|N3|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Poorvagowla''|| {{svaraC|S|G3|R2|G3|S|R2|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Rathnabhooshani''|| {{svaraC|S|R2|G3|M1|P|S'|abbr=no}} || {{svaraC|S'|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Reetuvilāsa''|| {{svaraC|S|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|S|abbr=no}}
+|-
+|''Sāranga Mallār''|| {{svaraC|S|R2|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|R2|S|N3|S|abbr=no}}
+|-
+|''Shankara''|| {{svaraC|S|G3|P|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|G3|P|R2|G3|S|abbr=no}}
+|-
+|''[[Shankara (raga)|Shankara]]'' {Hindustani}|| {{svaraC|S|G3|P|N3|D2|S'|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|G3|P|G3|R2|S|abbr=no}}
+|-
+|''Shankaraharigowla''|| {{svaraC|S|R2|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Shankaramohana''|| {{svaraC|S|R2|G3|P|N3|D2|S|N3|abbr=no}} || {{svaraC|S|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Shankari''|| {{svaraC|S|G3|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|G3|S|abbr=no}}
+|-
+|''Sindhu''|| {{svaraC|S|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|M1|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Sindhu Mandāri''|| {{svaraC|S|R2|G3|M1|P|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|G3|M1|P|M1|R2|S|abbr=no}}
+|-
+|''Suddha Mālavi''|| {{svaraC|S|R2|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|D2|N3|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Suddha Sārang''|| {{svaraC|S|R2|G3|M1|P|D2|N3|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R2|G3|R2|S|abbr=no}}
+|-
+|''[[Shuddha Saveri|Suddha Sāveri]]''|| {{svaraC|S|R2|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R2|S|abbr=no}}
+|-
+|''Suddha Vasantha''|| {{svaraC|S|R2|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|N3|P|M1|G3|S|abbr=no}}
+|-
+|''Suranandini''|| {{svaraC|S|R2|G3|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Suraranjani''|| {{svaraC|S|G3|P|R2|M1|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Tāndavam''|| {{svaraC|S|G3|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|G3|S|abbr=no}}
+|-
+|''Vallabhi''|| {{svaraC|S|R2|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|N3|D2|P|M1|P|G3|M1|R2|S|abbr=no}}
+|-
+|''Vasanthamalai''|| {{svaraC|S|R2|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|D2|P|M1|R2|S|abbr=no}}
+|-
+|''Vedhāndhagamana''|| {{svaraC|S|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|S|abbr=no}}
+|-
+|''Veerapratāpa''|| {{svaraC|S|G3|M1|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R2|S|abbr=no}}
+|-
+|''Vilāsini''|| {{svaraC|S|R2|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Naganandini"
+|'''30 [[Naganandini|Nāganandini]]'''|| {{svaraC|S|R2|G3|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G3|R2|S|abbr=no}}
+|-
+|'''Nāgabharanam'''|| {{svaraC|S|R2|G2|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G2|R2|S|abbr=no}}
+|-
+|''Gambheeravani''|| {{svaraC|S|G3|P|M1|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|R2|G3|R2|S|abbr=no}}
+|-
+|''Lalithagāndharva''|| {{svaraC|S|R2|G3|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|G3|R2|S|abbr=no}}
+|-
+|''Sāmanta''|| {{svaraC|S|R2|G3|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|N3|D3|P|M1|G3|R2|S|abbr=no}}
+|-
+|-style="background-color:#ebebeb;" id="Yagapriya"
+|'''31 [[Yagapriya|Yāgapriyā]]'''|| {{svaraC|S|R3|G3|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G3|R3|S|abbr=no}}
+|-
+|'''Kalāvathi'''|| {{svaraC|S|R3|G3|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G3|R3|S|abbr=no}}
+|-
+|''Damarugapriya''|| {{svaraC|S|R3|G3|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|G3|R3|S|abbr=no}}
+|-
+|''Desharanjani''|| {{svaraC|S|R3|M1|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|R3|S|abbr=no}}
+|-
+|''Deshyathodi''|| {{svaraC|S|G2|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Kalāhamsa''|| {{svaraC|S|R3|G3|M1|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G3|R3|S|abbr=no}}
+|-
+|''Niranjani''|| {{svaraC|S|R3|M1|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|M1|R3|S|abbr=no}}
+|-
+|''Prathāpahamsi''|| {{svaraC|S|G3|M1|P|N1|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G3|M1|R3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Ragavardhini"
+|'''32 [[Ragavardhini|Rāgavardhini]]'''|| {{svaraC|S|R3|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R3|S|abbr=no}}
+|-
+|'''Rāgachoodāmani'''|| {{svaraC|S|R3|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M1|R3|G3|S|abbr=no}}
+|-
+|''Amudagāndhāri''|| {{svaraC|S|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R3|S|abbr=no}}
+|-
+|''Dhowmya''|| {{svaraC|S|R3|G3|M1|P|D1|N2|P|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R3|S|abbr=no}}
+|-
+|''Hindoladarbār''|| {{svaraC|S|G3|M1|P|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|R3|S|abbr=no}}
+|-
+|''Ramyā''|| {{svaraC|S|R3|G3|M1|P|D1|N2|P|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G3|R3|S|abbr=no}}
+|-
+|''Sāmantajingala''|| {{svaraC|S|R3|G3|M1|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|D1|N2|P|M1|G3|M1|R3|G3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Gangeyabhushani"
+|'''33 [[Gangeyabhushani|Gāngeyabhuśani]]'''|| {{svaraC|S|R3|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R3|S|abbr=no}}
+|-
+|'''Gangātarangini'''|| {{svaraC|S|R3|G3|M1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|M1|G3|M1|R3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Vagadheeswari"
+|'''34 [[Vagadheeswari|Vāgadhīśvari]]'''|| {{svaraC|S|R3|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|G3|R3|S|abbr=no}}
+|-
+|'''Amarasindhu'''|| {{svaraC|S|R3|G3|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|G3|R3|S|abbr=no}}
+|-
+|'''Bhogachāyā Nāttai'''|| {{svaraC|S|R3|G3|R3|G3|M1|P|N2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|S|N2|P|M1|M1|R3|S|abbr=no}}
+|-
+|''Bhānumanjari''|| {{svaraC|S|R3|G3|M1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M1|R3|G3|R3|S|abbr=no}}
+|-
+|''Chāyanāttai''|| {{svaraC|S|R3|G3|M1|P|M1|P|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|R3|S|abbr=no}}
+|-
+|''Maghathi''|| {{svaraC|S|R3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M1|R3|S|abbr=no}}
+|-
+|''Drāvida Kalāvati''|| {{svaraC|S|R3|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|G3|R3|S|abbr=no}}
+|-
+|''Mohanāngi''|| {{svaraC|S|R3|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G3|P|D2|P|G3|R3|S|abbr=no}}
+|-
+|''Murali''|| {{svaraC|S|R3|G3|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|G3|R3|S|abbr=no}}
+|-
+|''Sharadabharana''|| {{svaraC|S|M1|G3|M1|P|M1|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M1|P|M1|R3|S|abbr=no}}
+|-
+|''Vikhavathi''|| {{svaraC|S|R3|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G3|R3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Shulini"
+|'''35 [[Shulini|Śūlini]]'''|| {{svaraC|S|R3|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R3|S|abbr=no}}
+|-
+|'''Shailadeshākshhi'''|| {{svaraC|S|M1|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|S|N3|P|M1|G3|S|abbr=no}}
+|-
+|''Suryavasantham''|| {{svaraC|S|M1|G3|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M1|G3|R3|S|abbr=no}}
+|-
+|''Dheerahindolam''|| {{svaraC|S|G3|M1|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M1|G3|R3|S|abbr=no}}
+|-
+|''Ganavaridhi''|| {{svaraC|S|M1|R3|G3|M1|P|D2|N2|S'|abbr=no}}<br />{{svaraC|S|M1|R3|G3|M1|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|D2|N2|P|M1|R3|S|abbr=no}}<br />{{svaraC|S'|D2|N3|P|M1|R3|S|abbr=no}}
+|-
+|''Shokavarāli''|| {{svaraC|S|G3|D2|N3|abbr=no}} || {{svaraC|D2|P|M1|G3|R3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Chalanata"
+|'''36 [[Chalanata|Chalanāṭṭai]]'''|| {{svaraC|S|R3|G3|M1|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G3|R3|S|abbr=no}}
+|-
+|''Devanāttai''|| {{svaraC|S|G3|M1|P|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|G3|R3|S|abbr=no}}
+|-
+|''[[Gambhiranata|Gambheeranāṭṭai]]''|| {{svaraC|S|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|S|abbr=no}}
+|-
+|''Ganaranjani''|| {{svaraC|S|R3|G3|M1|P|M1|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M1|P|M1|R3|S|abbr=no}}
+|-
+|''[[Nata (raga)|Nāṭṭai]]''|| {{svaraC|S|R3|G3|M1|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M1|G3|R3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Salagam"
+|'''37 [[Salagam|Sālagam]]'''|| {{svaraC|S|R1|G1|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G1|R1|S|abbr=no}}
+|-
+|'''Sowgandhini'''|| {{svaraC|S|R1|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G1|R1|S|abbr=no}}
+|-
+|''Bhogasāveri''|| {{svaraC|S|R1|M2|D1|N1|abbr=no}} || {{svaraC|D1|P|M2|G1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Jalarnavam"
+|'''38 [[Jalarnavam|Jalārnavam]]'''|| {{svaraC|S|R1|G1|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G1|R1|S|abbr=no}}
+|-
+|'''Jaganmohinam'''|| {{svaraC|S|R1|G1|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G1|R1|S|abbr=no}}
+|-
+|''Jaganmohana''|| {{svaraC|S|R1|G1|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Jhalavarali"
+|'''39 [[Jhalavarali|Jhālavarāḷi]]'''|| {{svaraC|S|R1|G1|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G1|R1|S|abbr=no}}
+|-
+|'''Dhālivarāli'''|| {{svaraC|S|R1|G1|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G1|R1|S|abbr=no}}
+|-
+|''Bhoopālapanchamam''|| {{svaraC|S|G1|R1|G1|P|M2|D1|S'|abbr=no}} || {{svaraC|S'|P|D1|M2|G1|R1|S|abbr=no}}
+|-
+|''Godari''|| {{svaraC|S|R1|G1|R1|M2|G1|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|R1|S|abbr=no}}
+|-
+|''Jālasugandhi''|| {{svaraC|S|R1|G1|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M2|G1|R1|S|abbr=no}}
+|-
+|''Janāvali''|| {{svaraC|S|G2|R1|G2|M2|P|D1|N3|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Karunāmritavarshini''|| {{svaraC|S|R1|G1|M2|P|D1|N3|P|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G1|R1|S|abbr=no}}
+|-
+|''Kokilapanchamam''|| {{svaraC|S|G1|R1|G1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G1|R1|S|abbr=no}}
+|-
+|''[[Varali|Varāli]]''|| {{svaraC|S|G1|R1|G1|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Navaneetam"
+|'''40 [[Navaneetam|Navanītam]]'''|| {{svaraC|S|R1|G1|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G1|R1|S|abbr=no}}
+|-
+|'''Nabhomani'''|| {{svaraC|S|G1|R1|G1|M2|P|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Pavani "
+|'''41 [[Pavani (ragam)|Pāvani]]'''|| {{svaraC|S|R1|G1|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G1|R1|S|abbr=no}}
+|-
+|'''Kumbhini'''|| {{svaraC|S|G1|R1|G1|M2|P|N3|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G1|R1|S|abbr=no}}
+|-
+|''Chandrajyothi''|| {{svaraC|S|R1|G1|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|G1|R1|S|abbr=no}}
+|-
+|''Prabhāvali''|| {{svaraC|S|R1|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|P|M2|R1|G1|R1|S|abbr=no}}
+|-
+|''Poornalalitha''|| {{svaraC|S|R1|M2|G1|R1|M2|P|N3|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G1|R1|S|abbr=no}}
+|-
+|''Poornapanchamam'' || (See 15, 16) {{svaraC|S|R1|G1|M2|P|D2|abbr=no}} || {{svaraC|D2|P|M2|G1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Raghupriya"
+|'''42 [[Raghupriya|Raghupriyā]]'''|| {{svaraC|S|R1|G1|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G1|R1|S|abbr=no}}
+|-
+|'''Ravi Kriyā'''|| {{svaraC|S|G1|R1|G1|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G1|R1|S|abbr=no}}
+|-
+|''Gāndharva''|| {{svaraC|M2|P|D3|N3|S|R1|G1|abbr=no}} || {{svaraC|R1|S|N3|P|M2|P|abbr=no}}
+|-
+|''Gomathi''|| {{svaraC|S|R1|G1|M2|P|D3|N3|abbr=no}} || {{svaraC|P|M2|G1|R1|S|abbr=no}}
+|-
+|''Raghuleela''|| {{svaraC|S|M2|R1|P|M2|G1|M2|P|M2|R1|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|N3|P|M2|G1|M2|R1|M2|G1|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Gavambhodi"
+|'''43 [[Gavambhodi|Ghavāmbhodi]]'''|| {{svaraC|S|R1|G2|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|'''Geervāni'''|| {{svaraC|S|R1|G2|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Kanchanabowli''|| {{svaraC|S|G2|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M1|G2|R1|S|abbr=no}}
+|-
+|''Mahathi''|| {{svaraC|S|G2|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G2|S|abbr=no}}
+|-
+|''Mechagāndhāri''|| {{svaraC|S|R3|G3|M1|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M1|G3|M1|R3|S|abbr=no}}
+|-
+|''Suvarnadeepakam''|| {{svaraC|S|R1|G2|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Vijayabhooshāvali''|| {{svaraC|S|R1|G3|M2|P|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G3|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Bhavapriya"
+|'''44 [[Bhavapriya|Bhavapriyā]]'''|| {{svaraC|S|R1|G2|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|'''Bhavāni''' || {{svaraC|S|R1|G2|M2|D1|N2|S|abbr=no}} || {{svaraC|S|N2|D1|M2|G2|R1|S|abbr=no}}
+|-
+|'''Bhavāni'''|| {{svaraC|S|R1|G2|M2|P|D1|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Kanchanāvathi''|| {{svaraC|S|R1|G2|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|G2|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Shubhapantuvarali"
+|'''45 [[Shubhapantuvarali|Śubhapantuvarāḷi]]'''|| {{svaraC|S|R1|G2|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|'''Shivapanthuvarāli'''|| {{svaraC|S|R1|G2|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Arunāngi''|| {{svaraC|S|R1|M2|P|N3|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|R1|G2|R1|S|abbr=no}}
+|-
+|''Bandhuvarāli''|| {{svaraC|S|M2|S|N3|D1|P|M2|abbr=no}} || {{svaraC|D1|M2|G2|R1|S|abbr=no}}
+|-
+|''Bhānudhanyāsi''|| {{svaraC|S|R1|G2|M2|N3|D1|N3|abbr=no}} || {{svaraC|D1|P|M2|G2|R1|S|N3|S|abbr=no}}
+|-
+|''Bhānukeeravāni''|| {{svaraC|S|R1|G2|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G2|R1|S|abbr=no}}
+|-
+|''Chāyaranjani''|| {{svaraC|S|G2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|S|abbr=no}}
+|-
+|''Dhowreyani''|| {{svaraC|S|R1|G2|M2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''[[Todi (raga)|Hindusthāni Todi]]''|| {{svaraC|N3|R1|G2|M2|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Jālakesari''|| {{svaraC|S|R1|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|D1|P|M2|R1|S|abbr=no}}
+|-
+|''Kumudhachandrikā''|| {{svaraC|S|G2|M2|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G2|R1|S|abbr=no}}
+|-
+|''Mahānandhini''|| {{svaraC|S|M2|G2|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|D1|N3|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''[[Multani (raga)|Multani]] {Hindustani}''|| {{svaraC|S|G2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Parpathi''|| {{svaraC|S|G2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|S|abbr=no}}
+|-
+|''Shekharachandrikā''|| {{svaraC|S|R1|G2|M2|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G2|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Shadvidamargini"
+|'''46 [[Shadvidamargini|Śadvidamārgini]]'''|| {{svaraC|S|R1|G2|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G2|R1|S|abbr=no}}
+|-
+|'''Sthavarājam'''|| {{svaraC|S|R1|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M2|G2|S|abbr=no}}
+|-
+|''Ganahemāvati''|| {{svaraC|S|G2|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G2|S|abbr=no}}
+|-
+|''Indhudhanyāsi''|| {{svaraC|S|G2|M2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|D2|M2|G2|R1|S|abbr=no}}
+|-
+|''Shreekānti''|| {{svaraC|S|G2|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G2|S|abbr=no}}
+|-
+|''Teevravāhini''|| {{svaraC|S|R1|G2|M2|P|D2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G2|R1|G2|M2|R1|S|abbr=no}}
+|-
+|Vaishalini
+|{{svaraC|R1|G2|M2|D2|N2|abbr=no}}
+|{{svaraC|N2|D2|M2|G2|R1|abbr=no}}
+|-style="background-color:#ebebeb;" id="Suvarnangi"
+|'''47 [[Suvarnangi|Suvarnāngi]]'''|| {{svaraC|S|R1|G2|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G2|R1|S|abbr=no}}
+|-
+|'''Sowveeram'''|| {{svaraC|S|R1|G2|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Abhiru''|| {{svaraC|S|R1|G2|R1|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|G2|R1|G2|S|abbr=no}}
+|-
+|''Rathikā''|| {{svaraC|S|M2|G2|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Vijayashree''|| {{svaraC|S|R1|G2|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|G2|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Divyamani"
+|'''48 [[Divyamani|Divyamaṇi]]'''|| {{svaraC|S|R1|G2|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G2|R1|S|abbr=no}}
+|-
+|'''Jeevanthikā'''|| {{svaraC|S|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|S|abbr=no}}
+|-
+|''Deshamukhāri''|| {{svaraC|S|R1|G2|M2|P|D3|N3|D3|S'|abbr=no}} || {{svaraC|S'|D3|N3|D3|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Dundubi''|| {{svaraC|S|R1|G2|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Jeevanthini''|| {{svaraC|S|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|S|abbr=no}}
+|-
+|''Suddha Gāndhāri''|| {{svaraC|S|R1|G2|M2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|N3|S|N3|P|M2|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Dhavalambari"
+|'''49 [[Dhavalambari|Dhavaḻāmbari]]'''|| {{svaraC|S|R1|G3|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G3|R1|S|abbr=no}}
+|-
+|'''Dhavalāngam'''|| {{svaraC|S|R1|G3|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Abhirāmam''|| {{svaraC|S|R1|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Bhinnapauarali''|| {{svaraC|S|M2|P|D1|N1|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G3|S|abbr=no}}
+|-
+|''Dharmini''|| {{svaraC|S|R1|G3|M2|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|M2|G3|R1|S|abbr=no}}
+|-
+|''Sudharmini''|| {{svaraC|S|R1|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|M1|G3|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Namanarayani"
+|'''50 [[Namanarayani|Nāmanārāyaṇi]]'''|| {{svaraC|S|R1|G3|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G3|R1|S|abbr=no}}
+|-
+|'''Nāmadeshi'''|| {{svaraC|S|R1|G3|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Narmada''|| {{svaraC|S|R1|G3|M2|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M2|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Neelanjana'' <small>(Raga created by Mahesh Mahadev)</small><ref>{{cite web |url=https://web.archive.org/web/20260731221234/https://web.archive.org/web/20260731221234/https://maheshmahadev.com/neelanjana-%E0%A4%A8%E0%A5%80%E0%A4%B2%E0%A4%BE%E0%A4%82%E0%A4%9C%E0%A4%A8%E0%A4%BE-%E0%B2%A8%E0%B3%80%E0%B2%B2%E0%B2%BE%E0%B2%82%E0%B2%9C%E0%B2%A8%E0%B2%BE-a-new-janya-raga-of-the-50th-melaka/ |title=Neelanjana – A New Janya Raga |website=Internet Archive |access-date=6 August 2026 }}</ref>|| {{svaraC|S|R1|G3|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Swaramanjari''|| {{svaraC|S|G3|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Kamavardhini"
+|'''51 [[Kamavardhini|Panthuvarāli (Kāmavardhini)]]'''|| {{svaraC|S|R1|G3|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|R1|S|abbr=no}}
+|-
+|'''Kāshirāmakriyā'''|| {{svaraC|S|G3|R1|G3|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M1|G3|R1|S|abbr=no}}
+|-
+|''Mandāri''|| {{svaraC|S|R1|G3|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|R1|S|abbr=no}}
+|-
+|''ādhi Panchama''|| {{svaraC|S|R1|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|N3|P|M2|G3|R1|S|abbr=no}}
+|-
+|''[[Basant (raga)|Basant]] /Vasant {Hindustani}''|| {{svaraC|S|G3|M2|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|M2|N3|D1|M2|G3|R1|S|abbr=no}} (''Anya swara*'' : {{svaraC|M1|abbr=no}})
+|-
+|''Basant Bahār {Hindustani}''|| {{svaraC|S|M2|P|G3|M2|N3|D1|N3|S|abbr=no}} || {{svaraC|R2|S|N2|D2|P|M1|G2|M1|G2|R2|S|abbr=no}}
+|-
+|''Bhogavasantha''|| {{svaraC|S|R1|G3|M2|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G3|R1|S|abbr=no}}
+|-
+|''Deepakam''|| {{svaraC|S|R2|M2|P|D1|P|S'|abbr=no}} || {{svaraC|S'|N3|D1|N3|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Gamakapriyā''|| {{svaraC|S|R1|G3|M2|P|N3|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Gamanapriyā''|| {{svaraC|S|R1|G3|M2|P|N3|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Hamsanārāyani''|| {{svaraC|S|R1|G3|M2|P|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Indumathi''|| {{svaraC|S|G3|M2|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|S|abbr=no}}
+|-
+|''Kamalāptapriyā''|| {{svaraC|S|R1|G3|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|D1|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Kumudhakriyā''|| {{svaraC|S|R1|G3|M2|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G3|R1|S|abbr=no}}
+|-
+|''Māruthi''|| {{svaraC|S|R1|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Ponni''|| {{svaraC|S|G3|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Prathāpa''|| {{svaraC|S|G3|M2|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|R1|S|abbr=no}}
+|-
+|''[[Puriya Dhanashree]] {Hindustani}''|| {{svaraC|N3|R1|G3|M2|P|D1|P|N3|S|abbr=no}} || {{svaraC|R1|N3|D1|P|M2|G3|M2|R1|G3|R1|S|abbr=no}}
+|-
+|''Tāndavapriyā''|| {{svaraC|S|R1|G3|M2|P|S'|abbr=no}} || {{svaraC|S'|P|M2|G3|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Ramapriya"
+|'''52 [[Ramapriya|Rāmapriyā]]'''|| {{svaraC|S|R1|G3|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R1|S|abbr=no}}
+|-
+|'''Ramāmanohari'''|| {{svaraC|S|R1|G3|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Chintaramani''|| {{svaraC|S|G3|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Hamsagamini''|| {{svaraC|S|G3|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|D2|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Lokaranjani''|| {{svaraC|S|G3|M2|P|M2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|N2|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Meghashyāmala''|| {{svaraC|S|G3|M2|P|D2|N2|D2|P|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R1|S|abbr=no}}
+|- 		
+|''Namoveenapaani (creation by Siri Girish)''|| {{svaraC|S|G3|M2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M2|G3|R1|S|abbr=no}}
+|-
+|''Patalāmbari''|| {{svaraC|S|R1|G3|M2|D2|S'|abbr=no}} || {{svaraC|S'|D2|M2|G3|R1|S|abbr=no}}
+|-
+|''Raktimārgini''|| {{svaraC|S|P|M2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|P|G3|R1|S|abbr=no}}
+|-
+|''Rasavinodini''|| {{svaraC|S|G3|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|S|abbr=no}}
+|-
+|''Reethi Chandrikā''|| {{svaraC|S|R1|G3|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Seemantinipriyā''|| {{svaraC|S|R1|G3|M2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M2|G3|R1|S|abbr=no}}
+|-
+|''Sukhakari''|| {{svaraC|S|R1|S|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|S|R1|S|abbr=no}}
+|-
+|''Vedhaswaroopi''|| {{svaraC|S|R1|G3|M2|P|D2|N3|P|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|N3|P|M2|G3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Gamanashrama"
+|'''53 [[Gamanashrama|Gamanāśrama]]'''|| {{svaraC|S|R1|G3|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|R1|S|abbr=no}}
+|-
+|'''Gamakakriyā'''|| {{svaraC|S|R1|G3|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Alankāri''|| {{svaraC|S|G3|M2|D2|N3|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G3|S|abbr=no}}
+|-
+|''[[Bhatiyar|Bhatiyār]] {Hindustani}''|| {{svaraC|S|D2|P|D2|M2|P|G3|M2|D2|S|abbr=no}} || {{svaraC|R1|N3|D2|P|M2|P|G3|R1|S|abbr=no}} (''Anya swara*'' : {{svaraC|M1|abbr=no}})
+|-
+|''Dvigāndhārabhooshani''|| {{svaraC|S|R1|G2|G3|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G2|G3|G2|R1|S|D2|S|abbr=no}}
+|-
+|''[[Hamsanandi|Hamsānandi]]''|| {{svaraC|S|R1|G3|M2|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G3|R1|S|abbr=no}}
+|-
+|''Mechakāngi''|| {{svaraC|S|R1|G3|M2|P|D2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|D2|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Padmakalyāni''|| {{svaraC|S|G3|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|S|abbr=no}}
+|-
+|''Poorvi Kalyāni''|| {{svaraC|S|R1|G3|M2|P|D2|P|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Sharabadhvāja''|| {{svaraC|S|R1|G3|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G3|R1|S|abbr=no}}
+|-
+|''[[Sohini]] {Hindustani}''|| {{svaraC|S|G3|M2|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G3|R1|S|abbr=no}}
+|-
+|''Vaishaka''|| {{svaraC|S|R1|G3|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|N3|P|M2|G3|M2|R1|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Vishwambari"
+|'''54 [[Vishwambari|Viśvambari]]'''|| {{svaraC|S|R1|G3|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G3|R1|S|abbr=no}}
+|-
+|'''Vamshavathi'''|| {{svaraC|S|R1|G3|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Hemāngi''|| {{svaraC|S|R1|G3|M2|D3|S'|abbr=no}} || {{svaraC|S'|D3|M2|G3|R1|S|abbr=no}}
+|-
+|''Pooshakalyāni''|| {{svaraC|S|R1|G3|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Sharadhyuthi''|| {{svaraC|S|R1|G3|M2|P|D3|N3|D3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Suddhakriyā''|| {{svaraC|S|R1|M2|M2|P|D3|S'|abbr=no}} || {{svaraC|S'|D3|P|M2|G3|R1|S|abbr=no}}
+|-
+|''Sundarāngi''|| {{svaraC|S|R1|G3|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|G3|R1|S|abbr=no}}
+|-
+|''Vijayavasantham''|| {{svaraC|S|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Shamalangi"
+|'''55 [[Shamalangi|Śāmaḻāngi]]'''|| {{svaraC|S|R2|G2|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G2|R2|S|abbr=no}}
+|-
+|'''Shyāmalam'''|| {{svaraC|S|R2|G2|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Deshāvali''|| {{svaraC|S|R2|G2|M2|D1|N1|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|M2|G2|R2|S|abbr=no}}
+|-
+|''Vijayamālavi''|| {{svaraC|S|R2|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Shanmukhapriya"
+|'''56 [[Shanmukhapriya|Śanmukhapriyā]]'''|| {{svaraC|S|R2|G2|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G2|R2|S|abbr=no}}
+|-
+|'''Chāmaram'''|| {{svaraC|S|R2|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Bhāshini''|| {{svaraC|S|G2|R2|G2|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G2|R1|S|abbr=no}}
+|-
+|''Chintāmani''|| {{svaraC|S|G2|R2|G2|M2|G2|R2|G2|P|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Dhanakari''|| {{svaraC|S|G2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M2|G2|S|abbr=no}}
+|-
+|''Garigadya''|| {{svaraC|N2|S|G2|M2|P|D1|N2|abbr=no}} || {{svaraC|D1|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Gopikathilakam''|| {{svaraC|S|R2|G2|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Kokilanandhi''|| {{svaraC|S|G2|M2|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G2|S|abbr=no}}
+|-
+|''Rājeshwari''|| {{svaraC|S|R2|G2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M1|G2|S|abbr=no}}
+|-
+|''Samudrapriyā''|| {{svaraC|S|G2|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|G2|S|abbr=no}}
+|-
+|''Shanmukhi (Trimoorti)''|| {{svaraC|S|R1|G2|M2|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M2|G2|R1|S|abbr=no}}
+|-
+|''Sumanasaranjani'' || {{svaraC|S|G2|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|G2|S|abbr=no}}
+|-
+|''Vasukari''|| {{svaraC|S|G2|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M2|G2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Simhendramadhyamam"
+|'''57 [[Simhendramadhyamam]]'''(Sumadhyuti)|| {{svaraC|S|R2|G2|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|R2|S|abbr=no}}
+|-
+|-
+|''Ānandavalli''|| {{svaraC|S|G2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|S|abbr=no}}
+|-
+|''Ghantana''|| {{svaraC|S|R2|G2|M2|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G2|R2|S|abbr=no}}
+|-
+|''Jayachoodāmani''|| {{svaraC|S|G2|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Pranavapriyā''|| {{svaraC|S|R2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Sarvāngi''|| {{svaraC|S|R2|M2|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G2|S|R3|S|abbr=no}}
+|-
+|''Seshanādam''|| {{svaraC|S|R2|G2|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Suddha''|| {{svaraC|S|R2|G2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Sunādapriyā''|| {{svaraC|S|R2|G2|M2|P|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Urmikā''|| {{svaraC|S|R2|G2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Vijayasaraswathi''|| {{svaraC|S|G2|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Hemavati "
+|'''58 [[Hemavati (ragam)|Hemavati]]'''|| {{svaraC|S|R2|G2|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G2|R2|S|abbr=no}}
+|-
+|'''Deshisimhāravam'''|| {{svaraC|S|R2|G2|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Chandrarekhā''|| {{svaraC|S|R2|G2|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M2|G2|R2|S|abbr=no}}
+|-
+|''Hamsabhramari''|| {{svaraC|S|R2|G2|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Hemāmbari''|| {{svaraC|S|R2|G2|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Hemapriya''|| {{svaraC|S|R2|G2|M2|D2|S'|abbr=no}} || {{svaraC|S'|D2|M2|G2|R2|S|abbr=no}}
+|-
+|''Kshemakari''|| {{svaraC|S|R2|M2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M2|R2|S|abbr=no}}
+|-
+|''Madhukowns''|| {{svaraC|S|G2|M2|P|N2|P|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|G2|S|abbr=no}}
+|-
+|''Shakthiroopini''|| {{svaraC|S|G2|M2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M2|G2|S|abbr=no}}
+|-
+|''Simhārava''|| {{svaraC|S|R2|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|R2|G2|R2|S|abbr=no}}
+|-
+|''Vijayasāranga''|| {{svaraC|S|R2|G2|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M2|G2|R2|S|abbr=no}}
+|-
+|''Vijayashrāngi''|| {{svaraC|S|R2|G2|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M2|G2|R2|S|abbr=no}}
+|-
+|''Yāgini''|| {{svaraC|S|R2|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Dharmavati"
+|'''59 [[Dharmavati]]'''|| {{svaraC|S|R2|G2|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G2|R2|S|abbr=no}}
+|-
+|'''Dhāmavathi'''|| {{svaraC|S|R2|G2|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G2|R2|S|abbr=no}}
+|-
+|''[[Sri Tyagaraja]]'' ''<small>(Raga created by Mahesh Mahadev)</small>''<ref>{{Cite web |last=Pinto |first=Arun |date=2023-01-19 |title=Sri Tyagaraja - a New Raga in Carnatic Music by Mahesh Mahadev |url=https://newskarnataka.com/karnataka/bengaluru/sri-tyagaraja-a-new-raga-in-carnatic-music-by-mahesh-mahadev/19012023 |access-date=2023-01-21 |website=News Karnataka |language=en-US}}</ref>
+|{{svaraC|S|G2|M2|P|6=N3|7=S'|abbr=no}}
+|{{svaraC|S'|N3|4=P|5=M2|6=G2|7=R2|8=S|abbr=no}}
+|-
+|''Gowrikriya''|| {{svaraC|S|G2|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|N3|P|M2|G2|S|abbr=no}}
+|-
+|''Karmukhāvati''|| {{svaraC|S|R2|G2|M2|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G2|R2|S|abbr=no}}
+|-
+|''Karpoora Bharani''|| {{svaraC|S|R2|G2|P|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|P|G2|R2|S|abbr=no}}
+|-
+|''Lalitasimharavam''|| {{svaraC|S|R2|G2|M2|P|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Madhumālti'' {Hindustani}|| {{svaraC|N3|S|G2|M2|P|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G2|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|M1|abbr=no}})
+|-
+|''[[Madhuvanti|Madhuvanthi]] {Hindustani}''|| {{svaraC|S|G2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Moharanjani''|| {{svaraC|S|R2|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G2|S|abbr=no}}
+|-
+|''[[Ranjani]]''|| {{svaraC|S|R2|G2|M2|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G2|S|abbr=no}}
+|-
+|''Varada''|| {{svaraC|S|R2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|R2|S|abbr=no}}
+|-
+|''Vijayanāgari''|| {{svaraC|S|R2|G2|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Vishveshwarapriyā''|| {{svaraC|S|R2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Neetimati"
+|'''60 [[Neetimati|Nītimati]]'''|| {{svaraC|S|R2|G2|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G2|R2|S|abbr=no}}
+|-
+|'''Nisshadham'''|| {{svaraC|S|R2|G2|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Amarasenapriyā''|| {{svaraC|S|R2|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Deshyagānavaridhi''|| {{svaraC|S|R2|G2|M2|P|D3|N3|P|S'|abbr=no}} || {{svaraC|S'|N3|S|P|M2|G2|R2|S|abbr=no}}
+|-
+|''[[Hamsanadam|Hamsanādam]]''|| {{svaraC|S|R2|M2|P|D3|N3|S'|abbr=no}}<br /> {{svaraC|S|R2|M2|P|N3|S|abbr=no}} || {{svaraC|S|N3|D3|P|M2|R2|S'|abbr=no}}<br /> {{svaraC|S|N3|P|M2|R2|S|abbr=no}}
+|-
+|''Kaikavashi''|| {{svaraC|S|R2|G2|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G2|R2|S|abbr=no}}
+|-
+|''Nuthanachandrikā''|| {{svaraC|S|R2|G2|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|D3|N3|P|M2|G2|S|abbr=no}}
+|-
+|''Rathnasāranga''|| {{svaraC|S|R2|G2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G2|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Kantamani"
+|'''61 [[Kantamani|Kāntāmani]]'''|| {{svaraC|S|R2|G3|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G3|R2|S|abbr=no}}
+|-
+|'''Kunthalam'''|| {{svaraC|S|R2|G3|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Kanakakusumāvali''|| {{svaraC|S|R2|G3|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Shruthiranjani''|| {{svaraC|S|R2|G3|M2|P|D1|N1|abbr=no}} || {{svaraC|N1|D1|P|M2|G3|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Rishabhapriya"
+|'''62 [[Rishabhapriya|Riśabhapriyā]]'''|| {{svaraC|S|R2|G3|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G3|R2|S|abbr=no}}
+|-
+|'''Rathipriyā'''|| {{svaraC|S|R2|G3|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Gopriya''|| {{svaraC|S|R2|G3|M2|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|M2|G3|R2|S|abbr=no}}
+|-
+|''Poornasāveri''|| {{svaraC|S|R2|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Rathnabhānu''|| {{svaraC|S|R2|M2|P|N2|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Suddha Sāranga''|| {{svaraC|S|G3|M2|P|N2|S'|abbr=no}}||{{svaraC|S'|D1|P|M2|G3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Latangi"
+|'''63 [[Latangi|Latāngi]]'''|| {{svaraC|S|R2|G3|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|R2|S|abbr=no}}
+|-
+|'''Geethapriyā'''|| {{svaraC|S|R2|G3|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Chitrachandrika''|| {{svaraC|S|G3|R2|G3|M2|P|N3|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G3|R2|S|abbr=no}}
+|-
+|''Hamsalatha''|| {{svaraC|S|R2|G3|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Kananapriyā''|| {{svaraC|S|R2|G3|M2|P|M2|D1|N3|S'|abbr=no}} || {{svaraC|S'|D1|N3|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Karunākari''|| {{svaraC|S|M2|P|D1|N3|D1|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|S|abbr=no}}
+|-
+|''Lalithāngi''|| {{svaraC|S|R2|G3|M2|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G3|R2|S|abbr=no}}
+|-
+|''Ramani''|| {{svaraC|S|G3|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|S|abbr=no}}
+|-
+|''Rathnakānthi''|| {{svaraC|S|R2|G3|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Raviswaroopini''|| {{svaraC|S|G3|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|S|abbr=no}}
+|-
+|''Sajjananandhi''|| {{svaraC|S|R2|G3|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|M2|G3|R2|S|abbr=no}}
+|-
+|''Skandamanorama''|| {{svaraC|S|R2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|R2|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Vachaspati "
+|'''64 [[Vachaspati (ragam)|Vāchaspati]]'''|| {{svaraC|S|R2|G3|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|'''Bhooshāvathi'''|| {{svaraC|S|R2|G3|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Bhagavataranjana''|| {{svaraC|S|R2|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Bhogeeshwari''|| {{svaraC|S|R2|G3|P|D2|N2|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Bhooshāvali''|| {{svaraC|S|R2|G3|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Dwigāndhārabhooshani''|| {{svaraC|S|R1|G2|G3|G2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G2|G3|G2|R1|S|D2|S|abbr=no}}
+|-
+|''Gaganamohini''|| {{svaraC|S|G3|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|G3|S|abbr=no}}
+|-
+|''Gurupriya''|| {{svaraC|S|R2|G3|M2|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M2|G3|R2|S|abbr=no}}
+|-
+|''Hrdhini''|| {{svaraC|S|G3|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|G3|S|abbr=no}}
+|-
+|''Mangalakari''|| {{svaraC|S|R2|P|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Mukthidāyini''|| {{svaraC|S|G3|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|S|abbr=no}}
+|-
+|''Nādhabrahma''|| {{svaraC|S|P|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|S|abbr=no}}
+|-
+|''Pranavākāri''|| {{svaraC|P|N2|D2|N2|S|R2|G3|M2|abbr=no}} || {{svaraC|P|M2|G3|R2|S|N2|D2|N2|P|abbr=no}}
+|-
+|''Saraswathi''|| {{svaraC|S|R2|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|R2|S|abbr=no}}
+|-
+|''Shivaranjani (Original)''|| {{svaraC|S|R2|G3|M2|D2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|D2|M2|G3|R2|S|abbr=no}}
+|-
+|''Triveni''|| {{svaraC|S|R2|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|R2|S|abbr=no}}
+|-
+|''Utthari''|| {{svaraC|S|G3|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|M2|G3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Kalyani "
+|'''65 [[Kalyani (rāga)|Mechakalyāni]]'''|| {{svaraC|S|R2|G3|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|'''Shānthakalyāni'''|| {{svaraC|S|R2|G3|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|''[[Amritha Kalyani]] <small>(Raga created by Mahesh Mahadev)<ref name=":0" /></small>''
+|{{svaraC|S|G3|M2|P|6=N3|7=S'|abbr=no}}
+|{{svaraC|S'|N3|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Amritha Behāg''|| {{svaraC|S|M2|G3|P|N3|S|abbr=no}} || {{svaraC|D2|N3|D2|M2|G3|S|abbr=no}}
+|-
+|''Aprameya''|| {{svaraC|S|R2|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G3|M2|R2|S|abbr=no}}
+|-
+|''Bhoopkalyāni''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|''[[Bhoopali|Bhoopāli]] {Hindustani}''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|G3|R2|S|abbr=no}}
+|-
+|''Chandrakāntha''|| {{svaraC|S|R2|G3|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|N3|P|M2|G3|R2|S|abbr=no}}
+|-
+|''[[Hameer]] {Hindustani}''|| {{svaraC|S|R2|S|G3|M1|D2|N3|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|N3|P|G3|M1|D2|M2|P|D2|P|G3|M1|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|M1|abbr=no}})
+|-
+|''Hameer Kalyāni {carnatic interpretation of Kedar}''|| {{svaraC|S|P|M2|P|D2|N3|S'|abbr=no}}<br /> {{svaraC|S|R2|S|P|M2|P|D2|N3|S'|abbr=no}}<br /> {{svaraC|S|R2|S|P|M2|N3|D2|S|N3|S'|abbr=no}}<br /> {{svaraC|S|R2|G3|M2|P|D2|N3|P|D2|P|S'|abbr=no}}<br /> {{svaraC|S|P|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|M1|G3|P|M1|R2|S'|abbr=no}}<br /> {{svaraC|S|N3|D2|P|M2|G3|M1|G3|R2|S'|abbr=no}}<br /> {{svaraC|S|N3|D2|P|M2|G|M1|R2|S|abbr=no}}<br />{{svaraC|S|N3|D2|P|G3|M1|G3|R2|S'|abbr=no}}<br /> {{svaraC|S|N3|D2|P|G3|M1|G3|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|M1|N2|abbr=no}})
+|-
+|''Hamsakalyāni''|| {{svaraC|S|R2|G3|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Kalyānadāyini''|| {{svaraC|S|R2|G3|M2|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G3|R2|S|abbr=no}}
+|-
+|''Kannadamaruva''|| {{svaraC|S|G3|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|S|abbr=no}}
+|-
+|''[[Kedar (raga)|Ked''ār'']] {Hindustani}''
+|{{svaraC|S|}} *{{svaraC|M1|}}({{svaraC|G3|}}){{svaraC|P|D2|N3|S'|abbr=no}}
+|{{svaraC|S'|N3|D2|P|M2|P|}} *{{svaraC|M1|S|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|M1|abbr=no}})
+|-
+|''Kowmoda''|| {{svaraC|S|R2|G3|M2|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|S|abbr=no}}
+|-
+|''Kunthalashreekānti''|| {{svaraC|S|G3|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|R2|S|abbr=no}}
+|-
+|''[[Mohanakalyani|Mohana Kalyāni]]''|| {{svaraC|S|R2|G3|P|D2|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Mrgānandhana''|| {{svaraC|S|R2|G3|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|D2|G3|R2|S|abbr=no}}
+|-
+|''[[Nada Kalyani]] <small>(Raga created by Mahesh Mahadev)<ref name=":0" /></small>''
+|{{svaraC|S|R2|M2|P|N3|S'|abbr=no}}
+|{{svaraC|S'|N3|D2|M2|G3|R2|S|abbr=no}}
+|-
+|''Nāndhakalyāni''|| {{svaraC|S|G3|M2|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G3|M2|R2|S|abbr=no}}
+|-
+|''Pramodhini''|| {{svaraC|S|G3|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|G3|S|abbr=no}}
+|-
+|''Rajasadhaka <small>(Raga created by Mahesh Mahadev)<ref name=":0" /></small>''
+|{{svaraC|S|R2|G3|P|D2|S'|abbr=no}}
+|{{svaraC|S'|N3|P|M2|R2|S|abbr=no}}
+|-
+|''Sāranga''|| {{svaraC|S|R2|G3|M2|P|D2|N3|S'|abbr=no}}<br /> {{svaraC|S|R2|S|P|M2|P|D2|N3|S'|abbr=no}}<br /> {{svaraC|S|P|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|R2|G3|M1|R2|S'|abbr=no}}<br /> {{svaraC|S|N3|S|D2|P|M2|R2|G3|M1|R2|S'|abbr=no}}<br /> {{svaraC|S|N3|D2|P|M2|R2|G3|M1|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|M1|abbr=no}})
+|-
+|''Sāranga Tārangini''|| {{svaraC|S|R2|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|R2|S|abbr=no}}
+|-
+|''Shilangi''|| {{svaraC|S|G3|M2|P|N3|S'|abbr=no}}|| {{svaraC|S'|N3|P|M2|G3|S|abbr=no}}
+|-
+|''Shuddha Sārang {Hindustani}''|| {{svaraC|N3|S|R2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|P|M1|R2|S|N3|S|abbr=no}} (''Anya swara*'' : {{svaraC|M1|abbr=no}})
+|-
+|''Suddha Koshala''|| {{svaraC|S|G3|M2|P|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G3|R2|S|abbr=no}}
+|-
+|''Shyām Kalyān {Hindustani}''|| {{svaraC|N3|S|R2|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|P|D2|P|G3|M1|P|G3|M1|R2|S|N3|S|abbr=no}} (''Anya swara*'' : {{svaraC|M1|abbr=no}})
+|-
+|''[[Sunadavinodini|Sunādavinodini]] / [[Hindol]] of Hindustani''|| {{svaraC|S|G3|M2|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|M2|G3|S|abbr=no}}
+|-
+
+|''Swayambhooshwara Rāga''|| {{svaraC|S|G3|P|S'|abbr=no}} || {{svaraC|S'|P|G3|S|abbr=no}}
+|-
+|''Vandanadhārini''|| {{svaraC|S|R2|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|R2|S|abbr=no}}
+|-
+|''Vivāhapriyā <ref name="vivahapriya_Doubt"> The notes of Vivahapriya raga are theoretically same as Saranga Tarangini, are we missing something?)</ref>''|| {{svaraC|S|R2|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|R2|S|abbr=no}}
+|-
+|''[[Yamunakalyani|Yamuna Kalyāni]] / [[Yaman Kalyan]] {Hindustani}''|| {{svaraC|S|R2|G3|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|M1|G3|R2|S|abbr=no}} (''Anya swara*'' : {{svaraC|M1|abbr=no}})
+|-style="background-color:#ebebeb;" id="Chitrambari"
+|'''66 [[Chitrambari|Chitrāmbari]]'''|| {{svaraC|S|R2|G3|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G3|R2|S|abbr=no}}
+|-
+|'''Chaturāngini'''|| {{svaraC|S|R2|G3|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|N3|P|G3|M2|G3|R2|S|abbr=no}}
+|-
+|''[[Amritavarshini]]''|| {{svaraC|S|G3|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|S|abbr=no}}
+|-
+|''Chitrasindhu''|| {{svaraC|S|G3|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Churnikavinodhini''|| {{svaraC|S|R2|G3|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|N3|P|M2|G3|R2|S|abbr=no}}
+|-
+|''Vijayakoshalam''|| {{svaraC|S|R2|G3|M2|P|S'|abbr=no}} || {{svaraC|S'|N3|P|M2|G3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Sucharitra"
+|'''67 [[Sucharitra|Sucharitrā]]'''|| {{svaraC|S|R3|G3|M2|P|D1|N1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|G3|R3|S|abbr=no}}
+|-
+|'''Santhāna Manjari'''|| {{svaraC|S|R3|G3|M2|P|D1|S'|abbr=no}} || {{svaraC|S'|N1|D1|P|M2|R3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Jyoti swarupini"
+|'''68 [[Jyoti swarupini|Jyothisvarūpiṇi]]'''|| {{svaraC|S|R3|G3|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G3|R3|S|abbr=no}}
+|-
+|'''Jyothi'''|| {{svaraC|S|R3|G3|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|N2|D1|P|M2|G3|S|abbr=no}}
+|-
+|''Deepavarāli''|| {{svaraC|S|R3|M2|P|N2|S'|abbr=no}} || {{svaraC|S'|N2|P|M2|G3|R3|S|abbr=no}}
+|-
+|''Jyothishmathi''|| {{svaraC|S|R3|G3|M2|P|S'|abbr=no}} || {{svaraC|S'|N2|D1|M2|P|M2|G3|R3|S|abbr=no}}
+|-
+|''Rāmagiri''|| {{svaraC|S|R3|M2|G3|M2|P|D1|N2|S'|abbr=no}} || {{svaraC|S'|D1|N2|D1|P|M2|G3|R3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Dhatuvardani"
+|'''69 [[Dhatuvardani|Dhātuvardhani]]'''|| {{svaraC|S|R3|G3|M2|P|D1|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|R3|S|abbr=no}}
+|-
+|'''Dhowtha Panchamam'''|| {{svaraC|S|R3|G3|M2|P|N3|P|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|R3|G3|M2|R3|S|abbr=no}}
+|-
+|''Dhwithiyapanchamam''|| {{svaraC|S|R3|G3|M2|P|N3|P|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|R3|M2|G3|R3|S|abbr=no}}
+|-
+|''Sumukham''|| {{svaraC|S|R3|M2|N3|S'|abbr=no}} || {{svaraC|S'|N3|M2|R3|S|abbr=no}}
+|-
+|''Tavapriyā''|| {{svaraC|S|R3|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D1|P|M2|G3|R3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Nasikabhushani"
+|'''70 [[Nasikabhushani|Nāsikābhūśaṇi]]'''|| {{svaraC|S|R3|G3|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R3|S|abbr=no}}
+|-
+|'''Nāsāmani'''|| {{svaraC|S|R3|S|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R3|S|abbr=no}}
+|-
+|''Marakathagowla''|| {{svaraC|S|R3|M2|P|D2|N2|S'|abbr=no}} || {{svaraC|S'|N2|D2|P|M2|G3|R3|S|abbr=no}}
+|-
+|''Thilakamandāri''|| {{svaraC|S|R3|M2|P|D2|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|G3|R3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Kosalam"
+|'''71 [[Kosalam|Kōsalam]]'''|| {{svaraC|S|R3|G3|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|R3|S|abbr=no}}
+|-
+|'''Kusumākaram'''|| {{svaraC|S|R3|G3|M2|P|D2|N3|S'|abbr=no}} || {{svaraC|S'|N3|D2|P|M2|G3|R3|S|abbr=no}}
+|-
+|''Ayodhya''|| {{svaraC|S|G3|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|G3|M2|R3|S|abbr=no}}
+|-style="background-color:#ebebeb;" id="Rasikapriya"
+|'''72 [[Rasikapriya|Rasikapriyā]]'''|| {{svaraC|S|R3|G3|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G3|R3|S|abbr=no}}
+|-
+|'''Rasamanjari'''|| {{svaraC|S|R3|G3|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G3|R3|S|abbr=no}}
+|-
+|''Hamsagiri''|| {{svaraC|S|R3|G3|M2|P|D3|N3|S'|abbr=no}} || {{svaraC|S'|N3|P|D3|N3|P|M2|G3|S|abbr=no}}
+|-
+|''Ishtārangini''|| {{svaraC|S|R3|M2|P|N3|S'|abbr=no}} || {{svaraC|S'|N3|D3|P|M2|G3|R3|S|abbr=no}}
+|-
+|''Nāgagiri''|| {{svaraC|S|G3|M2|P|D2|P|S'|abbr=no}} || {{svaraC|S'|D2|P|M2|G3|S|abbr=no}}
+|}
+
+==Other janyas==
+{{unreferenced section|date=October 2018}}
+{{columns-list|colwidth=22em|
+*āṣaḍhakannaḍa
+*bhāvya
+*bhet̄nia
+*bhuvana manōhari
+*dēshalam/dēśalam
+*dēshikakhamāj/dēśikakhamāj
+*dēshikasencuruṭi/dēśikasencuraṭi
+*dēshya keeravāṇi/dēśya keeravāṇi
+*gaṅgādhāriṇi
+*harihamsa
+*harikalyāṇi
+*Harisaraswati
+*Hindustāni bhairavi - uses all 12 notes
+*Hindustāni gāndhāri
+*Jālini
+*Kamalāmanōhari 
+*Kannaḍa kāmbhōji/kannaḍa kāmbōdhi
+*Karnāṭaka nāṭṭai
+*karṇashravya/karṇaśravya
+*Khaṇḍe
+*Koṇḍamalahari
+*Lāvaṇi
+*Māṇikya
+*Madhumādhavi
+*Maitrabhāvini
+*Manōllāsini
+*Mishra khamāj/Miśra khamāj
+*Mishra māṇḍ/Miśra māṇḍ
+*Mishra tilang/Miśra tilaṅg  - S G3 M1 P N3 S - S N3 P M1 G3 R2 S
+*Mukundabhairavam
+*Mukundamaṇirangu
+*Mukundanandini
+*Mukundashree/mukundaśrī
+*Mukundavasanta
+*Mukundavasantini
+*Namoveenapaani/namōveeṇāpāṇi - Aro: S G3 M2 D2 N2 S, Ava: S N2 D2 M2 G3 R1 S (Creation by Siri Girish at the age of 12)
+*Navakānti
+*Parvatavardhini/parvatavardhani
+*Padmashree/padmaśrī
+*Pancabhoota
+*Pancagata
+*Poorṇavasanta
+*Rāgadhwani
+*[[Ragini raga]]
+*Rājahamsini
+*Rājalahari (Scale introduced by Maestro [[Ilaiyaraaja]])
+*Rājkowns/rājakauns
+*Rāyagowla/rāyagaula 
+*Rojuvana
+*Rudrabharaṇam
+*Sampoorṇam
+*Sanga
+*Sarvānanda
+*Sarvashakti
+*Savitā
+*Shiva kalyāṇam
+*Shree chintāmaṇi
+*Shreekāntimati
+*Shubhakalyāṇi
+*Siddhēśvara
+*Shuddha cintāmaṇi
+*Vasavanti/vāsavanti 
+}}
+
+==See also==
+{{Portal|India|Music}}
+* [[List of film songs based on ragas]]
+* [[List of composers who created ragas]]
+
+==Notes==
+{{reflist}}
+
+==External links==
+* [http://www.karnatik.com/janyalist.shtml karnATik.com: Raaga Janya list]
+* [http://carnatica.net/sangeet/handbook.htm Carnatica.net: Music Handbook]
+
+{{Melakarta ragas|state=collapsed}}
+{{Janya|state=collapsed}}
+
+{{DEFAULTSORT:Janya ragas}}
+[[Category:Janya ragas| ]]
+[[Category:India music-related lists]]

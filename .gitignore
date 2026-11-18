@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.store/
+node_modules/
+frontend/dist/
+frontend/dev-dist/
+test-results/
+playwright-report/
+seed_unmatched.txt
